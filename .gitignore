@@ -166,3 +166,11 @@ dkms.conf
 # Fortran module files
 *.mod
 *.smod
+
+# LaTeX intermediate files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.dvi
+*.toc
