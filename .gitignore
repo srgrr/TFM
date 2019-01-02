@@ -174,3 +174,5 @@ dkms.conf
 *.log
 *.dvi
 *.toc
+*.bbl
+*.blg

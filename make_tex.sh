@@ -1,8 +1,5 @@
 #!/bin/bash
 cd tex
-pdflatex main.tex
-rm *.log
-rm *.aux
-rm *.toc
+latexmk main.tex -pdf
 mv main.pdf ../tfm.pdf
 cd ..
