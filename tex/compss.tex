@@ -8,14 +8,58 @@ COMPSs also provides the user some tools and data that helps to monitor and to d
 
 \subsection{A Full Example}
 \label{subsec:compss_example}
-This section intends to give the reader a more or less extensive insight on what writing a PyCOMPSs application is. We think that this section may help to \textit{materialize} concepts that will be introduced later, and will avoid to give this document an abstract tone.\\
+This section intends to give the reader a more or less extensive insight on what writing a PyCOMPSs application is. We think that this section may help to \textit{materialize} concepts and will avoid to give this document an excessively abstract tone.\\
 \\
-Lets suppose that 
-% TODO: Add the PI approximation example (implement it!)
+Lets suppose that we want to approximate the value of $\pi$. For this purpose we have thought on a simple, randomized algorithm:
+\begin{enumerate}
+\item Generate $N$ random points with coordinates between $-1$ and $1$
+\item Consider the set of points $S$ within distance $1$ or less to the origin
+\item Assume that $\frac{|S|}{N} = \frac{\pi}{4}$
+\end{enumerate}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.1]{figures/circle_square.png}
+\caption{A graphical representation of the random experiment. If the square has side length $2$ then the circle will have radius $1$, and therefore area $\pi$. In proportion, $\frac{\pi}{4}$ of the points belong to the circle}
+\label{fig:circle_square}
+\end{figure}
+
+A more graphical explanation on why this works can be found in figure \ref{fig:circle_square}.\\
+\\
+We know a little bit of Python, so we have decided to implement this program in it. Basically, our small application will consist of a \verb|test_random_point| function that generates a random point and return $1$ if this point lies inside our circle, and $0$ otherwise. We will call this function $N$ times, and consider the proportion $\frac{|S|}{N}$ to be equal to $\frac{\pi}{4}$.
+\newpage
+\inputminted{python}{applications/PI_SQUARE/sequential.py}
+Although we are happy with our $\pi$ program we notice that it is slow (figure \ref{fig:pi_size_vs_time}), and any reasonable approximation will need many experiments (figure \ref{fig:pi_size_vs_value}).\\
+\\
+The first thing to note is that no instance of \verb|test_random_point| depends on another one. That is, it should cause no harm to compute two or more instances of this function at the same time. If we translate it to the COMPSs language, this means that the function \verb|test_random_point| is a serious candidate to become a task. So, a first candidate of our optimized application is the following:
+
+\inputminted{python}{applications/PI_SQUARE/pycompss_naive.py}
+
+This example can be run with the \verb|runcompss| script.
+
+\begin{verbatim}
+runcompss -dg pycompss_naive.py 10
+\end{verbatim}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.6]{applications/PI_SQUARE/pi_size_vs_time.png}
+\caption{Evolution of the necessary computation time when the number of experiments increases}
+\label{fig:pi_size_vs_time}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.6]{applications/PI_SQUARE/pi_size_vs_value.png}
+\caption{Evolution of the obtained $\pi$ approximation when the number of experiments increases}
+\label{fig:pi_size_vs_value}
+\end{figure}
 
 \subsection{COMPSs Components}
 \label{subsec:compss_components}
-COMPSs is designed, developed, and deployed in a modular way. This gives some advantages:
+COMPSs is designed, developed, and deployed in a modular way. This has some advantages:
 \begin{itemize} 
 \item Easier isolation of features
 \item Partial COMPSs installations are possible (e.g: install COMPSs without PyCOMPSs)
@@ -44,7 +88,7 @@ An overview of the main COMPSs components can be found in figure \ref{fig:compss
 \label{fig:pycompss_modules}
 \end{figure}
 
-However, this design choice also brings some unwanted issues. The main issue is isolation and concentration of knowledge of some parts in some developers, which leads to unnecessary code replication, lack of coherence of design and implementation choices between different modules, partial feature implementations (e.g: a feature that is only available in PyCOMPSs because it was developed by someone who did not know how to implement it in the runtime), and many other things. All these issues will be adressed and referred to in this document, as they appear and play an important role in our own design choices and implementations.
+However, this design choice also brings some unwanted problems. The main issue is isolation and concentration of knowledge of some parts in some developers, which leads to unnecessary code replication, lack of coherence of design and implementation choices between different modules, partial feature implementations (e.g: a feature that is only available in PyCOMPSs because it was developed by someone who did not know how to implement it in the runtime), and many other things. All these issues will be adressed and referred to in this document, as they appear and play an important role in our own design choices and implementations.
 
 %TODO
 \subsection{Runtime Structure}

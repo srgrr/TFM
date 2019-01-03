@@ -9,3 +9,5 @@ sudo apt-get install texlive-fonts-extra -y
 sudo apt-get install texlive-latex-extra -y
 # LaTeX "make" utility
 sudo apt-get install latexmk -y
+# LaTeX syntax highlightning packages
+sudo apt-get install python-pygments -y

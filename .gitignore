@@ -177,6 +177,7 @@ dkms.conf
 *.bbl
 *.blg
 *.t
+tex/_minted_main
 
 # Openoffice locks
 *.*#
