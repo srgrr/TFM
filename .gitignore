@@ -176,3 +176,10 @@ dkms.conf
 *.toc
 *.bbl
 *.blg
+*.t
+
+# Openoffice locks
+*#^
+
+# Final PDF
+tfm.pdf
