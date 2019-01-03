@@ -179,7 +179,7 @@ dkms.conf
 *.t
 
 # Openoffice locks
-*#^
+*.*#
 
 # Final PDF
 tfm.pdf
