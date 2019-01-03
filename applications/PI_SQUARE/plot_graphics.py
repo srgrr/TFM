@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 def main():
-  sizes = list(range(10000, 10000001, 10000))
+  sizes = list(range(0, 1000001, 10000))
   values, times = [], []
 
   for size in sizes:
@@ -17,8 +17,8 @@ def main():
 
   plt.figure('Experiments vs Value')
   plt.xlabel('#Experiments')
-  plt.ylabel('Elapsed Time (s)')
-  plt.ylim([np.pi - 0.1, np.pi + 0.1])
+  plt.ylabel('Value')
+  plt.ylim([np.pi - 0.05, np.pi + 0.05])
   # Draw the correct value of pi as a reference
   pi_plot, = plt.plot([sizes[0], sizes[-1]], [np.pi, np.pi], color = 'yellow', label = '$\pi$')
   approx_plot, = plt.plot(sizes, values, color = 'blue', label = 'approximation')
@@ -27,7 +27,7 @@ def main():
 
   plt.figure('Experiments vs Time')
   plt.xlabel('#Experiments')
-  plt.ylabel('Value')
+  plt.ylabel('Elapsed Time (s)')
   plt.plot(sizes, times)
   plt.savefig('pi_size_vs_time.png')
 
