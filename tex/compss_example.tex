@@ -29,4 +29,4 @@ Another important thing to note is that a distributed application can still expl
 
 \inputminted{python}{applications/PI_SQUARE/pycompss_vectorized.py}
 
-This last approach is what we consider a well \textit{COMPSsfied} application: it has a reasonable task count and granularity, and it exploits various levels of parallelism at the same time. This application also delegates most of the work to \verb|numpy| procedures, which are mainly written in C++ and OpenMP.
+This last approach is what we consider a well \textit{COMPSsfied} application: it has a reasonable task count and granularity, and it exploits various levels of parallelism at the same time. This application also delegates most of the work to \verb|numpy| procedures, which are mainly written in C++ and OpenMP. This aspect is also important in PyCOMPSs, as Python is, by nature, a very slow programming language and it should be only used as an orchestrator.
