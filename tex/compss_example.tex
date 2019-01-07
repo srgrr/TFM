@@ -1,0 +1,32 @@
+\newpage
+\subsection{A Full Example}
+\label{subsec:compss_example}
+This section intends to give the reader a more or less extensive insight on what writing a COMPSs application is. We think that this section may help to \textit{materialize} concepts and will avoid to give this document an excessively abstract tone.\\
+\\
+Lets suppose that we want to approximate the value of $\pi$. For this purpose we have thought on a simple, randomized algorithm:
+\begin{enumerate}
+\item Generate $N$ random points with coordinates between $-1$ and $1$
+\item Consider the set of points $S$ within distance $1$ or less to the origin
+\item Assume that $\frac{|S|}{N} = \frac{\pi}{4}$
+\end{enumerate}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{figures/circle_square.png}
+\caption{A graphical representation of the random experiment. If the square has side length $2$ then the circle will have radius $1$, and therefore area $\pi$. In proportion, $\frac{\pi}{4}$ of the points belong to the circle}
+\label{fig:circle_square}
+\end{figure}
+
+A more graphical explanation on why this works can be found in figure \ref{fig:circle_square}.\\
+\\
+We know a little bit of Python, so we have decided to implement this program in it. Basically, our small application will consist of a \verb|test_random_point| function that generates a random point and return $1$ if this point lies inside our circle, and $0$ otherwise. We will call this function $N$ times, and consider the proportion $\frac{|S|}{N}$ to be equal to $\frac{\pi}{4}$.
+\inputminted{python}{applications/PI_SQUARE/sequential.py}
+This code can be straightforward \textit{optimized} by transforming the \verb|test_random_point| function into a COMPSs task and syncing the results in the main procedure.
+\inputminted{python}{applications/PI_SQUARE/pycompss_naive.py}
+Although this may be a good approach to \textit{parallelize} this application we must note that we want to make it run in a distributed environment. The main difference we can appreciate is that a COMPSs task may run in a different machine than the master code, so some coordination between two processes in different machines and the transfer of potentially big amounts of data are necessary. In other words, the tradeoff between task granularity and performance is much more punishing in distributed computing than in single-machine parallel cases.\\
+\\
+Another important thing to note is that a distributed application can still exploit lower level parallelism in each of its tasks. In our case, we can transform our \verb|test_random_point| function into a \verb|test_random_points| procedure that generates and tests various random points at the same time.
+
+\inputminted{python}{applications/PI_SQUARE/pycompss_vectorized.py}
+
+This last approach is what we consider a well \textit{COMPSsfied} application: it has a reasonable task count and granularity, and it exploits various levels of parallelism at the same time. This application also delegates most of the work to \verb|numpy| procedures, which are mainly written in C++ and OpenMP.
