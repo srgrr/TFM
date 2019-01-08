@@ -29,9 +29,6 @@ def select_element(c, i):
   """
   return c[i]
 
-
-
-
 def main():
   from pycompss.api.api import compss_wait_on
   # Generate ten random vectors with pre-determined seed
