@@ -20,7 +20,7 @@ def generate_object(seed):
   """
   import numpy as np
   np.random.seed(seed)
-  return np.random.rand(5)  
+  return np.random.rand(5)
 
 @task(c = COLLECTION_IN, returns = 1)
 def select_element(c, i):
@@ -34,8 +34,8 @@ def main():
   # Generate ten random vectors with pre-determined seed
   ten_random_vectors = [generate_object(i) for i in range(10)]
   # Pick the fifth vector from a COLLECTION_IN parameter
-  fifth_vector = select_element(ten_random_vectors, 4)
-  print("My chosen vector is \t %s" % str( compss_wait_on(fifth_vector) ))
+  fifth_vector = compss_wait_on(select_element(ten_random_vectors, 4))
+  print("My chosen vector is \t %s" % str( fifth_vector ))
 
   # Recreate this vector locally 
   import numpy as np
