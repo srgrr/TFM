@@ -26,8 +26,6 @@ def select_element(c, i):
   """Given a collection and an integer "i", return the ith element
   of this collection
   """
-  import time
-  time.sleep(1289371)
   return c[i]
 
 def main():
