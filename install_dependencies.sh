@@ -15,3 +15,6 @@ sudo apt-get install python-pygments -y
 
 # Python pandas
 pip3 install pandas --user
+
+# Graphviz
+sudo apt-get install graphviz -y
