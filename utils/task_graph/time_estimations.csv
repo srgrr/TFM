@@ -3,9 +3,9 @@ Write document,Incremental,17,no
 Merge Basic Col IN,Main feature already implemented,2,9
 Col IN examples,"Dislib, pi",1,3
 Retrieve Storage Material,Prepare figures and results,1,no
-Threading IO,(De) Serialize with pyThreading,3,no
+Threading IO,(De) Serialize with pyThreading,3,11
 Col IN TXN improvement,Optimize network transfers,5,3
-Col INOUT,Enable Collection INOUT Handling,4,3
-Basic Col IN,Implement basic Collection IN feature,4,10 11
+Col INOUT,Enable Col INOUT Handling,4,3
+Col IN,Implement basic COL IN feature,4,10 11
 Runtime familiarization,Learn Runtime structure,5,no
-Bindings familiarization,Learn Bindings (Py + Commons) structure,2,no
+Bindings familiarization,Learn Bindings (Py + Commons) structure,2,10
