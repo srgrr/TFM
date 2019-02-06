@@ -18,6 +18,7 @@ def main():
       g.append(cur_node)
 
   print("digraph thesis_tasks {")
+  print("rankdir=LR;")
   print("\tnode [shape = circle]; %s ;" % " ".join("\"%s\"" % x["name"] for x in g))
 
   vis = [False] * len(g)
