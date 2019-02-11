@@ -1,0 +1,50 @@
+digraph {
+  rankdir=TB;
+  labeljust="l";
+  subgraph dependence_graph {
+    ranksep=0.20;
+    node[height=0.75];
+
+1[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+2[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+3[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+4[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+5[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+6[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+7[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+8[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+9[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+10[shape=circle, style=filled fillcolor="#0000ff" fontcolor="#ffffff"];
+11[shape=circle, style=filled fillcolor="#ffffff" fontcolor="#000000"];
+1 -> 11[ label="d1v2" ];
+2 -> 11[ label="d2v2" ];
+3 -> 11[ label="d3v2" ];
+4 -> 11[ label="d4v2" ];
+5 -> 11[ label="d5v2" ];
+6 -> 11[ label="d6v2" ];
+7 -> 11[ label="d7v2" ];
+8 -> 11[ label="d8v2" ];
+9 -> 11[ label="d9v2" ];
+10 -> 11[ label="d10v2" ];
+Synchro0 -> 11[ label="d11v1" ];
+Synchro1[label="sync", shape=octagon, style=filled fillcolor="#ff0000" fontcolor="#FFFFFF"];
+11 -> Synchro1[ label="d12v2" ];  }
+  subgraph legend {
+    rank=sink;
+    node [shape=plaintext, height=0.75];
+    ranksep=0.20;
+    label = "Legend";
+    key [label=<
+      <table border="0" cellpadding="2" cellspacing="0" cellborder="1">
+<tr>
+<td align="right">resources_in_worker.generate_object</td>
+<td bgcolor="#0000ff">&nbsp;</td>
+</tr>
+<tr>
+<td align="right">resources_in_worker.select_element</td>
+<td bgcolor="#ffffff">&nbsp;</td>
+</tr>
+      </table>
+    >]
+  }
+}
