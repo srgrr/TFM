@@ -105,10 +105,6 @@ target/
 # Vi
 *.swp
 
-# Executions
-*compss*.out
-*compss*.err
-
 # ========== C & C++ ignores =================
 # Prerequisites
 *.d
