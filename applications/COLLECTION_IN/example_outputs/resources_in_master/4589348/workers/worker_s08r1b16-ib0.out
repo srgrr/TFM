@@ -1,0 +1,1116 @@
+[(455)(2019-02-11 11:44:32,349)              Worker]    @main             -  maxSnd: 5
+[(457)(2019-02-11 11:44:32,351)              Worker]    @main             -  maxRcv: 5
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  WorkerName: s08r1b16-ib0
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  WorkerPort: 43001
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  MasterName: null
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  MasterPort: 43828
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  Computing Units CPU: 24
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  Computing Units GPU: 0
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  Computing Units FPGA: 0
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  User defined CPU Map: automatic
+[(458)(2019-02-11 11:44:32,352)              Worker]    @main             -  User defined GPU Map: automatic
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  User defined FPGA Map: automatic
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  Limit Of Tasks: -1
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  App uuid: 2b40ef41-8bc0-4468-9d77-0096ee195c5a
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  WorkingDir:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  Install Dir: /apps/COMPSs/TrunkCollectionIN
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  Tracing: 0
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  Extrae config File: null
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  Host: 1
+[(459)(2019-02-11 11:44:32,353)              Worker]    @main             -  LibraryPath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Classpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Pythonpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  StorageConf: null
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  executionType: COMPSS
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Persistent c: false
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Python interpreter: python
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Python version: 2
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Python virtual environment: null
+[(460)(2019-02-11 11:44:32,354)              Worker]    @main             -  Python propagate virtual environment: true
+[(461)(2019-02-11 11:44:32,355)              Worker]    @main             -  Remove Sanbox WD: true
+[(461)(2019-02-11 11:44:32,355)       Communication]    @<init>           -  [NIO Agent] Debug: true persistent: false
+[(461)(2019-02-11 11:44:32,355)              Worker]    @<init>           -  NIO Worker init
+[(463)(2019-02-11 11:44:32,357)              Worker]    @init             -  No storage configuration file passed
+[(464)(2019-02-11 11:44:32,358)         ExecManager]    @<init>           -  Instantiate CPU Binder with 24 CUs
+[(539)(2019-02-11 11:44:32,433)        ThreadBinder]    @cessLsCpuOutput  -  Parsing LSCPU Output : Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz
+Stepping:              4
+CPU MHz:               2100.000
+CPU max MHz:           2101,0000
+CPU min MHz:           1000,0000
+BogoMIPS:              4190.16
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              33792K
+NUMA node0 CPU(s):     0-23
+NUMA node1 CPU(s):     24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb pln pts dtherm intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc
+
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map constructed by Affinity per Numa Node
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map: 0-23/24-47
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 0
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 1
+[(541)(2019-02-11 11:44:32,435)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(542)(2019-02-11 11:44:32,436)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 
+[(542)(2019-02-11 11:44:32,436)         ExecManager]    @<init>           -  Instantiate GPU Binder with 0 CUs
+[(542)(2019-02-11 11:44:32,436)         ExecManager]    @<init>           -  Instantiate FPGA Binder with 0 CUs
+[(544)(2019-02-11 11:44:32,438)          ThreadPool]    @<init>           -  Init JobsThreadPool
+[(550)(2019-02-11 11:44:32,444)            Executor]    @<init>           -  Executor init
+[(550)(2019-02-11 11:44:32,444)            Executor]    @<init>           -  Executor init
+[(550)(2019-02-11 11:44:32,444)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(551)(2019-02-11 11:44:32,445)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(552)(2019-02-11 11:44:32,446)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)            Executor]    @<init>           -  Executor init
+[(553)(2019-02-11 11:44:32,447)         ExecManager]    @init             -  Init Execution Manager
+[(553)(2019-02-11 11:44:32,447)          ThreadPool]    @start            -  Start threads of ThreadPool
+[(555)(2019-02-11 11:44:32,449)            Executor]    @start            -  Executor started
+[(555)(2019-02-11 11:44:32,449)            Executor]    @start            -  Executor started
+[(556)(2019-02-11 11:44:32,450)            Executor]    @start            -  Executor started
+[(555)(2019-02-11 11:44:32,449)            Executor]    @start            -  Executor started
+[(556)(2019-02-11 11:44:32,450)            Executor]    @start            -  Executor started
+[(557)(2019-02-11 11:44:32,451)            Executor]    @start            -  Executor started
+[(557)(2019-02-11 11:44:32,451)            Executor]    @start            -  Executor started
+[(557)(2019-02-11 11:44:32,451)            Executor]    @start            -  Executor started
+[(558)(2019-02-11 11:44:32,452)            Executor]    @start            -  Executor started
+[(558)(2019-02-11 11:44:32,452)            Executor]    @start            -  Executor started
+[(558)(2019-02-11 11:44:32,452)            Executor]    @start            -  Executor started
+[(559)(2019-02-11 11:44:32,453)            Executor]    @start            -  Executor started
+[(559)(2019-02-11 11:44:32,453)            Executor]    @start            -  Executor started
+[(560)(2019-02-11 11:44:32,454)            Executor]    @start            -  Executor started
+[(560)(2019-02-11 11:44:32,454)            Executor]    @start            -  Executor started
+[(560)(2019-02-11 11:44:32,454)            Executor]    @start            -  Executor started
+[(561)(2019-02-11 11:44:32,455)            Executor]    @start            -  Executor started
+[(561)(2019-02-11 11:44:32,455)            Executor]    @start            -  Executor started
+[(561)(2019-02-11 11:44:32,455)            Executor]    @start            -  Executor started
+[(562)(2019-02-11 11:44:32,456)            Executor]    @start            -  Executor started
+[(562)(2019-02-11 11:44:32,456)            Executor]    @start            -  Executor started
+[(562)(2019-02-11 11:44:32,456)            Executor]    @start            -  Executor started
+[(563)(2019-02-11 11:44:32,457)            Executor]    @start            -  Executor started
+[(560)(2019-02-11 11:44:32,454)            Executor]    @start            -  Executor started
+[(569)(2019-02-11 11:44:32,463)              Worker]    @main             -    Initializing the TransferManager structures...
+[(569)(2019-02-11 11:44:32,463)     TransferManager]    @init             -  TransferManager init
+[(576)(2019-02-11 11:44:32,470)              Worker]    @main             -    Starting TransferManager Thread
+[(576)(2019-02-11 11:44:32,470)     TransferManager]    @startServer      -  TransferManager Start Server
+[(577)(2019-02-11 11:44:32,471)        EventManager]    @run              -  Event Manager started
+[(577)(2019-02-11 11:44:32,471)            Listener]    @run              -  NIO Listener started
+[(577)(2019-02-11 11:44:32,471)        EventManager]    @run              -  Waiting for events
+[(577)(2019-02-11 11:44:32,471)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13431)(2019-02-11 11:44:45,325)          Connection]    @registerChannel  -  Associating Socket: 354429030 with connection: 1698491901
+[(13432)(2019-02-11 11:44:45,326)        EventManager]    @run              -  Processing NIO event
+[(13433)(2019-02-11 11:44:45,327)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(13434)(2019-02-11 11:44:45,328)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1698491901
+[(13434)(2019-02-11 11:44:45,328)        EventManager]    @run              -  Waiting for events
+[(13434)(2019-02-11 11:44:45,328)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13447)(2019-02-11 11:44:45,341)        EventManager]    @run              -  Processing NIO event
+[(13447)(2019-02-11 11:44:45,341)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13447)(2019-02-11 11:44:45,341)        EventManager]    @processEvent     -  Processing Package received through  connection@1698491901
+[(13463)(2019-02-11 11:44:45,357)       Communication]    @commandReceived  -  Received Command CommandCheckWorker for deployment ID 2b40ef41-8bc0-4468-9d77-0096ee195c5a on nodeName s08r1b16-ib0 through connection 1698491901
+[(13464)(2019-02-11 11:44:45,358)        EventManager]    @run              -  Waiting for events
+[(13464)(2019-02-11 11:44:45,358)        EventManager]    @run              -  Processing NIO event
+[(13464)(2019-02-11 11:44:45,358)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13465)(2019-02-11 11:44:45,359)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@653cedfd with transfer es.bsc.comm.stage.Submission@27568b27[SEND COMMAND OBJECT]
+[(13465)(2019-02-11 11:44:45,359)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@27568b27[SEND COMMAND OBJECT] on connection 1698491901
+[(13465)(2019-02-11 11:44:45,359)          Connection]    @dleNextTransfer  -  NIOConnection 1698491901 takes es.bsc.comm.stage.Submission@27568b27[SEND COMMAND OBJECT]
+[(13467)(2019-02-11 11:44:45,361)               Stage]    @loadFirstToken   -  Loading first token
+[(13467)(2019-02-11 11:44:45,361)        EventManager]    @run              -  Processing NIO event
+[(13467)(2019-02-11 11:44:45,361)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13467)(2019-02-11 11:44:45,361)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@653cedfd with transfer es.bsc.comm.stage.Shutdown@1370695b
+[(13467)(2019-02-11 11:44:45,361)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@1370695b on connection 1698491901
+[(13467)(2019-02-11 11:44:45,361)        EventManager]    @run              -  Waiting for events
+[(13468)(2019-02-11 11:44:45,362)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13468)(2019-02-11 11:44:45,362)            Listener]    @write            -  writting buffer-1072476
+[(13469)(2019-02-11 11:44:45,363)            Listener]    @write            -  4 bytes written to socket 354429030
+[(13469)(2019-02-11 11:44:45,363)            Listener]    @write            -  Removed buffer1
+[(13470)(2019-02-11 11:44:45,364)            Listener]    @write            -  writting buffer-1787388843
+[(13470)(2019-02-11 11:44:45,364)        EventManager]    @run              -  Processing NIO event
+[(13470)(2019-02-11 11:44:45,364)            Listener]    @write            -  189 bytes written to socket 354429030
+[(13470)(2019-02-11 11:44:45,364)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(13470)(2019-02-11 11:44:45,364)            Listener]    @write            -  Removed buffer1
+[(13470)(2019-02-11 11:44:45,364)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1698491901
+[(13470)(2019-02-11 11:44:45,364)       Communication]    @writeFinished    -  Finished sending CommandCheckWorkerACK for deployment ID 2b40ef41-8bc0-4468-9d77-0096ee195c5a through connection 1698491901
+[(13470)(2019-02-11 11:44:45,364)          Connection]    @dleNextTransfer  -  NIOConnection 1698491901 takes es.bsc.comm.stage.Shutdown@1370695b
+[(13470)(2019-02-11 11:44:45,364)          Connection]    @closeConnection  -  Requesting connection 1698491901 closure
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @run              -  Waiting for events
+[(13471)(2019-02-11 11:44:45,365)            Listener]    @InterestChanges  -  Closing channel 354429030 no more data to write
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @run              -  Processing NIO event
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(13471)(2019-02-11 11:44:45,365)            Listener]    @closeChannel     -  Channel 354429030is open. Requesting closure
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1698491901
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @run              -  Waiting for events
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @run              -  Processing NIO event
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(13471)(2019-02-11 11:44:45,365)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1698491901
+[(13471)(2019-02-11 11:44:45,365)          Connection]    @closedChannel    -  Channel on connection 1698491901 has been closed
+[(13472)(2019-02-11 11:44:45,366)       Communication]    @nectionFinished  -  Connection 1698491901 finished
+[(13472)(2019-02-11 11:44:45,366)        EventManager]    @run              -  Waiting for events
+[(13472)(2019-02-11 11:44:45,366)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13959)(2019-02-11 11:44:45,853)          Connection]    @registerChannel  -  Associating Socket: 1729303211 with connection: 964332417
+[(13959)(2019-02-11 11:44:45,853)        EventManager]    @run              -  Processing NIO event
+[(13960)(2019-02-11 11:44:45,854)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(13960)(2019-02-11 11:44:45,854)        EventManager]    @processEvent     -  Processing Connection actually established for socket@964332417
+[(13960)(2019-02-11 11:44:45,854)        EventManager]    @run              -  Waiting for events
+[(13960)(2019-02-11 11:44:45,854)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13972)(2019-02-11 11:44:45,866)        EventManager]    @run              -  Processing NIO event
+[(13972)(2019-02-11 11:44:45,866)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @processEvent     -  Processing Package received through  connection@964332417
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @run              -  Waiting for events
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @run              -  Processing NIO event
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @processEvent     -  Processing Package received through  connection@964332417
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @run              -  Processing NIO event
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13973)(2019-02-11 11:44:45,867)        EventManager]    @processEvent     -  Processing Package received through  connection@964332417
+[(13973)(2019-02-11 11:44:45,867)            Listener]    @closeChannel     -  Channel 1729303211is open. Requesting closure
+[(14000)(2019-02-11 11:44:45,894)       Communication]    @commandReceived  -  Received Command new Task [TASK [LANG= PYTHON][TASK TYPE= METHOD][TASK ID= 1][JOB ID= 1][HISTORY= NEW][IMPLEMENTATION= [DECLARING CLASS=resources_in_master, METHOD NAME=select_element]] [PARAMS [PARAM[MGMT ID = d11v1_1549881883289.IT][TYPE = COLLECTION_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = c][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = d11v1_1549881883289.IT][DATA d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT]]][PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = i][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 4][DATA null]][PARAM[MGMT ID = d12v2_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = #][NAME = $return_0][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = true][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-1][VALUE = /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT][DATA null]]][REQUIREMENTS= [DESCRIPTION [PROCESSOR [unassigned] TYPE=CPU COMPUTING_UNITS=1 SPEED=-1.0 INTERNAL_MEMORY=-1.0 ARCHITECTURE=[unassigned] PROP_NAME=[unassigned] PROP_VALUE=[unassigned]][GENERAL_COUNTS TOTAL_CPUs=1 TOTAL_CPU_CU=1 TOTAL_GPUs=0 TOTAL_GPU_CU=0 TOTAL_FPGAs=0 TOTAL_FPGA_CU=0 TOTAL_OTHERs=0 TOTAL_OTHER_CU=0] [MEMORY SIZE=-1.0 TYPE=[unassigned]] [STORAGE SIZE=-1.0 TYPE=[unassigned]] [OPERATING_SYSTEM TYPE=[unassigned] DISTRIBUTION=[unassigned] VERSION=[unassigned]] [SOFTWARE ] [HOST_QUEUES ] [PRICE TIME_UNIT=-1 PRICE_PER_TIME=-1.0] [WALLCLOCK=-1]]][SLAVE_WORKERS_NODE_NAMES= ]] through connection 964332417
+[(14001)(2019-02-11 11:44:45,895)              Worker]    @receivedNewTask  -  Received Job [TASK [LANG= PYTHON][TASK TYPE= METHOD][TASK ID= 1][JOB ID= 1][HISTORY= NEW][IMPLEMENTATION= [DECLARING CLASS=resources_in_master, METHOD NAME=select_element]] [PARAMS [PARAM[MGMT ID = d11v1_1549881883289.IT][TYPE = COLLECTION_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = c][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = d11v1_1549881883289.IT][DATA d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT]]][PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = i][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 4][DATA null]][PARAM[MGMT ID = d12v2_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = #][NAME = $return_0][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = true][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-1][VALUE = /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT][DATA null]]][REQUIREMENTS= [DESCRIPTION [PROCESSOR [unassigned] TYPE=CPU COMPUTING_UNITS=1 SPEED=-1.0 INTERNAL_MEMORY=-1.0 ARCHITECTURE=[unassigned] PROP_NAME=[unassigned] PROP_VALUE=[unassigned]][GENERAL_COUNTS TOTAL_CPUs=1 TOTAL_CPU_CU=1 TOTAL_GPUs=0 TOTAL_GPU_CU=0 TOTAL_FPGAs=0 TOTAL_FPGA_CU=0 TOTAL_OTHERs=0 TOTAL_OTHER_CU=0] [MEMORY SIZE=-1.0 TYPE=[unassigned]] [STORAGE SIZE=-1.0 TYPE=[unassigned]] [OPERATING_SYSTEM TYPE=[unassigned] DISTRIBUTION=[unassigned] VERSION=[unassigned]] [SOFTWARE ] [HOST_QUEUES ] [PRICE TIME_UNIT=-1 PRICE_PER_TIME=-1.0] [WALLCLOCK=-1]]][SLAVE_WORKERS_NODE_NAMES= ]]
+[(14001)(2019-02-11 11:44:45,895)              Worker]    @receivedNewTask  -  ARGUMENTS:
+[(14001)(2019-02-11 11:44:45,895)              Worker]    @receivedNewTask  -      -null COLLECTION_T:d11v1_1549881883289.IT
+[(14001)(2019-02-11 11:44:45,895)              Worker]    @receivedNewTask  -      -null INT_T:4
+[(14001)(2019-02-11 11:44:45,895)              Worker]    @receivedNewTask  -  TARGET:
+[(14002)(2019-02-11 11:44:45,896)              Worker]    @receivedNewTask  -  RESULTS:
+[(14002)(2019-02-11 11:44:45,896)              Worker]    @receivedNewTask  -      -# FILE_T:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT
+[(14002)(2019-02-11 11:44:45,896)              Worker]    @receivedNewTask  -  Checking parameters
+[(14002)(2019-02-11 11:44:45,896)              Worker]    @receivedNewTask  -  --------------------
+[(14002)(2019-02-11 11:44:45,896)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d11v1_1549881883289.IT][TYPE = COLLECTION_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = c][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = d11v1_1549881883289.IT][DATA d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT]]]
+[(14003)(2019-02-11 11:44:45,897)              Worker]    @processNioParam  -  - Checking transfers for data d11v1_1549881883289.IT for target parameter 0
+[(14003)(2019-02-11 11:44:45,897)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 1
+[(14003)(2019-02-11 11:44:45,897)              Worker]    @fetchObject      -     - d11v1_1549881883289.IT registered as object.
+[(14004)(2019-02-11 11:44:45,898)              Worker]    @fetchObject      -     - Checking if d11v1_1549881883289.IT is in cache.
+[(14004)(2019-02-11 11:44:45,898)              Worker]    @ansferParameter  -  - Parameter 0(d11v1_1549881883289.IT) does not exist, requesting data transfer
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @processNioParam  -  Checking NIOParamCollection (received 10 params)
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d1v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.0][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2][DATA d1v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2]]]
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @processNioParam  -  - Checking transfers for data d1v1_1549881883289.IT for target parameter 1
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2 registered as file.
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2 exists.
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @fetchFile        -  - Parameter 1(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2) already exists.
+[(14005)(2019-02-11 11:44:45,899)              Worker]    @dLocalParameter  -  - Parameter 1(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-2) already exists.
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d2v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.1][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3][DATA d2v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3]]]
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @processNioParam  -  - Checking transfers for data d2v1_1549881883289.IT for target parameter 2
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3 registered as file.
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3 exists.
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @fetchFile        -  - Parameter 2(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3) already exists.
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @dLocalParameter  -  - Parameter 2(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-3) already exists.
+[(14006)(2019-02-11 11:44:45,900)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d3v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.2][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4][DATA d3v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4]]]
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @processNioParam  -  - Checking transfers for data d3v1_1549881883289.IT for target parameter 3
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4 registered as file.
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4 exists.
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @fetchFile        -  - Parameter 3(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4) already exists.
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @dLocalParameter  -  - Parameter 3(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-4) already exists.
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14007)(2019-02-11 11:44:45,901)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d4v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.3][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5][DATA d4v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5]]]
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @processNioParam  -  - Checking transfers for data d4v1_1549881883289.IT for target parameter 4
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5 registered as file.
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5 exists.
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @fetchFile        -  - Parameter 4(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5) already exists.
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @dLocalParameter  -  - Parameter 4(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-5) already exists.
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d5v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.4][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6][DATA d5v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6]]]
+[(14008)(2019-02-11 11:44:45,902)              Worker]    @processNioParam  -  - Checking transfers for data d5v1_1549881883289.IT for target parameter 5
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6 registered as file.
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6 exists.
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @fetchFile        -  - Parameter 5(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6) already exists.
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @dLocalParameter  -  - Parameter 5(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-6) already exists.
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d6v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.5][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7][DATA d6v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7]]]
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @processNioParam  -  - Checking transfers for data d6v1_1549881883289.IT for target parameter 6
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14009)(2019-02-11 11:44:45,903)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7 registered as file.
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7 exists.
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @fetchFile        -  - Parameter 6(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7) already exists.
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @dLocalParameter  -  - Parameter 6(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-7) already exists.
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d7v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.6][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8][DATA d7v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8]]]
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @processNioParam  -  - Checking transfers for data d7v1_1549881883289.IT for target parameter 7
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8 registered as file.
+[(14010)(2019-02-11 11:44:45,904)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8 exists.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @fetchFile        -  - Parameter 7(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8) already exists.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @dLocalParameter  -  - Parameter 7(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-8) already exists.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d8v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.7][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9][DATA d8v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9]]]
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @processNioParam  -  - Checking transfers for data d8v1_1549881883289.IT for target parameter 8
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9 registered as file.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9 exists.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @fetchFile        -  - Parameter 8(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9) already exists.
+[(14011)(2019-02-11 11:44:45,905)              Worker]    @dLocalParameter  -  - Parameter 8(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-9) already exists.
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d9v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.8][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10][DATA d9v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10]]]
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @processNioParam  -  - Checking transfers for data d9v1_1549881883289.IT for target parameter 9
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10 registered as file.
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10 exists.
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @fetchFile        -  - Parameter 9(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10) already exists.
+[(14012)(2019-02-11 11:44:45,906)              Worker]    @dLocalParameter  -  - Parameter 9(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-10) already exists.
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = d10v1_1549881883289.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = @c.9][PRESERVE SOURCE DATA = true][WRITE FINAL VALUE = false][ORIGINAL NAME = compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11][VALUE = /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11][DATA d10v1_1549881883289.IT@[file://null:43828//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11, file://s08r1b16-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11, file://s08r1b21-ib0:43001//gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11]]]
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @processNioParam  -  - Checking transfers for data d10v1_1549881883289.IT for target parameter 10
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @addOperation     -  Adding operation to TT1126331822 missing ops 2
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @fetchFile        -     - /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11 registered as file.
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @fetchFile        -     - Checking if file /gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11 exists.
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @fetchFile        -  - Parameter 10(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11) already exists.
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @dLocalParameter  -  - Parameter 10(/gpfs/home/bsc19/bsc19954/.COMPSs/4589348/tmpFiles/pycompss3Nbmyh/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-11) already exists.
+[(14013)(2019-02-11 11:44:45,907)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 1
+[(14014)(2019-02-11 11:44:45,908)              Worker]    @receivedNewTask  -  --------------------
+[(14014)(2019-02-11 11:44:45,908)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = i][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 4][DATA null]]
+[(14014)(2019-02-11 11:44:45,908)              Worker]    @receivedNewTask  -  Checking target
+[(14014)(2019-02-11 11:44:45,908)       Communication]    @equestTransfers  -  [NIO Agent] Received new DataRequest
+[TYPE: COLLECTION_T | SOURCE: d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT] | TARGET: d11v1_1549881883289.IT]
+[(14014)(2019-02-11 11:44:45,908)       Communication]    @equestTransfers  -  [NIO Agent] Received NIOData
+d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT]
+[(14014)(2019-02-11 11:44:45,908)       Communication]    @equestTransfers  -  [NIO Agent] 	URI object://null:43828/d11v1_1549881883289.IT
+[(14015)(2019-02-11 11:44:45,909)          Connection]    @registerChannel  -  Associating Socket: 34561253 with connection: 984004856
+[(14015)(2019-02-11 11:44:45,909)       Communication]    @equestTransfers  -  [NIO Agent] Connection 984004856 will be used to acquire data d11v1_1549881883289.IT stored in 10.1.7.16:43828 with name d11v1_1549881883289.IT
+[(14016)(2019-02-11 11:44:45,910)              Worker]    @receivedNewTask  -  [Profile] Obsolete Processing: 0Processing 14
+[(14016)(2019-02-11 11:44:45,910)              Worker]    @receivedNewTask  -  checking #params on TT at  receivedNewTask 1
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @run              -  Waiting for events
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @run              -  Processing NIO event
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 964332417
+[(14016)(2019-02-11 11:44:45,910)          Connection]    @closedChannel    -  Channel on connection 964332417 has been closed
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @run              -  Processing NIO event
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(14016)(2019-02-11 11:44:45,910)        EventManager]    @processEvent     -  Processing Connection actually established for socket@984004856
+[(14017)(2019-02-11 11:44:45,911)        EventManager]    @run              -  Processing NIO event
+[(14017)(2019-02-11 11:44:45,911)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14017)(2019-02-11 11:44:45,911)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@3aa6b8f8 with transfer es.bsc.comm.stage.Submission@a52d2d[SEND COMMAND OBJECT]
+[(14017)(2019-02-11 11:44:45,911)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@a52d2d[SEND COMMAND OBJECT] on connection 984004856
+[(14017)(2019-02-11 11:44:45,911)          Connection]    @dleNextTransfer  -  NIOConnection 984004856 takes es.bsc.comm.stage.Submission@a52d2d[SEND COMMAND OBJECT]
+[(14018)(2019-02-11 11:44:45,912)               Stage]    @loadFirstToken   -  Loading first token
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @run              -  Processing NIO event
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@3aa6b8f8 with transfer es.bsc.comm.stage.Reception@48ea355e[RECEIVE DATA OBJECT]
+[(14018)(2019-02-11 11:44:45,912)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Reception@48ea355e[RECEIVE DATA OBJECT] on connection 984004856
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @run              -  Processing NIO event
+[(14018)(2019-02-11 11:44:45,912)            Listener]    @write            -  writting buffer-1399216
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14018)(2019-02-11 11:44:45,912)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@3aa6b8f8 with transfer es.bsc.comm.stage.Shutdown@5e86295d
+[(14018)(2019-02-11 11:44:45,912)            Listener]    @write            -  4 bytes written to socket 34561253
+[(14018)(2019-02-11 11:44:45,912)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@5e86295d on connection 984004856
+[(14018)(2019-02-11 11:44:45,912)            Listener]    @write            -  Removed buffer1
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @run              -  Processing NIO event
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14019)(2019-02-11 11:44:45,913)            Listener]    @write            -  writting buffer1463072739
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@397a8b81 with transfer es.bsc.comm.stage.Shutdown@6e763eb7
+[(14019)(2019-02-11 11:44:45,913)            Listener]    @write            -  434 bytes written to socket 34561253
+[(14019)(2019-02-11 11:44:45,913)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@6e763eb7 on connection 964332417
+[(14019)(2019-02-11 11:44:45,913)            Listener]    @write            -  Removed buffer1
+[(14019)(2019-02-11 11:44:45,913)          Connection]    @dleNextTransfer  -  NIOConnection 964332417 takes es.bsc.comm.stage.Shutdown@6e763eb7
+[(14019)(2019-02-11 11:44:45,913)          Connection]    @closeConnection  -  Requesting connection 964332417 closure
+[(14019)(2019-02-11 11:44:45,913)       Communication]    @nectionFinished  -  Connection 964332417 finished
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @run              -  Waiting for events
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @run              -  Processing NIO event
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(14019)(2019-02-11 11:44:45,913)        EventManager]    @processEvent     -  Processing More To Write Event for connection@984004856
+[(14019)(2019-02-11 11:44:45,913)       Communication]    @writeFinished    -  Finished sending Request for sending data d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT] through connection 984004856
+[(14019)(2019-02-11 11:44:45,913)          Connection]    @dleNextTransfer  -  NIOConnection 984004856 takes es.bsc.comm.stage.Reception@48ea355e[RECEIVE DATA OBJECT]
+[(14020)(2019-02-11 11:44:45,914)        EventManager]    @run              -  Processing NIO event
+[(14020)(2019-02-11 11:44:45,914)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(14020)(2019-02-11 11:44:45,914)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@984004856
+[(14020)(2019-02-11 11:44:45,914)        EventManager]    @run              -  Waiting for events
+[(14020)(2019-02-11 11:44:45,914)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14021)(2019-02-11 11:44:45,915)        EventManager]    @run              -  Processing NIO event
+[(14021)(2019-02-11 11:44:45,915)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(14021)(2019-02-11 11:44:45,915)            Listener]    @closeChannel     -  Channel 34561253is open. Requesting closure
+[(14021)(2019-02-11 11:44:45,915)        EventManager]    @processEvent     -  Processing Package received through  connection@984004856
+[(14022)(2019-02-11 11:44:45,916)       Communication]    @dataReceived     -  Received data null through connection 984004856
+[(14022)(2019-02-11 11:44:45,916)       Communication]    @receivedData     -  [NIO Agent] Receiving data d11v1_1549881883289.IT
+[(14022)(2019-02-11 11:44:45,916)       Communication]    @receivedData     -  [NIO Agent] Group by target:d11v1_1549881883289.IT(d11v1_1549881883289.IT)
+[(14022)(2019-02-11 11:44:45,916)       Communication]    @receivedData     -  [NIO Agent] Data d11v1_1549881883289.IT will be saved as name d11v1_1549881883289.IT
+[(14022)(2019-02-11 11:44:45,916)              Worker]    @receivedValue    -  Received data d11v1_1549881883289.IT with associated object null
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  Processing data request [TYPE: COLLECTION_T | SOURCE: d11v1_1549881883289.IT@[object://null:43828/d11v1_1549881883289.IT] | TARGET: d11v1_1549881883289.IT]
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @loadedValue      -  Adding operation to TT1126331822 missing ops 0
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  LoadedValue succesfully ended
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  Remaining params 0
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  checking #params on TT at  receivedValue 0
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  No more params for TT, trying to execute...
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -   [Profile] Transfer: 7
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @receivedValue    -  Calling executeTask...
+[(14023)(2019-02-11 11:44:45,917)              Worker]    @executeTask      -  Enqueueing job 1 for execution.
+[(14024)(2019-02-11 11:44:45,918)              Worker]    @executeTask      -  Notifying presence of all data for job 1.
+[(14024)(2019-02-11 11:44:45,918)            Executor]    @processRequests  -  Dequeuing job 1
+[(14024)(2019-02-11 11:44:45,918)          Connection]    @registerChannel  -  Associating Socket: 1536133957 with connection: 1025571709
+[(14024)(2019-02-11 11:44:45,918)          Connection]    @dleNextTransfer  -  NIOConnection 984004856 takes es.bsc.comm.stage.Shutdown@5e86295d
+[(14025)(2019-02-11 11:44:45,919)          Connection]    @closeConnection  -  Requesting connection 984004856 closure
+[(14025)(2019-02-11 11:44:45,919)        EventManager]    @run              -  Waiting for events
+[(14025)(2019-02-11 11:44:45,919)            Listener]    @InterestChanges  -  Closing channel 34561253 no more data to write
+[(14025)(2019-02-11 11:44:45,919)        EventManager]    @run              -  Processing NIO event
+[(14025)(2019-02-11 11:44:45,919)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(14025)(2019-02-11 11:44:45,919)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 984004856
+[(14025)(2019-02-11 11:44:45,919)          Connection]    @closedChannel    -  Channel on connection 984004856 has been closed
+[(14025)(2019-02-11 11:44:45,919)       Communication]    @nectionFinished  -  Connection 984004856 finished
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @run              -  Processing NIO event
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@3d20fb7d with transfer es.bsc.comm.stage.Submission@2c19c3b8[SEND COMMAND OBJECT]
+[(14026)(2019-02-11 11:44:45,920)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@2c19c3b8[SEND COMMAND OBJECT] on connection 1025571709
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @run              -  Processing NIO event
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@3d20fb7d with transfer es.bsc.comm.stage.Shutdown@5054efd5
+[(14026)(2019-02-11 11:44:45,920)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@5054efd5 on connection 1025571709
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @run              -  Processing NIO event
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(14026)(2019-02-11 11:44:45,920)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1025571709
+[(14026)(2019-02-11 11:44:45,920)          Connection]    @dleNextTransfer  -  NIOConnection 1025571709 takes es.bsc.comm.stage.Submission@2c19c3b8[SEND COMMAND OBJECT]
+[(14027)(2019-02-11 11:44:45,921)               Stage]    @loadFirstToken   -  Loading first token
+[(14027)(2019-02-11 11:44:45,921)        EventManager]    @run              -  Waiting for events
+[(14027)(2019-02-11 11:44:45,921)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14027)(2019-02-11 11:44:45,921)            Listener]    @write            -  writting buffer-2562026
+[(14027)(2019-02-11 11:44:45,921)            Listener]    @write            -  4 bytes written to socket 1536133957
+[(14028)(2019-02-11 11:44:45,922)            Listener]    @write            -  Removed buffer1
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @run              -  Processing NIO event
+[(14028)(2019-02-11 11:44:45,922)            Listener]    @write            -  writting buffer2023597921
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(14028)(2019-02-11 11:44:45,922)            Listener]    @write            -  139 bytes written to socket 1536133957
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1025571709
+[(14028)(2019-02-11 11:44:45,922)            Listener]    @write            -  Removed buffer1
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @run              -  Waiting for events
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @run              -  Processing NIO event
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(14028)(2019-02-11 11:44:45,922)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1025571709
+[(14028)(2019-02-11 11:44:45,922)       Communication]    @writeFinished    -  Finished sending Data for transfer group0has been received in the remote worker through connection 1025571709
+[(14028)(2019-02-11 11:44:45,922)          Connection]    @dleNextTransfer  -  NIOConnection 1025571709 takes es.bsc.comm.stage.Shutdown@5054efd5
+[(14028)(2019-02-11 11:44:45,922)          Connection]    @closeConnection  -  Requesting connection 1025571709 closure
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @run              -  Waiting for events
+[(14029)(2019-02-11 11:44:45,923)            Listener]    @InterestChanges  -  Closing channel 1536133957 no more data to write
+[(14029)(2019-02-11 11:44:45,923)            Listener]    @closeChannel     -  Channel 1536133957is open. Requesting closure
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @run              -  Processing NIO event
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1025571709
+[(14029)(2019-02-11 11:44:45,923)          Connection]    @closedChannel    -  Channel on connection 1025571709 has been closed
+[(14029)(2019-02-11 11:44:45,923)       Communication]    @nectionFinished  -  Connection 1025571709 finished
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @run              -  Waiting for events
+[(14029)(2019-02-11 11:44:45,923)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14030)(2019-02-11 11:44:45,924)            Executor]    @execute          -  Binding renamed files to sandboxed original names for Job 1
+[(14030)(2019-02-11 11:44:45,924)            Executor]    @lenameToRenames  -  Setting Original Name to /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/sandBox/job_1/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-1
+[(14031)(2019-02-11 11:44:45,925)        ThreadBinder]    @dComputingUnits  -  [ThreadBinderCPUs] Task 1 binded to cores 0
+[(14031)(2019-02-11 11:44:45,925)            Executor]    @execute          -  Executing Task of Job 1
+[(14036)(2019-02-11 11:44:45,930)              Worker]    @tLanguageParams  -  GETTING LANGUAGE PARAMS :2 -> es.bsc.compss.invokers.types.PythonParams@17673453
+[(14036)(2019-02-11 11:44:45,930)            Executor]    @init             -  PIPE Script: /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/pipers/bindings_piper.sh
+[(14037)(2019-02-11 11:44:45,931)            Executor]    @ructGeneralArgs  -  WRITE PIPE Files: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.outbound
+
+[(14037)(2019-02-11 11:44:45,931)            Executor]    @ructGeneralArgs  -  READ PIPE Files: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.inbound
+
+[(14037)(2019-02-11 11:44:45,931)            Executor]    @ructGeneralArgs  -  WRITE DATA PIPE: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_data.outbound
+[(14037)(2019-02-11 11:44:45,931)            Executor]    @ructGeneralArgs  -  READ DATA PIPE: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_data.inbound
+[(14037)(2019-02-11 11:44:45,931)            Executor]    @init             -  Init piper ProcessBuilder
+[(14037)(2019-02-11 11:44:45,931)              Worker]    @tLanguageParams  -  GETTING LANGUAGE PARAMS :2 -> es.bsc.compss.invokers.types.CParams@1ba2d9d4
+[(14039)(2019-02-11 11:44:45,933)            Executor]    @init             -  Starting stdout/stderr gobblers ...
+[(14041)(2019-02-11 11:44:45,935)            Executor]    @run              -  Starting stream goobler
+[(14041)(2019-02-11 11:44:45,935)            Executor]    @run              -  Starting stream goobler
+[(14054)(2019-02-11 11:44:45,948)            Executor]    @run              -  [BINDINGS PIPER] NumThreads: 24
+[BINDINGS PIPER] Data CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_data.outbound
+
+[(14063)(2019-02-11 11:44:45,957)            Executor]    @run              -  [BINDINGS PIPER] Data RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_data.inbound
+
+[(14071)(2019-02-11 11:44:45,965)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.outbound
+
+[(14079)(2019-02-11 11:44:45,973)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound
+
+[(14087)(2019-02-11 11:44:45,981)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.outbound
+
+[(14094)(2019-02-11 11:44:45,988)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.outbound
+
+[(14102)(2019-02-11 11:44:45,996)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.outbound
+
+[(14110)(2019-02-11 11:44:46,004)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.outbound
+
+[(14118)(2019-02-11 11:44:46,012)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.outbound
+
+[(14125)(2019-02-11 11:44:46,019)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.outbound
+
+[(14132)(2019-02-11 11:44:46,026)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.outbound
+
+[(14142)(2019-02-11 11:44:46,036)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.outbound
+
+[(14150)(2019-02-11 11:44:46,044)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.outbound
+
+[(14158)(2019-02-11 11:44:46,052)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.outbound
+
+[(14165)(2019-02-11 11:44:46,059)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.outbound
+
+[(14173)(2019-02-11 11:44:46,067)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.outbound
+
+[(14180)(2019-02-11 11:44:46,074)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.outbound
+
+[(14189)(2019-02-11 11:44:46,083)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.outbound
+
+[(14196)(2019-02-11 11:44:46,090)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.outbound
+
+[(14206)(2019-02-11 11:44:46,100)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.outbound
+
+[(14213)(2019-02-11 11:44:46,107)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.outbound
+
+[(14220)(2019-02-11 11:44:46,114)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.outbound
+
+[(14227)(2019-02-11 11:44:46,121)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.outbound
+
+[(14236)(2019-02-11 11:44:46,130)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.outbound
+
+[(14243)(2019-02-11 11:44:46,137)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.outbound
+
+[(14250)(2019-02-11 11:44:46,144)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.outbound
+
+[(14258)(2019-02-11 11:44:46,152)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.inbound
+
+[(14265)(2019-02-11 11:44:46,159)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.inbound
+
+[(14273)(2019-02-11 11:44:46,167)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.inbound
+
+[(14281)(2019-02-11 11:44:46,175)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.inbound
+
+[(14288)(2019-02-11 11:44:46,182)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.inbound
+
+[(14295)(2019-02-11 11:44:46,189)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.inbound
+
+[(14302)(2019-02-11 11:44:46,196)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.inbound
+
+[(14308)(2019-02-11 11:44:46,202)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.inbound
+
+[(14317)(2019-02-11 11:44:46,211)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.inbound
+
+[(14324)(2019-02-11 11:44:46,218)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.inbound
+
+[(14332)(2019-02-11 11:44:46,226)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.inbound
+
+[(14339)(2019-02-11 11:44:46,233)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.inbound
+
+[(14346)(2019-02-11 11:44:46,240)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.inbound
+
+[(14353)(2019-02-11 11:44:46,247)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.inbound
+
+[(14360)(2019-02-11 11:44:46,254)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.inbound
+
+[(14367)(2019-02-11 11:44:46,261)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.inbound
+
+[(14374)(2019-02-11 11:44:46,268)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.inbound
+
+[(14381)(2019-02-11 11:44:46,275)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.inbound
+
+[(14388)(2019-02-11 11:44:46,282)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.inbound
+
+[(14395)(2019-02-11 11:44:46,289)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.inbound
+
+[(14403)(2019-02-11 11:44:46,297)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.inbound
+
+[(14410)(2019-02-11 11:44:46,304)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.inbound
+
+[(14418)(2019-02-11 11:44:46,312)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.inbound
+
+[(14425)(2019-02-11 11:44:46,319)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.inbound
+
+[(14432)(2019-02-11 11:44:46,326)            Executor]    @run              -  [BINDINGS PIPER] Initializing specific binding for PYTHON
+
+[(14432)(2019-02-11 11:44:46,326)            Executor]    @run              -  [BINDINGS PIPER] Making call: python -u /apps/COMPSs/TrunkCollectionIN//Bindings/python/2/pycompss/worker/piper_worker.py true false null 24 /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.outbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16
+[(14432)(2019-02-11 11:44:46,326)            Executor]    @run              -  -ib0/pipe_1451223269_compute13.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.inbound /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.inbound
+
+[(14544)(2019-02-11 11:44:46,438)            Executor]    @run              -  DEBUG - [PYTHON WORKER] piper_worker.py wake up
+
+[(14545)(2019-02-11 11:44:46,439)            Executor]    @run              -  DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Persistent worker parameters:
+DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Debug          : True
+
+[(14545)(2019-02-11 11:44:46,439)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Tracing        : False
+DEBUG - [PYTHON WORKER] Tasks per node : 24
+
+[(14545)(2019-02-11 11:44:46,439)            Executor]    @run              -  DEBUG - [PYTHON WORKER] In Pipes       : ['/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.outbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.outbound']
+
+[(14545)(2019-02-11 11:44:46,439)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Out Pipes      : ['/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.inbound', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.inbound']
+DEBUG - [PYTHON WORKER] Storage conf.  : null
+DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Launching process 0
+
+[(14553)(2019-02-11 11:44:46,447)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 1
+
+[(14555)(2019-02-11 11:44:46,449)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 2
+
+[(14555)(2019-02-11 11:44:46,449)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-0
+
+[(14556)(2019-02-11 11:44:46,450)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 3
+
+[(14556)(2019-02-11 11:44:46,450)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-1
+
+[(14557)(2019-02-11 11:44:46,451)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 4
+
+[(14558)(2019-02-11 11:44:46,452)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-2
+
+[(14559)(2019-02-11 11:44:46,453)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 5
+
+[(14559)(2019-02-11 11:44:46,453)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-3
+
+[(14560)(2019-02-11 11:44:46,454)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 6
+
+[(14560)(2019-02-11 11:44:46,454)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-4
+
+[(14561)(2019-02-11 11:44:46,455)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 7
+
+[(14562)(2019-02-11 11:44:46,456)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-5
+
+[(14563)(2019-02-11 11:44:46,457)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 8
+
+[(14563)(2019-02-11 11:44:46,457)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-6
+
+[(14564)(2019-02-11 11:44:46,458)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 9
+
+[(14564)(2019-02-11 11:44:46,458)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-7
+
+[(14565)(2019-02-11 11:44:46,459)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 10
+
+[(14566)(2019-02-11 11:44:46,460)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-8
+
+[(14568)(2019-02-11 11:44:46,462)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 11
+
+[(14569)(2019-02-11 11:44:46,463)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-9
+
+[(14570)(2019-02-11 11:44:46,464)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 12
+
+[(14570)(2019-02-11 11:44:46,464)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-10
+
+[(14571)(2019-02-11 11:44:46,465)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 13
+
+[(14571)(2019-02-11 11:44:46,465)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-11
+
+[(14572)(2019-02-11 11:44:46,466)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 14
+
+[(14573)(2019-02-11 11:44:46,467)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-12
+
+[(14574)(2019-02-11 11:44:46,468)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 15
+
+[(14574)(2019-02-11 11:44:46,468)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-13
+
+[(14575)(2019-02-11 11:44:46,469)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 16
+
+[(14576)(2019-02-11 11:44:46,470)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-14
+
+[(14577)(2019-02-11 11:44:46,471)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 17
+
+[(14577)(2019-02-11 11:44:46,471)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-15
+
+[(14578)(2019-02-11 11:44:46,472)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 18
+
+[(14578)(2019-02-11 11:44:46,472)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-16
+
+[(14579)(2019-02-11 11:44:46,473)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 19
+
+[(14580)(2019-02-11 11:44:46,474)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-17
+
+[(14581)(2019-02-11 11:44:46,475)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 20
+
+[(14581)(2019-02-11 11:44:46,475)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-18
+
+[(14582)(2019-02-11 11:44:46,476)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 21
+
+[(14582)(2019-02-11 11:44:46,476)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-19
+
+[(14584)(2019-02-11 11:44:46,478)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 22
+
+[(14584)(2019-02-11 11:44:46,478)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-20
+
+[(14585)(2019-02-11 11:44:46,479)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 23
+
+[(14586)(2019-02-11 11:44:46,480)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-21
+
+[(14587)(2019-02-11 11:44:46,481)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-22
+
+[(14588)(2019-02-11 11:44:46,482)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-23
+
+[(15243)(2019-02-11 11:44:47,137)            Executor]    @send             -  EXECUTOR COMMAND: EXECUTE_TASK 1 /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.out /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.err false 1 true null METHOD resources_in_master select_element 1 s08r1b16-ib0 1 false 9 1 3 26 3 null c d11v1_1549881883289.IT 4 3 null i 4 9 3 # $return_0 /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:false:true:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT 0 - s08r1b16,s08r1b16 @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound
+[(15244)(2019-02-11 11:44:47,138)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: EXECUTE_TASK 1 /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.out /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.err false 1 true null METHOD resources_in_master select_element 1 s08r1b16-ib0 1 false 9 1 3 26 3 null c d11v1_1549881883289.IT 4 3 null i 4 9 3 # $return_0 /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:false:true:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT 0 - s08r1b16,s08r1b16
+
+
+[(15244)(2019-02-11 11:44:47,138)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Assigning affinity 0
+
+[(15244)(2019-02-11 11:44:47,138)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-1] Received task.
+
+[(15244)(2019-02-11 11:44:47,138)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-1] - TASK CMD: ['EXECUTE_TASK', '1', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.out', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.err', 'false', '1', 'true', 'null', 'METHOD', 'resources_in_master', 'select_element', '1', 's08r1b16-ib0', '1', 'false', '9', '1', '3', '26', '3', 'null', 'c', 'd11v1_1549881883289.IT', '4', '3', 'null', 'i', '4', '9', '3', '#', '$return_0', '/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT:false:true:/scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT']
+
+[(15895)(2019-02-11 11:44:47,789)            Executor]    @read             -  Received endTask message: END_TASK 1 0 1 
+[(15896)(2019-02-11 11:44:47,790)            Executor]    @<init>           -  WARN: Skipping endTask parameters because of malformation.
+[(15897)(2019-02-11 11:44:47,791)             Invoker]    @invokeMethod     -  Updating parameters for job 1
+[(15897)(2019-02-11 11:44:47,791)            Executor]    @execute          -  Removing renamed files to sandboxed original names for Job 1
+[(15897)(2019-02-11 11:44:47,791)            Executor]    @ilenameToRename  -  Treating file /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/sandBox/job_1/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-1
+[(15897)(2019-02-11 11:44:47,791)            Executor]    @ilenameToRename  -  Repeated data for /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/sandBox/job_1/compss-serialized-obj_09af6084-2dea-11e9-9a61-0894ef42b4f0-1. Nothing to do
+[(15897)(2019-02-11 11:44:47,791)            Executor]    @execute          -  Checking generated files for Job 1
+[(15897)(2019-02-11 11:44:47,791)            Executor]    @execute          -  [Profile] createSandBox: 6 createSimLinks: 0 bindCU: 1 execution1866 restoreSimLinks: 0 checkResults: 0
+[(15898)(2019-02-11 11:44:47,792)            Executor]    @leanTaskSandbox  -  Deleting sandbox /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/sandBox/job_1
+[(15903)(2019-02-11 11:44:47,797)            Executor]    @processRequests  -  Job 1 finished (success: true)
+[(15904)(2019-02-11 11:44:47,798)          Connection]    @registerChannel  -  Associating Socket: 158981850 with connection: 754296507
+[(15905)(2019-02-11 11:44:47,799)              Worker]    @sendTaskDone     -  RESULT FOR JOB 1 (TASK ID: 1)
+[(15904)(2019-02-11 11:44:47,798)        EventManager]    @run              -  Processing NIO event
+[(15905)(2019-02-11 11:44:47,799)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(15905)(2019-02-11 11:44:47,799)        EventManager]    @processEvent     -  Processing Connection actually established for socket@754296507
+[(15905)(2019-02-11 11:44:47,799)        EventManager]    @run              -  Waiting for events
+[(15905)(2019-02-11 11:44:47,799)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15905)(2019-02-11 11:44:47,799)              Worker]    @sendTaskDone     -  [JOB_RESULT [JOB ID= 1][PARAM_TYPES COLLECTION_T INT_T FILE_T][PARAM_VALUES null null null]]
+[(15906)(2019-02-11 11:44:47,800)        EventManager]    @run              -  Processing NIO event
+[(15906)(2019-02-11 11:44:47,800)              Worker]    @sendTaskDone     -  Sending file /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.out, for connection: 754296507
+[(15906)(2019-02-11 11:44:47,800)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15906)(2019-02-11 11:44:47,800)              Worker]    @sendTaskDone     -  Sending file /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.err, for connection: 754296507
+[(15906)(2019-02-11 11:44:47,800)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@2cf5a6bb with transfer es.bsc.comm.stage.Submission@58dc03d6[SEND COMMAND OBJECT]
+[(15906)(2019-02-11 11:44:47,800)              Worker]    @sendTaskDone     -  Job 1(Task 1) send job done
+[(15906)(2019-02-11 11:44:47,800)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@58dc03d6[SEND COMMAND OBJECT] on connection 754296507
+[(15906)(2019-02-11 11:44:47,800)          Connection]    @dleNextTransfer  -  NIOConnection 754296507 takes es.bsc.comm.stage.Submission@58dc03d6[SEND COMMAND OBJECT]
+[(15907)(2019-02-11 11:44:47,801)               Stage]    @loadFirstToken   -  Loading first token
+[(15907)(2019-02-11 11:44:47,801)        EventManager]    @run              -  Waiting for events
+[(15907)(2019-02-11 11:44:47,801)        EventManager]    @run              -  Processing NIO event
+[(15907)(2019-02-11 11:44:47,801)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15907)(2019-02-11 11:44:47,801)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@2cf5a6bb with transfer es.bsc.comm.stage.Submission@6be76a4b[SEND DATA FILE]
+[(15907)(2019-02-11 11:44:47,801)            Listener]    @write            -  writting buffer-2710020
+[(15907)(2019-02-11 11:44:47,801)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@6be76a4b[SEND DATA FILE] on connection 754296507
+[(15907)(2019-02-11 11:44:47,801)        EventManager]    @run              -  Processing NIO event
+[(15907)(2019-02-11 11:44:47,801)            Listener]    @write            -  4 bytes written to socket 158981850
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15908)(2019-02-11 11:44:47,802)            Listener]    @write            -  Removed buffer1
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@2cf5a6bb with transfer es.bsc.comm.stage.Submission@49d1e7d3[SEND DATA FILE]
+[(15908)(2019-02-11 11:44:47,802)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@49d1e7d3[SEND DATA FILE] on connection 754296507
+[(15908)(2019-02-11 11:44:47,802)            Listener]    @write            -  writting buffer-1713485249
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @run              -  Processing NIO event
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15908)(2019-02-11 11:44:47,802)            Listener]    @write            -  390 bytes written to socket 158981850
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@2cf5a6bb with transfer es.bsc.comm.stage.Shutdown@7571a0bf
+[(15908)(2019-02-11 11:44:47,802)            Listener]    @write            -  Removed buffer1
+[(15908)(2019-02-11 11:44:47,802)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@7571a0bf on connection 754296507
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @run              -  Waiting for events
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @run              -  Processing NIO event
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @processEvent     -  Processing More To Write Event for connection@754296507
+[(15908)(2019-02-11 11:44:47,802)       Communication]    @writeFinished    -  Finished sending Job1 finishes properly through connection 754296507
+[(15908)(2019-02-11 11:44:47,802)          Connection]    @dleNextTransfer  -  NIOConnection 754296507 takes es.bsc.comm.stage.Submission@6be76a4b[SEND DATA FILE]
+[(15908)(2019-02-11 11:44:47,802)               Stage]    @loadFirstToken   -  Loading first token
+[(15908)(2019-02-11 11:44:47,802)        EventManager]    @run              -  Processing NIO event
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  writting buffer-2775368
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@754296507
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  4 bytes written to socket 158981850
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @run              -  Waiting for events
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  Removed buffer1
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @run              -  Processing NIO event
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @processEvent     -  Processing More To Write Event for connection@754296507
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  writting buffer-967602106
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @run              -  Waiting for events
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  6787 bytes written to socket 158981850
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15909)(2019-02-11 11:44:47,803)            Listener]    @write            -  Removed buffer1
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @run              -  Processing NIO event
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(15909)(2019-02-11 11:44:47,803)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@754296507
+[(15909)(2019-02-11 11:44:47,803)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.out through connection 754296507
+[(15910)(2019-02-11 11:44:47,804)          Connection]    @dleNextTransfer  -  NIOConnection 754296507 takes es.bsc.comm.stage.Submission@49d1e7d3[SEND DATA FILE]
+[(15910)(2019-02-11 11:44:47,804)               Stage]    @loadFirstToken   -  Loading first token
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @run              -  Waiting for events
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  writting buffer1400177
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  4 bytes written to socket 158981850
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  Removed buffer1
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  writting buffer971858239
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @run              -  Processing NIO event
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  16 bytes written to socket 158981850
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @processEvent     -  Processing More To Write Event for connection@754296507
+[(15910)(2019-02-11 11:44:47,804)            Listener]    @write            -  Removed buffer1
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @run              -  Waiting for events
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @run              -  Processing NIO event
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(15910)(2019-02-11 11:44:47,804)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@754296507
+[(15910)(2019-02-11 11:44:47,804)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/jobs/job1_NEW.err through connection 754296507
+[(15911)(2019-02-11 11:44:47,805)          Connection]    @dleNextTransfer  -  NIOConnection 754296507 takes es.bsc.comm.stage.Shutdown@7571a0bf
+[(15911)(2019-02-11 11:44:47,805)          Connection]    @closeConnection  -  Requesting connection 754296507 closure
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @run              -  Waiting for events
+[(15911)(2019-02-11 11:44:47,805)            Listener]    @InterestChanges  -  Closing channel 158981850 no more data to write
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15911)(2019-02-11 11:44:47,805)            Listener]    @closeChannel     -  Channel 158981850is open. Requesting closure
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @run              -  Processing NIO event
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 754296507
+[(15911)(2019-02-11 11:44:47,805)          Connection]    @closedChannel    -  Channel on connection 754296507 has been closed
+[(15911)(2019-02-11 11:44:47,805)       Communication]    @nectionFinished  -  Connection 754296507 finished
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @run              -  Waiting for events
+[(15911)(2019-02-11 11:44:47,805)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15917)(2019-02-11 11:44:47,811)          Connection]    @registerChannel  -  Associating Socket: 1792207471 with connection: 1726600230
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @run              -  Processing NIO event
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1726600230
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @run              -  Waiting for events
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @run              -  Processing NIO event
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @processEvent     -  Processing Package received through  connection@1726600230
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @run              -  Waiting for events
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @run              -  Processing NIO event
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(15918)(2019-02-11 11:44:47,812)        EventManager]    @processEvent     -  Processing Package received through  connection@1726600230
+[(15919)(2019-02-11 11:44:47,813)       Communication]    @commandReceived  -  Received Command Request for sending data d12v2_1549881883289.IT@[file://s08r1b16-ib0:43001//scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT] through connection 1726600230
+[(15919)(2019-02-11 11:44:47,813)       Communication]    @sendFile         -  [NIO Agent] Connection 1726600230 will transfer file /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT as data d12v2_1549881883289.IT
+[(15919)(2019-02-11 11:44:47,813)        EventManager]    @run              -  Waiting for events
+[(15919)(2019-02-11 11:44:47,813)        EventManager]    @run              -  Processing NIO event
+[(15919)(2019-02-11 11:44:47,813)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15919)(2019-02-11 11:44:47,813)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@66e9d426 with transfer es.bsc.comm.stage.Submission@67ce5d6[SEND DATA FILE]
+[(15919)(2019-02-11 11:44:47,813)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@67ce5d6[SEND DATA FILE] on connection 1726600230
+[(15919)(2019-02-11 11:44:47,813)          Connection]    @dleNextTransfer  -  NIOConnection 1726600230 takes es.bsc.comm.stage.Submission@67ce5d6[SEND DATA FILE]
+[(15919)(2019-02-11 11:44:47,813)               Stage]    @loadFirstToken   -  Loading first token
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @run              -  Processing NIO event
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@66e9d426 with transfer es.bsc.comm.stage.Shutdown@56996260
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  writting buffer-1102267
+[(15920)(2019-02-11 11:44:47,814)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@56996260 on connection 1726600230
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @run              -  Waiting for events
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  4 bytes written to socket 1792207471
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  Removed buffer1
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @run              -  Processing NIO event
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  writting buffer1095376149
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  188 bytes written to socket 1792207471
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1726600230
+[(15920)(2019-02-11 11:44:47,814)            Listener]    @write            -  Removed buffer1
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @run              -  Waiting for events
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @run              -  Processing NIO event
+[(15920)(2019-02-11 11:44:47,814)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1726600230
+[(15921)(2019-02-11 11:44:47,815)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/d12v2_1549881883289.IT through connection 1726600230
+[(15921)(2019-02-11 11:44:47,815)          Connection]    @dleNextTransfer  -  NIOConnection 1726600230 takes es.bsc.comm.stage.Shutdown@56996260
+[(15921)(2019-02-11 11:44:47,815)          Connection]    @closeConnection  -  Requesting connection 1726600230 closure
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @run              -  Waiting for events
+[(15921)(2019-02-11 11:44:47,815)            Listener]    @InterestChanges  -  Closing channel 1792207471 no more data to write
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @waitForEvents    -  Event Manager wait
+[(15921)(2019-02-11 11:44:47,815)            Listener]    @closeChannel     -  Channel 1792207471is open. Requesting closure
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @run              -  Processing NIO event
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1726600230
+[(15921)(2019-02-11 11:44:47,815)          Connection]    @closedChannel    -  Channel on connection 1726600230 has been closed
+[(15921)(2019-02-11 11:44:47,815)       Communication]    @nectionFinished  -  Connection 1726600230 finished
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @run              -  Waiting for events
+[(15921)(2019-02-11 11:44:47,815)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16194)(2019-02-11 11:44:48,088)          Connection]    @registerChannel  -  Associating Socket: 1448398417 with connection: 732481382
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @run              -  Processing NIO event
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @processEvent     -  Processing Connection actually established for socket@732481382
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @run              -  Waiting for events
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @run              -  Processing NIO event
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @processEvent     -  Processing Package received through  connection@732481382
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @run              -  Waiting for events
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @run              -  Processing NIO event
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(16195)(2019-02-11 11:44:48,089)        EventManager]    @processEvent     -  Processing Package received through  connection@732481382
+[(16196)(2019-02-11 11:44:48,090)       Communication]    @commandReceived  -  Received Command ExecutorShutdown through connection 732481382
+[(16196)(2019-02-11 11:44:48,090)              Worker]    @xecutionManager  -  Stopping Execution Manager...
+[(16196)(2019-02-11 11:44:48,090)         ExecManager]    @stop             -  Stopping Threads...
+[(16196)(2019-02-11 11:44:48,090)          ThreadPool]    @stop             -  Stopping Jobs Thread Pool
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @processRequests  -  Dequeued job is null
+[(16197)(2019-02-11 11:44:48,091)            Executor]    @finish           -  Executor finished
+[(16198)(2019-02-11 11:44:48,092)            Executor]    @finish           -  Executor finished
+[(16268)(2019-02-11 11:44:48,162)          ThreadPool]    @stop             -  ThreadPool stopped
+[(16269)(2019-02-11 11:44:48,163)          ThreadPool]    @stop             -  Stopping mirrors
+[(16269)(2019-02-11 11:44:48,163)            Executor]    @stopPipes        -  Stopping compute pipes for mirror 1451223269
+[(16269)(2019-02-11 11:44:48,163)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute0.outbound
+[(16269)(2019-02-11 11:44:48,163)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute1.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute2.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute3.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute4.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-0] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('DEBUG - [PYTHON WORKER Process-1] Received quit.
+[PYTHON WORKER] Exiting process ', 'Process-0')(
+'[PYTHON WORKER] Exiting process ', 'Process-1'DEBUG - [PYTHON WORKER Process-2] Received quit.
+)
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute5.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-2')
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute6.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-3] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-3')
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute7.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-4] Received quit.
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-4')
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute8.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-5] Received quit.
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process '
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute9.outbound
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @run              -  , 'Process-5')
+DEBUG - [PYTHON WORKER Process-6] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16270)(2019-02-11 11:44:48,164)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute10.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-6')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute11.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-7] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-7')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-8] Received quit.
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute12.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-9] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-8')
+('[PYTHON WORKER] Exiting process ', 'Process-9')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute13.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-10] Received quit.
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute14.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-10')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-11] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-11')DEBUG - [PYTHON WORKER Process-12] Received quit.
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute15.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  
+('[PYTHON WORKER] Exiting process ', 'Process-12')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute16.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-13] Received quit.
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-14] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-13')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute17.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-14')
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute18.outbound
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-15] Received quit.
+
+[(16271)(2019-02-11 11:44:48,165)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute19.outbound
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'ProcesDEBUG - [PYTHON WORKER Process-16] Received quit.
+s-15')
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-16')
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute20.outbound
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-17] Received quit.
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute21.outbound
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'DEBUG - [PYTHON WORKER] Received message: QUIT
+
+Process-17')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-18] Received quit.
+DEBUG - [PYTHON WORKER Process-19] Received quit.
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute22.outbound
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-18')(
+'[PYTHON WORKER] Exiting process ', 'Process-19')
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589348/2b40ef41-8bc0-4468-9d77-0096ee195c5a/s08r1b16-ib0/pipe_1451223269_compute23.outbound
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-20] Received quit.
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-20')
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @stopPiper        -  Waiting for finishing piper process
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-21] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-21')
+DEBUG - [PYTHON WORKER Process-22] Received quit.
+
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-23] Received quit.
+('[PYTHON WORKER] Exi(t'i[nPgYT pHroOcNe sWsO R'KE, R'] PrEoxcietsisn-g2 2p'r)oce
+ss ', 'Process-23')
+[(16272)(2019-02-11 11:44:48,166)            Executor]    @run              -  
+
+[(16274)(2019-02-11 11:44:48,168)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Finished
+
+[(16284)(2019-02-11 11:44:48,178)            Executor]    @run              -  [BINDINGS PIPER] Finished with status 0
+
+[(16284)(2019-02-11 11:44:48,178)            Executor]    @run              -  [BINDINGS PIPER] Cleaning environment
+
+[(16446)(2019-02-11 11:44:48,340)            Executor]    @stopPiper        -  ExternalThreadPool finished
+[(16446)(2019-02-11 11:44:48,340)        EventManager]    @run              -  Waiting for events
+[(16446)(2019-02-11 11:44:48,340)        EventManager]    @run              -  Processing NIO event
+[(16446)(2019-02-11 11:44:48,340)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(16446)(2019-02-11 11:44:48,340)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@2ba8c766 with transfer es.bsc.comm.stage.Submission@c4da946[SEND COMMAND OBJECT]
+[(16446)(2019-02-11 11:44:48,340)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@c4da946[SEND COMMAND OBJECT] on connection 732481382
+[(16446)(2019-02-11 11:44:48,340)          Connection]    @dleNextTransfer  -  NIOConnection 732481382 takes es.bsc.comm.stage.Submission@c4da946[SEND COMMAND OBJECT]
+[(16447)(2019-02-11 11:44:48,341)               Stage]    @loadFirstToken   -  Loading first token
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @run              -  Processing NIO event
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@2ba8c766 with transfer es.bsc.comm.stage.Shutdown@71fdfae
+[(16447)(2019-02-11 11:44:48,341)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@71fdfae on connection 732481382
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @run              -  Waiting for events
+[(16447)(2019-02-11 11:44:48,341)            Listener]    @write            -  writting buffer-2532235
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16447)(2019-02-11 11:44:48,341)            Listener]    @write            -  4 bytes written to socket 1448398417
+[(16447)(2019-02-11 11:44:48,341)            Listener]    @write            -  Removed buffer1
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @run              -  Processing NIO event
+[(16447)(2019-02-11 11:44:48,341)            Listener]    @write            -  writting buffer2068355243
+[(16447)(2019-02-11 11:44:48,341)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(16448)(2019-02-11 11:44:48,342)            Listener]    @write            -  140 bytes written to socket 1448398417
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @processEvent     -  Processing More To Write Event for connection@732481382
+[(16448)(2019-02-11 11:44:48,342)            Listener]    @write            -  Removed buffer1
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @run              -  Waiting for events
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @run              -  Processing NIO event
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@732481382
+[(16448)(2019-02-11 11:44:48,342)       Communication]    @writeFinished    -  Finished sending ExecutorShutdownACK through connection 732481382
+[(16448)(2019-02-11 11:44:48,342)          Connection]    @dleNextTransfer  -  NIOConnection 732481382 takes es.bsc.comm.stage.Shutdown@71fdfae
+[(16448)(2019-02-11 11:44:48,342)          Connection]    @closeConnection  -  Requesting connection 732481382 closure
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @run              -  Waiting for events
+[(16448)(2019-02-11 11:44:48,342)            Listener]    @InterestChanges  -  Closing channel 1448398417 no more data to write
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16448)(2019-02-11 11:44:48,342)            Listener]    @closeChannel     -  Channel 1448398417is open. Requesting closure
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @run              -  Processing NIO event
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 732481382
+[(16448)(2019-02-11 11:44:48,342)          Connection]    @closedChannel    -  Channel on connection 732481382 has been closed
+[(16448)(2019-02-11 11:44:48,342)       Communication]    @nectionFinished  -  Connection 732481382 finished
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @run              -  Waiting for events
+[(16448)(2019-02-11 11:44:48,342)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16449)(2019-02-11 11:44:48,343)          Connection]    @registerChannel  -  Associating Socket: 1065965895 with connection: 1340030625
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @run              -  Processing NIO event
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1340030625
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @run              -  Waiting for events
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @waitForEvents    -  Event Manager wait
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @run              -  Processing NIO event
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @processEvent     -  Processing Package received through  connection@1340030625
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @run              -  Waiting for events
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @run              -  Processing NIO event
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(16449)(2019-02-11 11:44:48,343)        EventManager]    @processEvent     -  Processing Package received through  connection@1340030625
+[(16450)(2019-02-11 11:44:48,344)       Communication]    @commandReceived  -  Received Command GenerateWorkerDebugFiles through connection 1340030625

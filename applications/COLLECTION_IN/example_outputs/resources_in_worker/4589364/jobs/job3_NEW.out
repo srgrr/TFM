@@ -1,0 +1,100 @@
+[EXECUTOR] executeTask - Begin task execution
+WORKER - Parameters of execution:
+  * Method type: METHOD
+  * Method definition: [DECLARING CLASS=resources_in_worker, METHOD NAME=generate_object]
+  * Parameter types: int
+  * Parameter values: 2
+  * Parameter streams: UNSPECIFIED
+  * Parameter prefixes: null
+  * Has Target: false
+  * Has Return: true
+[INVOKER] COMPSS_HOSTNAMES: s03r2b66
+[INVOKER] COMPSS_NUM_NODES: 1
+[INVOKER] COMPSS_NUM_THREADS: 1
+[EXECUTOR] executeTask - End task execution
+ask.
+DEBUG - [PYTHON WORKER Process-3] - TASK CMD: ['EXECUTE_TASK', '3', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/jobs/job3_NEW.out', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/jobs/job3_NEW.err', 'false', '3', 'true', 'null', 'METHOD', 'resources_in_worker', 'generate_object', '1', 's03r2b66-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '2', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-3] Begin task execution
+DEBUG - [PYTHON WORKER Process-3] Storage conf: null
+DEBUG - [PYTHON WORKER Process-3] Params: ['resources_in_worker', 'generate_object', '1', 's03r2b66-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '2', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-3] Path: resources_in_worker
+DEBUG - [PYTHON WORKER Process-3] Method name: generate_object
+DEBUG - [PYTHON WORKER Process-3] Num slaves: 1
+DEBUG - [PYTHON WORKER Process-3] Slaves: ['1']
+DEBUG - [PYTHON WORKER Process-3] Cus: 1
+DEBUG - [PYTHON WORKER Process-3] Has target: false
+DEBUG - [PYTHON WORKER Process-3] Num Params: 2
+DEBUG - [PYTHON WORKER Process-3] Return Length: 1
+DEBUG - [PYTHON WORKER Process-3] Args: ['4', '3', 'null', 'seed', '2', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-3] Processing parameters:
+DEBUG - [PYTHON WORKER Process-3] Parameter : 0
+DEBUG - [PYTHON WORKER Process-3] 	 * Type : 4
+DEBUG - [PYTHON WORKER Process-3] 	 * Stream : 3
+DEBUG - [PYTHON WORKER Process-3] 	 * Prefix : null
+DEBUG - [PYTHON WORKER Process-3] 	 * Name : seed
+DEBUG - [PYTHON WORKER Process-3] 	 * Value: '2'
+DEBUG - [PYTHON WORKER Process-3] Parameter : 1
+DEBUG - [PYTHON WORKER Process-3] 	 * Type : 9
+DEBUG - [PYTHON WORKER Process-3] 	 * Stream : 3
+DEBUG - [PYTHON WORKER Process-3] 	 * Prefix : #
+DEBUG - [PYTHON WORKER Process-3] 	 * Name : $return_0
+DEBUG - [PYTHON WORKER Process-3] 	 * Value: '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT'
+DEBUG - [PYTHON WORKER Process-3] RUN TASK with arguments: 
+DEBUG - [PYTHON WORKER Process-3] 	- Path: resources_in_worker
+DEBUG - [PYTHON WORKER Process-3] 	- Method/function name: generate_object
+DEBUG - [PYTHON WORKER Process-3] 	- Has target: false
+DEBUG - [PYTHON WORKER Process-3] 	- # parameters: 2
+DEBUG - [PYTHON WORKER Process-3] 	- Values:
+DEBUG - [PYTHON WORKER Process-3] 		 
+Parameter seed
+	Type 4
+	File Name None
+	Key None
+	Content 2
+	Stream 3
+	Prefix null
+--------------------
+
+DEBUG - [PYTHON WORKER Process-3] 		 
+Parameter $return_0
+	Type 9
+	File Name /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT
+	Key None
+	Content None
+	Stream 3
+	Prefix #
+--------------------
+
+DEBUG - [PYTHON WORKER Process-3] 	- COMPSs types:
+DEBUG - [PYTHON WORKER Process-3] 		 4
+DEBUG - [PYTHON WORKER Process-3] 		 9
+DEBUG - [PYTHON WORKER Process-3] Trying to import the user module: resources_in_worker
+DEBUG - [PYTHON WORKER Process-3] Module successfully loaded (Python version >= 2.7)
+DEBUG - [PYTHON WORKER Process-3] Starting task execution
+DEBUG - [PYTHON WORKER Process-3] Types : [4, 9] 
+DEBUG - [PYTHON WORKER Process-3] Values: [
+Parameter seed
+	Type 4
+	File Name None
+	Key None
+	Content 2
+	Stream 3
+	Prefix null
+--------------------
+, 
+Parameter $return_0
+	Type 9
+	File Name /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d3v2_1549881926952.IT
+	Key None
+	Content None
+	Stream 3
+	Prefix #
+--------------------
+] 
+DEBUG - [PYTHON WORKER Process-3] Return Types : [] 
+DEBUG - [PYTHON WORKER Process-3] Return Values: [] 
+DEBUG - [PYTHON WORKER Process-3] Return isModifier: True 
+DEBUG - [PYTHON WORKER Process-3] Finished task execution
+DEBUG - [PYTHON WORKER Process-3] End task execution. Status: Ok
+DEBUG - [PYTHON WORKER Process-3] - Pipe /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/pipe_1853867606_compute3.inbound END TASK MESSAGE: END_TASK 3 0 1 
+

@@ -1,0 +1,533 @@
+[  INFO] Inferred PYTHON language
+-------- Launch arguments --------
+Master:                    s03r2b62
+Workers:                    s03r2b63 s03r2b65 s03r2b66
+Tasks per Node:            -1
+CPUs per Node:             48
+GPUs per Node:             0
+FPGAs per Node:            0
+CPU Affinity:              automatic
+GPU Affinity:              automatic
+FPGA Affinity:             automatic
+FPGA reprogram command:    
+Network:                   -ib0
+Worker in Master CPUs:     24
+Worker in Master Memory:   92
+Master Port:               43774
+Master WD:                 .
+Worker WD:                 /scratch/tmp/4589364
+Master JVM Opts:           
+Workers JVM Opts:          -Xms16000m,-Xmx92000m,-Xmn1600m
+Worker in Master JVM Opts: 
+Library Path:              /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+Classpath:                 /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+Pythonpath:                /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+Appdir:			   /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+Lang:                      python
+Python Interpreter:        python
+Python version:            2
+Python virtual env:        null
+Python propagate virt env.:true
+COMM:                      es.bsc.compss.nio.master.NIOAdaptor
+Prolog:                    
+Epilog:                    
+Storage conf:              null
+Task execution:            compss
+To COMPSs:                  -d -g resources_in_worker.py
+-----------------------------------
+ 
+[XML] Begin generation of project and resources files
+Master will run in s03r2b62
+List of workers:  s03r2b63 s03r2b65 s03r2b66
+[XML] Generating project at /scratch/tmp/4589364/project_1549881911.xml
+Worker WD mkdir: srun -n1 -N1 --nodelist=s03r2b62 bash -c "mkdir -p /scratch/tmp/4589364 && chmod +rx /scratch/tmp/4589364"
+Worker WD mkdir: srun -n1 -N1 --nodelist=s03r2b63 bash -c "mkdir -p /scratch/tmp/4589364 && chmod +rx /scratch/tmp/4589364"
+Worker WD mkdir: srun -n1 -N1 --nodelist=s03r2b65 bash -c "mkdir -p /scratch/tmp/4589364 && chmod +rx /scratch/tmp/4589364"
+Worker WD mkdir: srun -n1 -N1 --nodelist=s03r2b66 bash -c "mkdir -p /scratch/tmp/4589364 && chmod +rx /scratch/tmp/4589364"
+[XML] Generating resources at /scratch/tmp/4589364/resources_1549881911.xml
+[XML] Generation of project and resources files finished
+[XML] Project.xml:   /scratch/tmp/4589364/project_1549881911.xml
+[XML] Resources.xml: /scratch/tmp/4589364/resources_1549881911.xml
+---- Executing Prolog actions ----
+------ Launching application ------
+CMD Worker 1 launcher: srun -n1 -N1 --nodelist=s03r2b62 /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/persistent_worker_starter.sh /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             0                          0                          true             5             5             s03r2b62-ib0             43001             null             43774             24             0             0             automatic             automatic             automatic             -1             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d             python             /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b62-ib0             /apps/COMPSs/TrunkCollectionIN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             0             null             1             null             compss             false             python             2             null             true
+CMD Worker 2 launcher: srun -n1 -N1 --nodelist=s03r2b63 /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/persistent_worker_starter.sh /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             3             -Xms16000m -Xmx92000m -Xmn1600m             0                          true             5             5             s03r2b63-ib0             43001             null             43774             48             0             0             automatic             automatic             automatic             -1             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d             python             /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b63-ib0             /apps/COMPSs/TrunkCollectionIN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             0             null             2             null             compss             false             python             2             null             true
+CMD Worker 3 launcher: srun -n1 -N1 --nodelist=s03r2b65 /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/persistent_worker_starter.sh /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             3             -Xms16000m -Xmx92000m -Xmn1600m             0                          true             5             5             s03r2b65-ib0             43001             null             43774             48             0             0             automatic             automatic             automatic             -1             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d             python             /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b65-ib0             /apps/COMPSs/TrunkCollectionIN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             0             null             3             null             compss             false             python             2             null             true
+CMD Worker 4 launcher: srun -n1 -N1 --nodelist=s03r2b66 /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/persistent_worker_starter.sh /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             3             -Xms16000m -Xmx92000m -Xmn1600m             0                          true             5             5             s03r2b66-ib0             43001             null             43774             48             0             0             automatic             automatic             automatic             -1             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d             python             /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0             /apps/COMPSs/TrunkCollectionIN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN             0             null             4             null             compss             false             python             2             null             true
+PERSISTENT_WORKER.sh
+- HostName:            s03r2b62-ib0
+- WorkerPort:          43001
+- WorkingDir:          /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b62-ib0
+- InstallDir:          /apps/COMPSs/TrunkCollectionIN
+- Computing Units CPU: 24
+- Computing Units GPU: 0
+PERSISTENT_WORKER.sh
+- HostName:            s03r2b63-ib0
+- WorkerPort:          43001
+- WorkingDir:          /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b63-ib0
+- InstallDir:          /apps/COMPSs/TrunkCollectionIN
+- Computing Units CPU: 48
+- Computing Units GPU: 0
+PERSISTENT_WORKER.sh
+- HostName:            s03r2b65-ib0
+- WorkerPort:          43001
+- WorkingDir:          /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b65-ib0
+- InstallDir:          /apps/COMPSs/TrunkCollectionIN
+- Computing Units CPU: 48
+- Computing Units GPU: 0
+PERSISTENT_WORKER.sh
+- HostName:            s03r2b66-ib0
+- WorkerPort:          43001
+- WorkingDir:          /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0
+- InstallDir:          /apps/COMPSs/TrunkCollectionIN
+- Computing Units CPU: 48
+- Computing Units GPU: 0
+- Limit Of Tasks:      -1
+- JVM Opts:            
+- AppUUID:             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- Lang:                python
+- AppDir:              /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- libPath:             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Classpath:           /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Pythonpath:          /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Python Interpreter   python
+- Python Version       2
+- Python Virtual Env.  null
+- Python Propagate Virtual Env.  true
+- Tracing:             0
+- ExtraeFile:          null
+- HostId:              1
+- StorageConf:         null
+- ExecType:            compss
+- Persistent:          false
+Calling NIOWorker
+Cmd: java      -XX:+PerfDisableSharedMem     -XX:-UsePerfData     -XX:+UseG1GC     -XX:+UseThreadPriorities     -XX:ThreadPriorityPolicy=42     -Dlog4j.configurationFile=/apps/COMPSs/TrunkCollectionIN/Runtime/configuration/log/COMPSsWorker-log4j.debug     -Dcompss.python.interpreter=python     -Dcompss.python.version=2     -Dcompss.python.virtualenvironment=null     -Dcompss.python.propagate_virtualenvironment=true     -Djava.library.path=/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/bindings-common/lib:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/c/lib:/apps/GCC/7.2.0/lib/gcc/x86_64-suse-linux/7.2.0:/apps/GCC/7.2.0/lib64:/apps/BOOST/1.64.0_py2/INTEL/IMPI/lib:/apps/OPENMM/7.2.2/lib:/apps/NETCDF/4.4.1.1/INTEL/IMPI/lib:/apps/UDUNITS/2.2.25/INTEL/lib:/apps/PYTHON/2.7.13/INTEL/lib:/apps/LZO/2.10/INTEL/lib:/apps/PAPI/5.5.1/lib:/apps/RUBY/2.4.2/INTEL/lib:/apps/INTEL/2017.4/mkl/lib/intel64:/apps/INTEL/2017.4/impi/2017.3.196/lib64:/apps/INTEL/2017.4/lib/intel64:/apps/JDK/8u131/jre/lib/amd64/server:/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN -classpath /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/compss-engine.jar:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../adaptors/nio/worker/compss-adaptors-nio-worker.jar es.bsc.compss.nio.worker.NIOWorker true 5 5 s03r2b62-ib0 43001 null 43774 24 0 0 automatic automatic automatic -1 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d python /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b62-ib0 /apps/COMPSs/TrunkCollectionIN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN 0 null 1 null compss false python 2 null true
+- Computing Units GPU: 0
+- Computing Units GPU: 0
+- Limit Of Tasks:      -1
+- Limit Of Tasks:      -1
+- JVM Opts:             -Xms16000m -Xmx92000m -Xmn1600m
+- JVM Opts:             -Xms16000m -Xmx92000m -Xmn1600m
+- AppUUID:             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- AppUUID:             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- Lang:                python
+- Lang:                python
+- AppDir:              /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- AppDir:              /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- libPath:             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- libPath:             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Classpath:           /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Classpath:           /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Pythonpath:          /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Pythonpath:          /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Python Interpreter   python
+- Python Interpreter   python
+- Python Version       2
+- Python Version       2
+- Python Virtual Env.  null
+- Python Virtual Env.  null
+- Python Propagate Virtual Env.  true
+- Python Propagate Virtual Env.  true
+- Tracing:             0
+- Tracing:             0
+- ExtraeFile:          null
+- ExtraeFile:          null
+- HostId:              3
+- HostId:              2
+- StorageConf:         null
+- StorageConf:         null
+- ExecType:            compss
+- ExecType:            compss
+- Persistent:          false
+- Persistent:          false
+- Computing Units GPU: 0
+- Computing Units GPU: 0
+- Limit Of Tasks:      -1
+- JVM Opts:             -Xms16000m -Xmx92000m -Xmn1600m
+- AppUUID:             0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- Lang:                python
+- AppDir:              /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- libPath:             /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Classpath:           /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Pythonpath:          /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+- Python Interpreter   python
+- Python Version       2
+- Python Virtual Env.  null
+- Python Propagate Virtual Env.  true
+- Tracing:             0
+- ExtraeFile:          null
+- HostId:              4
+- StorageConf:         null
+- ExecType:            compss
+- Persistent:          false
+Calling NIOWorker
+Cmd: java  -Xms16000m -Xmx92000m -Xmn1600m     -XX:+PerfDisableSharedMem     -XX:-UsePerfData     -XX:+UseG1GC     -XX:+UseThreadPriorities     -XX:ThreadPriorityPolicy=42     -Dlog4j.configurationFile=/apps/COMPSs/TrunkCollectionIN/Runtime/configuration/log/COMPSsWorker-log4j.debug     -Dcompss.python.interpreter=python     -Dcompss.python.version=2     -Dcompss.python.virtualenvironment=null     -Dcompss.python.propagate_virtualenvironment=true     -Djava.library.path=/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/bindings-common/lib:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/c/lib:/apps/GCC/7.2.0/lib/gcc/x86_64-suse-linux/7.2.0:/apps/GCC/7.2.0/lib64:/apps/BOOST/1.64.0_py2/INTEL/IMPI/lib:/apps/OPENMM/7.2.2/lib:/apps/NETCDF/4.4.1.1/INTEL/IMPI/lib:/apps/UDUNITS/2.2.25/INTEL/lib:/apps/PYTHON/2.7.13/INTEL/lib:/apps/LZO/2.10/INTEL/lib:/apps/PAPI/5.5.1/lib:/apps/RUBY/2.4.2/INTEL/lib:/apps/INTEL/2017.4/mkl/lib/intel64:/apps/INTEL/2017.4/impi/2017.3.196/lib64:/apps/INTEL/2017.4/lib/intel64:/apps/JDK/8u131/jre/lib/amd64/server:/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN -classpath /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/compss-engine.jar:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../adaptors/nio/worker/compss-adaptors-nio-worker.jar es.bsc.compss.nio.worker.NIOWorker true 5 5 s03r2b65-ib0 43001 null 43774 48 0 0 automatic automatic automatic -1 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d python /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b65-ib0 /apps/COMPSs/TrunkCollectionIN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN 0 null 3 null compss false python 2 null true
+Calling NIOWorker
+Cmd: java  -Xms16000m -Xmx92000m -Xmn1600m     -XX:+PerfDisableSharedMem     -XX:-UsePerfData     -XX:+UseG1GC     -XX:+UseThreadPriorities     -XX:ThreadPriorityPolicy=42     -Dlog4j.configurationFile=/apps/COMPSs/TrunkCollectionIN/Runtime/configuration/log/COMPSsWorker-log4j.debug     -Dcompss.python.interpreter=python     -Dcompss.python.version=2     -Dcompss.python.virtualenvironment=null     -Dcompss.python.propagate_virtualenvironment=true     -Djava.library.path=/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/bindings-common/lib:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/c/lib:/apps/GCC/7.2.0/lib/gcc/x86_64-suse-linux/7.2.0:/apps/GCC/7.2.0/lib64:/apps/BOOST/1.64.0_py2/INTEL/IMPI/lib:/apps/OPENMM/7.2.2/lib:/apps/NETCDF/4.4.1.1/INTEL/IMPI/lib:/apps/UDUNITS/2.2.25/INTEL/lib:/apps/PYTHON/2.7.13/INTEL/lib:/apps/LZO/2.10/INTEL/lib:/apps/PAPI/5.5.1/lib:/apps/RUBY/2.4.2/INTEL/lib:/apps/INTEL/2017.4/mkl/lib/intel64:/apps/INTEL/2017.4/impi/2017.3.196/lib64:/apps/INTEL/2017.4/lib/intel64:/apps/JDK/8u131/jre/lib/amd64/server:/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN -classpath /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/compss-engine.jar:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../adaptors/nio/worker/compss-adaptors-nio-worker.jar es.bsc.compss.nio.worker.NIOWorker true 5 5 s03r2b63-ib0 43001 null 43774 48 0 0 automatic automatic automatic -1 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d python /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b63-ib0 /apps/COMPSs/TrunkCollectionIN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN 0 null 2 null compss false python 2 null true
+Calling NIOWorker
+Cmd: java  -Xms16000m -Xmx92000m -Xmn1600m     -XX:+PerfDisableSharedMem     -XX:-UsePerfData     -XX:+UseG1GC     -XX:+UseThreadPriorities     -XX:ThreadPriorityPolicy=42     -Dlog4j.configurationFile=/apps/COMPSs/TrunkCollectionIN/Runtime/configuration/log/COMPSsWorker-log4j.debug     -Dcompss.python.interpreter=python     -Dcompss.python.version=2     -Dcompss.python.virtualenvironment=null     -Dcompss.python.propagate_virtualenvironment=true     -Djava.library.path=/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/bindings-common/lib:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../../Bindings/c/lib:/apps/GCC/7.2.0/lib/gcc/x86_64-suse-linux/7.2.0:/apps/GCC/7.2.0/lib64:/apps/BOOST/1.64.0_py2/INTEL/IMPI/lib:/apps/OPENMM/7.2.2/lib:/apps/NETCDF/4.4.1.1/INTEL/IMPI/lib:/apps/UDUNITS/2.2.25/INTEL/lib:/apps/PYTHON/2.7.13/INTEL/lib:/apps/LZO/2.10/INTEL/lib:/apps/PAPI/5.5.1/lib:/apps/RUBY/2.4.2/INTEL/lib:/apps/INTEL/2017.4/mkl/lib/intel64:/apps/INTEL/2017.4/impi/2017.3.196/lib64:/apps/INTEL/2017.4/lib/intel64:/apps/JDK/8u131/jre/lib/amd64/server:/home/bsc19/bsc19954/TFM/applications/COLLECTION_IN -classpath /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN:/apps/COMPSs/TrunkCollectionIN/Runtime/compss-engine.jar:/apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/../../../../adaptors/nio/worker/compss-adaptors-nio-worker.jar es.bsc.compss.nio.worker.NIOWorker true 5 5 s03r2b66-ib0 43001 null 43774 48 0 0 automatic automatic automatic -1 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d python /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0 /apps/COMPSs/TrunkCollectionIN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN 0 null 4 null compss false python 2 null true
+CMD Master: /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/user/runcompss --project=/scratch/tmp/4589364/project_1549881911.xml             --resources=/scratch/tmp/4589364/resources_1549881911.xml             --uuid=0ee807cd-4eb9-4c42-9f8e-a3f409c5333d             --specific_log_dir=/home/bsc19/bsc19954/.COMPSs/4589364/             --master_name=s03r2b62-ib0             --master_port=43774             --jvm_master_opts=             --jvm_workers_opts=-Xms16000m,-Xmx92000m,-Xmn1600m  -d -g resources_in_worker.py
+[  INFO] Using default execution type: compss
+[  INFO] Inferred PYTHON language
+
+----------------- Executing resources_in_worker.py --------------------------
+
+Binding debug is activated
+[BINDING-COMMONS]  -  @GS_On  -  Creating the JVM
+[BINDING_COMMONS]  -  @create_vm  -  reading file in JVM_OPTIONS_FILE
+[BINDING_COMMONS]  -  @create_vm  -  Launching JVM
+[BINDING_COMMONS]  -  @create_vm  -  JVM Ready
+[BINDING-COMMONS]  -  @GS_On  -  Creating runtime object
+[(523)    API]  -  Deploying COMPSs Runtime v2.4.rc1812 (build 20190211-0958.rda78642b10d9b80e3a81fa8c8357c1b3a661685f)
+[BINDING-COMMONS]  -  @GS_On  -  Calling runtime start
+[(525)    API]  -  Starting COMPSs Runtime v2.4.rc1812 (build 20190211-0958.rda78642b10d9b80e3a81fa8c8357c1b3a661685f)
+[(525)    API]  -  Initializing components
+[(1129)    API]  -  Ready to process tasks
+[BINDING-COMMONS]  -  @Init JNI Methods
+[BINDING_COMMONS]  -  @Init JNI Direction Types
+[BINDING_COMMONS]  -  @Init JNI Stream Types
+[BINDING-COMMONS]  -  @Init JNI Types
+[BINDING_COMMONS]  -  @Init DONE
+[BINDING_COMMONS]  -  @Master JNI Init DONE
+[BINDING-COMMONS]  -  @GS_Get_AppDir - Getting application directory.
+[BINDING-COMMONS]  -  @GS_Get_AppDir  -  directory name: /home/bsc19/bsc19954/.COMPSs/4589364/
+[BINDING-COMMONS]  -  @GS_RegisterCE - Registering Core element.
+[(1155)    API]  -  Registering CoreElement resources_in_worker.generate_object
+[(1155)    API]  -  	 - Implementation: resources_in_worker.generate_object
+[(1155)    API]  -  	 - Constraints   : 
+[(1155)    API]  -  	 - Type          : METHOD
+[(1155)    API]  -  	 - ImplTypeArgs  : 
+[(1155)    API]  -  		 Arg: resources_in_worker
+[(1155)    API]  -  		 Arg: generate_object
+[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: resources_in_worker.generate_object
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1164)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1164)    API]  -  There are 2 parameters
+[(1164)    API]  -    Parameter 1 has type INT_T
+[(1165)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1173)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1173)    API]  -  There are 2 parameters
+[(1173)    API]  -    Parameter 1 has type INT_T
+[(1173)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 2
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1176)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1176)    API]  -  There are 2 parameters
+[(1176)    API]  -    Parameter 1 has type INT_T
+[(1176)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 3
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1178)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1178)    API]  -  There are 2 parameters
+[(1178)    API]  -    Parameter 1 has type INT_T
+[(1179)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 4
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1181)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1181)    API]  -  There are 2 parameters
+[(1181)    API]  -    Parameter 1 has type INT_T
+[(1181)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 5
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1184)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1184)    API]  -  There are 2 parameters
+[(1184)    API]  -    Parameter 1 has type INT_T
+[(1184)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 6
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1187)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1187)    API]  -  There are 2 parameters
+[(1187)    API]  -    Parameter 1 has type INT_T
+[(1187)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 7
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1190)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1190)    API]  -  There are 2 parameters
+[(1190)    API]  -    Parameter 1 has type INT_T
+[(1190)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 8
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1193)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1193)    API]  -  There are 2 parameters
+[(1193)    API]  -    Parameter 1 has type INT_T
+[(1193)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 9
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: seed
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1195)    API]  -  Creating task from method resources_in_worker.generate_object
+[(1195)    API]  -  There are 2 parameters
+[(1195)    API]  -    Parameter 1 has type INT_T
+[(1195)    API]  -    Parameter 7 has type FILE_T
+[BINDING-COMMONS]  -  @GS_RegisterCE - Registering Core element.
+[(1199)    API]  -  Registering CoreElement resources_in_worker.select_element
+[(1199)    API]  -  	 - Implementation: resources_in_worker.select_element
+[(1199)    API]  -  	 - Constraints   : 
+[(1199)    API]  -  	 - Type          : METHOD
+[(1199)    API]  -  	 - ImplTypeArgs  : 
+[(1199)    API]  -  		 Arg: resources_in_worker
+[(1199)    API]  -  		 Arg: select_element
+[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: resources_in_worker.select_element
+COLLECTION VALUE IS 23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-12 10 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 26
+[BINDING-COMMONS]  -  @process_param  -  Collection: 23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-12 10 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9 9 /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: c
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 4
+[BINDING-COMMONS]  -  @process_param  -  Int: 4
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: i
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 2
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+[(1203)    API]  -  Creating task from method resources_in_worker.select_element
+[(1203)    API]  -  There are 3 parameters
+[(1203)    API]  -    Parameter 1 has type COLLECTION_T
+[(1205)    API]  -  Add COLLECTION_T with 10 parameters
+[(1205)    API]  -  Collection 23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-12
+Name: c
+Contents:
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9, type FILE_T, direction IN
+	FileParameter with location shared:gpfs/home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10, type FILE_T, direction IN
+
+[(1205)    API]  -    Parameter 7 has type INT_T
+[(1205)    API]  -    Parameter 13 has type FILE_T
+[BINDING-COMMONS]  -  @GS_Get_File  -  Calling runtime OpenFile method  for /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11 and mode 0 ...
+[(1206)    API]  -  Opening /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11 in mode IN
+[(21240)    API]  -  File target Location: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/d12v2_1549881926952.IT
+[BINDING-COMMONS]  -  @GS_Get_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/d12v2_1549881926952.IT
+[BINDING-COMMONS]  -  @GS_Close_File  -  Calling runtime closeFile method...
+[(21243)    API]  -  Closing /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11 in mode IN
+[(21244)    API]  -  Closing file home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11
+[BINDING-COMMONS]  -  @GS_Close_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11
+[(21244)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-11
+My chosen vector is 	 [0.96702984 0.54723225 0.97268436 0.71481599 0.69772882]
+The correct vector is 	 [0.96702984 0.54723225 0.97268436 0.71481599 0.69772882]
+Congratulations! Both vectors match!
+[(21248)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-5
+[(21250)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-4
+[(21251)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-7
+[(21251)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-6
+[(21252)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-1
+[(21253)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-3
+[(21254)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-2
+[(21254)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-9
+[(21255)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-8
+[(21256)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-10
+[(21256)    API]  -  Deleting File /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-13
+[BINDING-COMMONS]  -  @GS_Delete_File  -  COMPSs filename: /home/bsc19/bsc19954/.COMPSs/4589364/tmpFiles/pycompssBpYgUy/compss-serialized-obj_23a8aa9a-2dea-11e9-a6a7-0894ef434a8a-13
+[BINDING-COMMONS]  -  @GS_Off
+[BINDING-COMMONS]  -  @Off - Waiting to end tasks
+[(21257)    API]  -  No more tasks for app 0
+[(21260)    API]  -  Getting Result Files 0
+[BINDING-COMMONS]  -  @Off - Stopping runtime
+[(21263)    API]  -  Stop IT reached
+[(21263)    API]  -  Stopping Graph generation...
+[(21263)    API]  -  Stopping AP...
+[(21264)    API]  -  Stopping TD...
+[(22849)    API]  -  Stopping Comm...
+[(22850)    API]  -  Runtime stopped
+[(22850)    API]  -  Execution Finished
+[BINDING-COMMONS]  -  @Off - Removing JVM
+Exit NIOWorker
+[persistent_worker.sh] Clean WD /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b62-ib0
+Exit NIOWorker
+[persistent_worker.sh] Clean WD /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0
+[BINDING-COMMONS]  -  @Off - End
+Exit NIOWorker
+[persistent_worker.sh] Clean WD /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b63-ib0
+Exit NIOWorker
+[persistent_worker.sh] Clean WD /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b65-ib0
+
+------------------------------------------------------------
+Waiting for application completion
+---- Executing Epilog actions ----
+Cleanup Worker TMP files
+- Removing /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- Removing /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+- Removing /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+Cleanup TMP files

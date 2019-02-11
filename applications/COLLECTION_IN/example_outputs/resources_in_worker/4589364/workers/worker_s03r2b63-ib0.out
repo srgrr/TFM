@@ -1,0 +1,390 @@
+[(565)(2019-02-11 11:45:14,748)              Worker]    @main             -  maxSnd: 5
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  maxRcv: 5
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  WorkerName: s03r2b63-ib0
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  WorkerPort: 43001
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  MasterName: null
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  MasterPort: 43774
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  Computing Units CPU: 48
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  Computing Units GPU: 0
+[(568)(2019-02-11 11:45:14,751)              Worker]    @main             -  Computing Units FPGA: 0
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  User defined CPU Map: automatic
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  User defined GPU Map: automatic
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  User defined FPGA Map: automatic
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  Limit Of Tasks: -1
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  App uuid: 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  WorkingDir:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b63-ib0
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  Install Dir: /apps/COMPSs/TrunkCollectionIN
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  Tracing: 0
+[(569)(2019-02-11 11:45:14,752)              Worker]    @main             -  Extrae config File: null
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Host: 2
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  LibraryPath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Classpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Pythonpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  StorageConf: null
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  executionType: COMPSS
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Persistent c: false
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Python interpreter: python
+[(570)(2019-02-11 11:45:14,753)              Worker]    @main             -  Python version: 2
+[(571)(2019-02-11 11:45:14,754)              Worker]    @main             -  Python virtual environment: null
+[(571)(2019-02-11 11:45:14,754)              Worker]    @main             -  Python propagate virtual environment: true
+[(571)(2019-02-11 11:45:14,754)              Worker]    @main             -  Remove Sanbox WD: true
+[(571)(2019-02-11 11:45:14,754)       Communication]    @<init>           -  [NIO Agent] Debug: true persistent: false
+[(571)(2019-02-11 11:45:14,754)              Worker]    @<init>           -  NIO Worker init
+[(573)(2019-02-11 11:45:14,756)              Worker]    @init             -  No storage configuration file passed
+[(574)(2019-02-11 11:45:14,757)         ExecManager]    @<init>           -  Instantiate CPU Binder with 48 CUs
+[(650)(2019-02-11 11:45:14,833)        ThreadBinder]    @cessLsCpuOutput  -  Parsing LSCPU Output : Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz
+Stepping:              4
+CPU MHz:               2100.000
+CPU max MHz:           2101,0000
+CPU min MHz:           1000,0000
+BogoMIPS:              4190.16
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              33792K
+NUMA node0 CPU(s):     0-23
+NUMA node1 CPU(s):     24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb pln pts dtherm intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc
+
+[(650)(2019-02-11 11:45:14,833)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map constructed by Affinity per Numa Node
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map: 0-23/24-47
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 0
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 1
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(651)(2019-02-11 11:45:14,834)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 
+[(652)(2019-02-11 11:45:14,835)         ExecManager]    @<init>           -  Instantiate GPU Binder with 0 CUs
+[(652)(2019-02-11 11:45:14,835)         ExecManager]    @<init>           -  Instantiate FPGA Binder with 0 CUs
+[(653)(2019-02-11 11:45:14,836)          ThreadPool]    @<init>           -  Init JobsThreadPool
+[(660)(2019-02-11 11:45:14,843)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 11:45:14,843)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 11:45:14,843)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 11:45:14,843)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 11:45:14,844)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(662)(2019-02-11 11:45:14,845)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(663)(2019-02-11 11:45:14,846)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(664)(2019-02-11 11:45:14,847)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(665)(2019-02-11 11:45:14,848)            Executor]    @<init>           -  Executor init
+[(666)(2019-02-11 11:45:14,849)         ExecManager]    @init             -  Init Execution Manager
+[(666)(2019-02-11 11:45:14,849)          ThreadPool]    @start            -  Start threads of ThreadPool
+[(667)(2019-02-11 11:45:14,850)            Executor]    @start            -  Executor started
+[(667)(2019-02-11 11:45:14,850)            Executor]    @start            -  Executor started
+[(668)(2019-02-11 11:45:14,851)            Executor]    @start            -  Executor started
+[(668)(2019-02-11 11:45:14,851)            Executor]    @start            -  Executor started
+[(669)(2019-02-11 11:45:14,852)            Executor]    @start            -  Executor started
+[(669)(2019-02-11 11:45:14,852)            Executor]    @start            -  Executor started
+[(670)(2019-02-11 11:45:14,853)            Executor]    @start            -  Executor started
+[(669)(2019-02-11 11:45:14,852)            Executor]    @start            -  Executor started
+[(672)(2019-02-11 11:45:14,855)            Executor]    @start            -  Executor started
+[(672)(2019-02-11 11:45:14,855)            Executor]    @start            -  Executor started
+[(673)(2019-02-11 11:45:14,856)            Executor]    @start            -  Executor started
+[(673)(2019-02-11 11:45:14,856)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 11:45:14,858)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 11:45:14,858)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 11:45:14,858)            Executor]    @start            -  Executor started
+[(676)(2019-02-11 11:45:14,859)            Executor]    @start            -  Executor started
+[(676)(2019-02-11 11:45:14,859)            Executor]    @start            -  Executor started
+[(678)(2019-02-11 11:45:14,861)            Executor]    @start            -  Executor started
+[(676)(2019-02-11 11:45:14,859)            Executor]    @start            -  Executor started
+[(678)(2019-02-11 11:45:14,861)            Executor]    @start            -  Executor started
+[(679)(2019-02-11 11:45:14,862)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 11:45:14,863)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 11:45:14,863)            Executor]    @start            -  Executor started
+[(681)(2019-02-11 11:45:14,864)            Executor]    @start            -  Executor started
+[(682)(2019-02-11 11:45:14,865)            Executor]    @start            -  Executor started
+[(682)(2019-02-11 11:45:14,865)            Executor]    @start            -  Executor started
+[(683)(2019-02-11 11:45:14,866)            Executor]    @start            -  Executor started
+[(683)(2019-02-11 11:45:14,866)            Executor]    @start            -  Executor started
+[(683)(2019-02-11 11:45:14,866)            Executor]    @start            -  Executor started
+[(684)(2019-02-11 11:45:14,867)            Executor]    @start            -  Executor started
+[(685)(2019-02-11 11:45:14,868)            Executor]    @start            -  Executor started
+[(685)(2019-02-11 11:45:14,868)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 11:45:14,869)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 11:45:14,869)            Executor]    @start            -  Executor started
+[(687)(2019-02-11 11:45:14,870)            Executor]    @start            -  Executor started
+[(687)(2019-02-11 11:45:14,870)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 11:45:14,869)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 11:45:14,869)            Executor]    @start            -  Executor started
+[(688)(2019-02-11 11:45:14,871)            Executor]    @start            -  Executor started
+[(688)(2019-02-11 11:45:14,871)            Executor]    @start            -  Executor started
+[(689)(2019-02-11 11:45:14,872)            Executor]    @start            -  Executor started
+[(691)(2019-02-11 11:45:14,874)            Executor]    @start            -  Executor started
+[(690)(2019-02-11 11:45:14,873)            Executor]    @start            -  Executor started
+[(691)(2019-02-11 11:45:14,874)            Executor]    @start            -  Executor started
+[(691)(2019-02-11 11:45:14,874)            Executor]    @start            -  Executor started
+[(691)(2019-02-11 11:45:14,874)            Executor]    @start            -  Executor started
+[(672)(2019-02-11 11:45:14,855)            Executor]    @start            -  Executor started
+[(689)(2019-02-11 11:45:14,872)            Executor]    @start            -  Executor started
+[(696)(2019-02-11 11:45:14,879)              Worker]    @main             -    Initializing the TransferManager structures...
+[(697)(2019-02-11 11:45:14,880)     TransferManager]    @init             -  TransferManager init
+[(707)(2019-02-11 11:45:14,890)              Worker]    @main             -    Starting TransferManager Thread
+[(707)(2019-02-11 11:45:14,890)     TransferManager]    @startServer      -  TransferManager Start Server
+[(708)(2019-02-11 11:45:14,891)        EventManager]    @run              -  Event Manager started
+[(708)(2019-02-11 11:45:14,891)        EventManager]    @run              -  Waiting for events
+[(708)(2019-02-11 11:45:14,891)        EventManager]    @waitForEvents    -  Event Manager wait
+[(708)(2019-02-11 11:45:14,891)            Listener]    @run              -  NIO Listener started
+[(14825)(2019-02-11 11:45:29,008)          Connection]    @registerChannel  -  Associating Socket: 2126446107 with connection: 1285592432
+[(14826)(2019-02-11 11:45:29,009)        EventManager]    @run              -  Processing NIO event
+[(14827)(2019-02-11 11:45:29,010)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(14827)(2019-02-11 11:45:29,010)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1285592432
+[(14827)(2019-02-11 11:45:29,010)        EventManager]    @run              -  Waiting for events
+[(14827)(2019-02-11 11:45:29,010)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14843)(2019-02-11 11:45:29,026)        EventManager]    @run              -  Processing NIO event
+[(14843)(2019-02-11 11:45:29,026)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(14843)(2019-02-11 11:45:29,026)        EventManager]    @processEvent     -  Processing Package received through  connection@1285592432
+[(14863)(2019-02-11 11:45:29,046)       Communication]    @commandReceived  -  Received Command CommandCheckWorker for deployment ID 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d on nodeName s03r2b63-ib0 through connection 1285592432
+[(14864)(2019-02-11 11:45:29,047)        EventManager]    @run              -  Waiting for events
+[(14864)(2019-02-11 11:45:29,047)        EventManager]    @run              -  Processing NIO event
+[(14864)(2019-02-11 11:45:29,047)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14865)(2019-02-11 11:45:29,048)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@4ca09570 with transfer es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT]
+[(14865)(2019-02-11 11:45:29,048)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT] on connection 1285592432
+[(14865)(2019-02-11 11:45:29,048)          Connection]    @dleNextTransfer  -  NIOConnection 1285592432 takes es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT]
+[(14867)(2019-02-11 11:45:29,050)               Stage]    @loadFirstToken   -  Loading first token
+[(14867)(2019-02-11 11:45:29,050)        EventManager]    @run              -  Processing NIO event
+[(14867)(2019-02-11 11:45:29,050)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(14867)(2019-02-11 11:45:29,050)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@4ca09570 with transfer es.bsc.comm.stage.Shutdown@cb2a000
+[(14867)(2019-02-11 11:45:29,050)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@cb2a000 on connection 1285592432
+[(14868)(2019-02-11 11:45:29,051)        EventManager]    @run              -  Waiting for events
+[(14868)(2019-02-11 11:45:29,051)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14868)(2019-02-11 11:45:29,051)            Listener]    @write            -  writting buffer-1072476
+[(14869)(2019-02-11 11:45:29,052)            Listener]    @write            -  4 bytes written to socket 2126446107
+[(14869)(2019-02-11 11:45:29,052)            Listener]    @write            -  Removed buffer1
+[(14869)(2019-02-11 11:45:29,052)            Listener]    @write            -  writting buffer135381531
+[(14869)(2019-02-11 11:45:29,052)        EventManager]    @run              -  Processing NIO event
+[(14869)(2019-02-11 11:45:29,052)            Listener]    @write            -  189 bytes written to socket 2126446107
+[(14869)(2019-02-11 11:45:29,052)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(14869)(2019-02-11 11:45:29,052)            Listener]    @write            -  Removed buffer1
+[(14869)(2019-02-11 11:45:29,052)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1285592432
+[(14870)(2019-02-11 11:45:29,053)       Communication]    @writeFinished    -  Finished sending CommandCheckWorkerACK for deployment ID 0ee807cd-4eb9-4c42-9f8e-a3f409c5333d through connection 1285592432
+[(14870)(2019-02-11 11:45:29,053)          Connection]    @dleNextTransfer  -  NIOConnection 1285592432 takes es.bsc.comm.stage.Shutdown@cb2a000
+[(14870)(2019-02-11 11:45:29,053)          Connection]    @closeConnection  -  Requesting connection 1285592432 closure
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @run              -  Waiting for events
+[(14870)(2019-02-11 11:45:29,053)            Listener]    @InterestChanges  -  Closing channel 2126446107 no more data to write
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @run              -  Processing NIO event
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(14870)(2019-02-11 11:45:29,053)            Listener]    @closeChannel     -  Channel 2126446107is open. Requesting closure
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1285592432
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @run              -  Waiting for events
+[(14870)(2019-02-11 11:45:29,053)        EventManager]    @waitForEvents    -  Event Manager wait
+[(14871)(2019-02-11 11:45:29,054)        EventManager]    @run              -  Processing NIO event
+[(14871)(2019-02-11 11:45:29,054)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(14871)(2019-02-11 11:45:29,054)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1285592432
+[(14871)(2019-02-11 11:45:29,054)          Connection]    @closedChannel    -  Channel on connection 1285592432 has been closed
+[(14871)(2019-02-11 11:45:29,054)       Communication]    @nectionFinished  -  Connection 1285592432 finished
+[(14871)(2019-02-11 11:45:29,054)        EventManager]    @run              -  Waiting for events
+[(14871)(2019-02-11 11:45:29,054)        EventManager]    @waitForEvents    -  Event Manager wait
+[(32971)(2019-02-11 11:45:47,154)          Connection]    @registerChannel  -  Associating Socket: 1291692161 with connection: 1420291888
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @run              -  Processing NIO event
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1420291888
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @run              -  Processing NIO event
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(32971)(2019-02-11 11:45:47,154)        EventManager]    @processEvent     -  Processing Package received through  connection@1420291888
+[(32980)(2019-02-11 11:45:47,163)       Communication]    @commandReceived  -  Received Command ExecutorShutdown through connection 1420291888
+[(32980)(2019-02-11 11:45:47,163)              Worker]    @xecutionManager  -  Stopping Execution Manager...
+[(32980)(2019-02-11 11:45:47,163)         ExecManager]    @stop             -  Stopping Threads...
+[(32980)(2019-02-11 11:45:47,163)          ThreadPool]    @stop             -  Stopping Jobs Thread Pool
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @finish           -  Executor finished
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @finish           -  Executor finished
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @finish           -  Executor finished
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @finish           -  Executor finished
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32980)(2019-02-11 11:45:47,163)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32981)(2019-02-11 11:45:47,164)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @processRequests  -  Dequeued job is null
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32983)(2019-02-11 11:45:47,166)            Executor]    @finish           -  Executor finished
+[(32983)(2019-02-11 11:45:47,166)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(32983)(2019-02-11 11:45:47,166)            Executor]    @finish           -  Executor finished
+[(32983)(2019-02-11 11:45:47,166)            Executor]    @finish           -  Executor finished
+[(32983)(2019-02-11 11:45:47,166)            Executor]    @finish           -  Executor finished
+[(32982)(2019-02-11 11:45:47,165)            Executor]    @finish           -  Executor finished
+[(33214)(2019-02-11 11:45:47,397)          ThreadPool]    @stop             -  ThreadPool stopped
+[(33215)(2019-02-11 11:45:47,398)          ThreadPool]    @stop             -  Stopping mirrors
+[(33215)(2019-02-11 11:45:47,398)        EventManager]    @run              -  Waiting for events
+[(33216)(2019-02-11 11:45:47,399)        EventManager]    @run              -  Processing NIO event
+[(33216)(2019-02-11 11:45:47,399)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(33216)(2019-02-11 11:45:47,399)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@54a7ef30 with transfer es.bsc.comm.stage.Submission@1491dfd[SEND COMMAND OBJECT]
+[(33216)(2019-02-11 11:45:47,399)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@1491dfd[SEND COMMAND OBJECT] on connection 1420291888
+[(33216)(2019-02-11 11:45:47,399)          Connection]    @dleNextTransfer  -  NIOConnection 1420291888 takes es.bsc.comm.stage.Submission@1491dfd[SEND COMMAND OBJECT]
+[(33216)(2019-02-11 11:45:47,399)               Stage]    @loadFirstToken   -  Loading first token
+[(33217)(2019-02-11 11:45:47,400)        EventManager]    @run              -  Processing NIO event
+[(33217)(2019-02-11 11:45:47,400)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(33217)(2019-02-11 11:45:47,400)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@54a7ef30 with transfer es.bsc.comm.stage.Shutdown@59837daf
+[(33217)(2019-02-11 11:45:47,400)            Listener]    @write            -  writting buffer-2532235
+[(33217)(2019-02-11 11:45:47,400)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@59837daf on connection 1420291888
+[(33217)(2019-02-11 11:45:47,400)        EventManager]    @run              -  Waiting for events
+[(33218)(2019-02-11 11:45:47,401)            Listener]    @write            -  4 bytes written to socket 1291692161
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @waitForEvents    -  Event Manager wait
+[(33218)(2019-02-11 11:45:47,401)            Listener]    @write            -  Removed buffer1
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @run              -  Processing NIO event
+[(33218)(2019-02-11 11:45:47,401)            Listener]    @write            -  writting buffer2068355243
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(33218)(2019-02-11 11:45:47,401)            Listener]    @write            -  140 bytes written to socket 1291692161
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1420291888
+[(33218)(2019-02-11 11:45:47,401)            Listener]    @write            -  Removed buffer1
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @run              -  Waiting for events
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @run              -  Processing NIO event
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(33218)(2019-02-11 11:45:47,401)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1420291888
+[(33218)(2019-02-11 11:45:47,401)       Communication]    @writeFinished    -  Finished sending ExecutorShutdownACK through connection 1420291888
+[(33218)(2019-02-11 11:45:47,401)          Connection]    @dleNextTransfer  -  NIOConnection 1420291888 takes es.bsc.comm.stage.Shutdown@59837daf
+[(33218)(2019-02-11 11:45:47,401)          Connection]    @closeConnection  -  Requesting connection 1420291888 closure
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @run              -  Waiting for events
+[(33219)(2019-02-11 11:45:47,402)            Listener]    @InterestChanges  -  Closing channel 1291692161 no more data to write
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @waitForEvents    -  Event Manager wait
+[(33219)(2019-02-11 11:45:47,402)            Listener]    @closeChannel     -  Channel 1291692161is open. Requesting closure
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @run              -  Processing NIO event
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1420291888
+[(33219)(2019-02-11 11:45:47,402)          Connection]    @registerChannel  -  Associating Socket: 1876989834 with connection: 1324909399
+[(33219)(2019-02-11 11:45:47,402)          Connection]    @closedChannel    -  Channel on connection 1420291888 has been closed
+[(33219)(2019-02-11 11:45:47,402)       Communication]    @nectionFinished  -  Connection 1420291888 finished
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @run              -  Waiting for events
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @run              -  Processing NIO event
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1324909399
+[(33219)(2019-02-11 11:45:47,402)        EventManager]    @run              -  Waiting for events
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @waitForEvents    -  Event Manager wait
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @run              -  Processing NIO event
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @processEvent     -  Processing Package received through  connection@1324909399
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @run              -  Waiting for events
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @run              -  Processing NIO event
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(33220)(2019-02-11 11:45:47,403)        EventManager]    @processEvent     -  Processing Package received through  connection@1324909399
+[(33221)(2019-02-11 11:45:47,404)       Communication]    @commandReceived  -  Received Command GenerateWorkerDebugFiles through connection 1324909399
