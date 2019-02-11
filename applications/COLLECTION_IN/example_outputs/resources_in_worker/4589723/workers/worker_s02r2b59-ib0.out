@@ -1,0 +1,1382 @@
+[(557)(2019-02-11 12:32:58,463)              Worker]    @main             -  maxSnd: 5
+[(559)(2019-02-11 12:32:58,465)              Worker]    @main             -  maxRcv: 5
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  WorkerName: s02r2b59-ib0
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  WorkerPort: 43001
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  MasterName: null
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  MasterPort: 43700
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  Computing Units CPU: 48
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  Computing Units GPU: 0
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  Computing Units FPGA: 0
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  User defined CPU Map: automatic
+[(560)(2019-02-11 12:32:58,466)              Worker]    @main             -  User defined GPU Map: automatic
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  User defined FPGA Map: automatic
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  Limit Of Tasks: 1
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  App uuid: 0d8c7da4-b0f4-454b-8f7b-30a8439195bf
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  WorkingDir:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  Install Dir: /apps/COMPSs/TrunkCollectionIN
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  Tracing: 0
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  Extrae config File: null
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  Host: 4
+[(561)(2019-02-11 12:32:58,467)              Worker]    @main             -  LibraryPath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Classpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Pythonpath: /home/bsc19/bsc19954/TFM/applications/COLLECTION_IN
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  StorageConf: null
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  executionType: COMPSS
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Persistent c: false
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Python interpreter: python
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Python version: 2
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Python virtual environment: null
+[(562)(2019-02-11 12:32:58,468)              Worker]    @main             -  Python propagate virtual environment: true
+[(563)(2019-02-11 12:32:58,469)              Worker]    @main             -  Remove Sanbox WD: true
+[(563)(2019-02-11 12:32:58,469)       Communication]    @<init>           -  [NIO Agent] Debug: true persistent: false
+[(563)(2019-02-11 12:32:58,469)              Worker]    @<init>           -  NIO Worker init
+[(565)(2019-02-11 12:32:58,471)              Worker]    @init             -  No storage configuration file passed
+[(566)(2019-02-11 12:32:58,472)         ExecManager]    @<init>           -  Instantiate CPU Binder with 48 CUs
+[(645)(2019-02-11 12:32:58,551)        ThreadBinder]    @cessLsCpuOutput  -  Parsing LSCPU Output : Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                48
+On-line CPU(s) list:   0-47
+Thread(s) per core:    1
+Core(s) per socket:    24
+Socket(s):             2
+NUMA node(s):          2
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 85
+Model name:            Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz
+Stepping:              4
+CPU MHz:               2100.000
+CPU max MHz:           2101,0000
+CPU min MHz:           1000,0000
+BogoMIPS:              4190.13
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              1024K
+L3 cache:              33792K
+NUMA node0 CPU(s):     0-23
+NUMA node1 CPU(s):     24-47
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb pln pts dtherm intel_pt tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm cqm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 cqm_llc cqm_occup_llc
+
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map constructed by Affinity per Numa Node
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @cessLsCpuOutput  -  CPU Map: 0-23/24-47
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 0
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Socket 1
+[(646)(2019-02-11 12:32:58,552)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered slots: -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 
+[(647)(2019-02-11 12:32:58,553)        ThreadBinder]    @liarConstructor  -  [ThreadBinderCPUs] Registered ids: 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 
+[(647)(2019-02-11 12:32:58,553)         ExecManager]    @<init>           -  Instantiate GPU Binder with 0 CUs
+[(647)(2019-02-11 12:32:58,553)         ExecManager]    @<init>           -  Instantiate FPGA Binder with 0 CUs
+[(648)(2019-02-11 12:32:58,554)          ThreadPool]    @<init>           -  Init JobsThreadPool
+[(655)(2019-02-11 12:32:58,561)            Executor]    @<init>           -  Executor init
+[(655)(2019-02-11 12:32:58,561)            Executor]    @<init>           -  Executor init
+[(655)(2019-02-11 12:32:58,561)            Executor]    @<init>           -  Executor init
+[(655)(2019-02-11 12:32:58,561)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(656)(2019-02-11 12:32:58,562)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(657)(2019-02-11 12:32:58,563)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(658)(2019-02-11 12:32:58,564)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(659)(2019-02-11 12:32:58,565)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(660)(2019-02-11 12:32:58,566)            Executor]    @<init>           -  Executor init
+[(661)(2019-02-11 12:32:58,567)         ExecManager]    @init             -  Init Execution Manager
+[(661)(2019-02-11 12:32:58,567)          ThreadPool]    @start            -  Start threads of ThreadPool
+[(662)(2019-02-11 12:32:58,568)            Executor]    @start            -  Executor started
+[(662)(2019-02-11 12:32:58,568)            Executor]    @start            -  Executor started
+[(663)(2019-02-11 12:32:58,569)            Executor]    @start            -  Executor started
+[(664)(2019-02-11 12:32:58,570)            Executor]    @start            -  Executor started
+[(665)(2019-02-11 12:32:58,571)            Executor]    @start            -  Executor started
+[(665)(2019-02-11 12:32:58,571)            Executor]    @start            -  Executor started
+[(666)(2019-02-11 12:32:58,572)            Executor]    @start            -  Executor started
+[(666)(2019-02-11 12:32:58,572)            Executor]    @start            -  Executor started
+[(667)(2019-02-11 12:32:58,573)            Executor]    @start            -  Executor started
+[(667)(2019-02-11 12:32:58,573)            Executor]    @start            -  Executor started
+[(668)(2019-02-11 12:32:58,574)            Executor]    @start            -  Executor started
+[(669)(2019-02-11 12:32:58,575)            Executor]    @start            -  Executor started
+[(669)(2019-02-11 12:32:58,575)            Executor]    @start            -  Executor started
+[(670)(2019-02-11 12:32:58,576)            Executor]    @start            -  Executor started
+[(671)(2019-02-11 12:32:58,577)            Executor]    @start            -  Executor started
+[(671)(2019-02-11 12:32:58,577)            Executor]    @start            -  Executor started
+[(671)(2019-02-11 12:32:58,577)            Executor]    @start            -  Executor started
+[(673)(2019-02-11 12:32:58,579)            Executor]    @start            -  Executor started
+[(672)(2019-02-11 12:32:58,578)            Executor]    @start            -  Executor started
+[(672)(2019-02-11 12:32:58,578)            Executor]    @start            -  Executor started
+[(673)(2019-02-11 12:32:58,579)            Executor]    @start            -  Executor started
+[(674)(2019-02-11 12:32:58,580)            Executor]    @start            -  Executor started
+[(674)(2019-02-11 12:32:58,580)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 12:32:58,581)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 12:32:58,581)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 12:32:58,581)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 12:32:58,581)            Executor]    @start            -  Executor started
+[(675)(2019-02-11 12:32:58,581)            Executor]    @start            -  Executor started
+[(678)(2019-02-11 12:32:58,584)            Executor]    @start            -  Executor started
+[(677)(2019-02-11 12:32:58,583)            Executor]    @start            -  Executor started
+[(678)(2019-02-11 12:32:58,584)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 12:32:58,586)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 12:32:58,586)            Executor]    @start            -  Executor started
+[(678)(2019-02-11 12:32:58,584)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 12:32:58,586)            Executor]    @start            -  Executor started
+[(680)(2019-02-11 12:32:58,586)            Executor]    @start            -  Executor started
+[(681)(2019-02-11 12:32:58,587)            Executor]    @start            -  Executor started
+[(681)(2019-02-11 12:32:58,587)            Executor]    @start            -  Executor started
+[(682)(2019-02-11 12:32:58,588)            Executor]    @start            -  Executor started
+[(682)(2019-02-11 12:32:58,588)            Executor]    @start            -  Executor started
+[(683)(2019-02-11 12:32:58,589)            Executor]    @start            -  Executor started
+[(685)(2019-02-11 12:32:58,591)            Executor]    @start            -  Executor started
+[(685)(2019-02-11 12:32:58,591)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 12:32:58,592)            Executor]    @start            -  Executor started
+[(686)(2019-02-11 12:32:58,592)            Executor]    @start            -  Executor started
+[(685)(2019-02-11 12:32:58,591)            Executor]    @start            -  Executor started
+[(667)(2019-02-11 12:32:58,573)            Executor]    @start            -  Executor started
+[(684)(2019-02-11 12:32:58,590)            Executor]    @start            -  Executor started
+[(691)(2019-02-11 12:32:58,597)              Worker]    @main             -    Initializing the TransferManager structures...
+[(691)(2019-02-11 12:32:58,597)     TransferManager]    @init             -  TransferManager init
+[(700)(2019-02-11 12:32:58,606)              Worker]    @main             -    Starting TransferManager Thread
+[(701)(2019-02-11 12:32:58,607)     TransferManager]    @startServer      -  TransferManager Start Server
+[(701)(2019-02-11 12:32:58,607)        EventManager]    @run              -  Event Manager started
+[(702)(2019-02-11 12:32:58,608)        EventManager]    @run              -  Waiting for events
+[(702)(2019-02-11 12:32:58,608)        EventManager]    @waitForEvents    -  Event Manager wait
+[(702)(2019-02-11 12:32:58,608)            Listener]    @run              -  NIO Listener started
+[(13097)(2019-02-11 12:33:11,003)          Connection]    @registerChannel  -  Associating Socket: 795225975 with connection: 555667941
+[(13099)(2019-02-11 12:33:11,005)        EventManager]    @run              -  Processing NIO event
+[(13100)(2019-02-11 12:33:11,006)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(13100)(2019-02-11 12:33:11,006)        EventManager]    @processEvent     -  Processing Connection actually established for socket@555667941
+[(13100)(2019-02-11 12:33:11,006)        EventManager]    @run              -  Waiting for events
+[(13100)(2019-02-11 12:33:11,006)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13116)(2019-02-11 12:33:11,022)        EventManager]    @run              -  Processing NIO event
+[(13116)(2019-02-11 12:33:11,022)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13117)(2019-02-11 12:33:11,023)        EventManager]    @processEvent     -  Processing Package received through  connection@555667941
+[(13138)(2019-02-11 12:33:11,044)       Communication]    @commandReceived  -  Received Command CommandCheckWorker for deployment ID 0d8c7da4-b0f4-454b-8f7b-30a8439195bf on nodeName s02r2b59-ib0 through connection 555667941
+[(13140)(2019-02-11 12:33:11,046)        EventManager]    @run              -  Waiting for events
+[(13140)(2019-02-11 12:33:11,046)        EventManager]    @run              -  Processing NIO event
+[(13140)(2019-02-11 12:33:11,046)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13141)(2019-02-11 12:33:11,047)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@211ed1e5 with transfer es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT]
+[(13141)(2019-02-11 12:33:11,047)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT] on connection 555667941
+[(13141)(2019-02-11 12:33:11,047)          Connection]    @dleNextTransfer  -  NIOConnection 555667941 takes es.bsc.comm.stage.Submission@6556ece[SEND COMMAND OBJECT]
+[(13143)(2019-02-11 12:33:11,049)               Stage]    @loadFirstToken   -  Loading first token
+[(13143)(2019-02-11 12:33:11,049)        EventManager]    @run              -  Processing NIO event
+[(13143)(2019-02-11 12:33:11,049)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13143)(2019-02-11 12:33:11,049)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@211ed1e5 with transfer es.bsc.comm.stage.Shutdown@cb2a000
+[(13143)(2019-02-11 12:33:11,049)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@cb2a000 on connection 555667941
+[(13144)(2019-02-11 12:33:11,050)        EventManager]    @run              -  Waiting for events
+[(13144)(2019-02-11 12:33:11,050)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13145)(2019-02-11 12:33:11,051)            Listener]    @write            -  writting buffer-1072476
+[(13145)(2019-02-11 12:33:11,051)            Listener]    @write            -  4 bytes written to socket 795225975
+[(13145)(2019-02-11 12:33:11,051)            Listener]    @write            -  Removed buffer1
+[(13145)(2019-02-11 12:33:11,051)        EventManager]    @run              -  Processing NIO event
+[(13145)(2019-02-11 12:33:11,051)            Listener]    @write            -  writting buffer-277799178
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @processEvent     -  Processing More To Write Event for connection@555667941
+[(13146)(2019-02-11 12:33:11,052)            Listener]    @write            -  189 bytes written to socket 795225975
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @run              -  Waiting for events
+[(13146)(2019-02-11 12:33:11,052)            Listener]    @write            -  Removed buffer1
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @run              -  Processing NIO event
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(13146)(2019-02-11 12:33:11,052)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@555667941
+[(13146)(2019-02-11 12:33:11,052)       Communication]    @writeFinished    -  Finished sending CommandCheckWorkerACK for deployment ID 0d8c7da4-b0f4-454b-8f7b-30a8439195bf through connection 555667941
+[(13147)(2019-02-11 12:33:11,053)          Connection]    @dleNextTransfer  -  NIOConnection 555667941 takes es.bsc.comm.stage.Shutdown@cb2a000
+[(13147)(2019-02-11 12:33:11,053)          Connection]    @closeConnection  -  Requesting connection 555667941 closure
+[(13147)(2019-02-11 12:33:11,053)            Listener]    @closeChannel     -  Channel 795225975is open. Requesting closure
+[(13147)(2019-02-11 12:33:11,053)        EventManager]    @run              -  Waiting for events
+[(13147)(2019-02-11 12:33:11,053)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13147)(2019-02-11 12:33:11,053)        EventManager]    @run              -  Processing NIO event
+[(13147)(2019-02-11 12:33:11,053)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(13147)(2019-02-11 12:33:11,053)            Listener]    @InterestChanges  -  Closing channel 795225975 no more data to write
+[(13147)(2019-02-11 12:33:11,053)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 555667941
+[(13147)(2019-02-11 12:33:11,053)          Connection]    @closedChannel    -  Channel on connection 555667941 has been closed
+[(13148)(2019-02-11 12:33:11,054)       Communication]    @nectionFinished  -  Connection 555667941 finished
+[(13148)(2019-02-11 12:33:11,054)        EventManager]    @run              -  Waiting for events
+[(13148)(2019-02-11 12:33:11,054)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13613)(2019-02-11 12:33:11,519)          Connection]    @registerChannel  -  Associating Socket: 888620914 with connection: 57990531
+[(13613)(2019-02-11 12:33:11,519)        EventManager]    @run              -  Processing NIO event
+[(13613)(2019-02-11 12:33:11,519)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(13613)(2019-02-11 12:33:11,519)        EventManager]    @processEvent     -  Processing Connection actually established for socket@57990531
+[(13613)(2019-02-11 12:33:11,519)        EventManager]    @run              -  Waiting for events
+[(13613)(2019-02-11 12:33:11,519)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13625)(2019-02-11 12:33:11,531)        EventManager]    @run              -  Processing NIO event
+[(13625)(2019-02-11 12:33:11,531)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(13625)(2019-02-11 12:33:11,531)        EventManager]    @processEvent     -  Processing Package received through  connection@57990531
+[(13626)(2019-02-11 12:33:11,532)            Listener]    @closeChannel     -  Channel 888620914is open. Requesting closure
+[(13647)(2019-02-11 12:33:11,553)       Communication]    @commandReceived  -  Received Command new Task [TASK [LANG= PYTHON][TASK TYPE= METHOD][TASK ID= 3][JOB ID= 3][HISTORY= NEW][IMPLEMENTATION= [DECLARING CLASS=resources_in_worker, METHOD NAME=generate_object]] [PARAMS [PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = seed][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 2][DATA null]][PARAM[MGMT ID = d3v2_1549884788948.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = #][NAME = $return_0][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = true][ORIGINAL NAME = compss-serialized-obj_cd88bc8e-2df0-11e9-9806-0894ef4d2464-3][VALUE = /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT][DATA null]]][REQUIREMENTS= [DESCRIPTION [PROCESSOR [unassigned] TYPE=CPU COMPUTING_UNITS=1 SPEED=-1.0 INTERNAL_MEMORY=-1.0 ARCHITECTURE=[unassigned] PROP_NAME=[unassigned] PROP_VALUE=[unassigned]][GENERAL_COUNTS TOTAL_CPUs=1 TOTAL_CPU_CU=1 TOTAL_GPUs=0 TOTAL_GPU_CU=0 TOTAL_FPGAs=0 TOTAL_FPGA_CU=0 TOTAL_OTHERs=0 TOTAL_OTHER_CU=0] [MEMORY SIZE=-1.0 TYPE=[unassigned]] [STORAGE SIZE=-1.0 TYPE=[unassigned]] [OPERATING_SYSTEM TYPE=[unassigned] DISTRIBUTION=[unassigned] VERSION=[unassigned]] [SOFTWARE ] [HOST_QUEUES ] [PRICE TIME_UNIT=-1 PRICE_PER_TIME=-1.0] [WALLCLOCK=-1]]][SLAVE_WORKERS_NODE_NAMES= ]] through connection 57990531
+[(13647)(2019-02-11 12:33:11,553)              Worker]    @receivedNewTask  -  Received Job [TASK [LANG= PYTHON][TASK TYPE= METHOD][TASK ID= 3][JOB ID= 3][HISTORY= NEW][IMPLEMENTATION= [DECLARING CLASS=resources_in_worker, METHOD NAME=generate_object]] [PARAMS [PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = seed][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 2][DATA null]][PARAM[MGMT ID = d3v2_1549884788948.IT][TYPE = FILE_T][STREAM = UNSPECIFIED][PREFIX = #][NAME = $return_0][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = true][ORIGINAL NAME = compss-serialized-obj_cd88bc8e-2df0-11e9-9806-0894ef4d2464-3][VALUE = /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT][DATA null]]][REQUIREMENTS= [DESCRIPTION [PROCESSOR [unassigned] TYPE=CPU COMPUTING_UNITS=1 SPEED=-1.0 INTERNAL_MEMORY=-1.0 ARCHITECTURE=[unassigned] PROP_NAME=[unassigned] PROP_VALUE=[unassigned]][GENERAL_COUNTS TOTAL_CPUs=1 TOTAL_CPU_CU=1 TOTAL_GPUs=0 TOTAL_GPU_CU=0 TOTAL_FPGAs=0 TOTAL_FPGA_CU=0 TOTAL_OTHERs=0 TOTAL_OTHER_CU=0] [MEMORY SIZE=-1.0 TYPE=[unassigned]] [STORAGE SIZE=-1.0 TYPE=[unassigned]] [OPERATING_SYSTEM TYPE=[unassigned] DISTRIBUTION=[unassigned] VERSION=[unassigned]] [SOFTWARE ] [HOST_QUEUES ] [PRICE TIME_UNIT=-1 PRICE_PER_TIME=-1.0] [WALLCLOCK=-1]]][SLAVE_WORKERS_NODE_NAMES= ]]
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -  ARGUMENTS:
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -      -null INT_T:2
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -  TARGET:
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -  RESULTS:
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -      -# FILE_T:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT
+[(13648)(2019-02-11 12:33:11,554)              Worker]    @receivedNewTask  -  Checking parameters
+[(13649)(2019-02-11 12:33:11,555)              Worker]    @receivedNewTask  -  --------------------
+[(13649)(2019-02-11 12:33:11,555)              Worker]    @processNioParam  -  Checking parameter [PARAM[MGMT ID = null][TYPE = INT_T][STREAM = UNSPECIFIED][PREFIX = null][NAME = seed][PRESERVE SOURCE DATA = false][WRITE FINAL VALUE = false][ORIGINAL NAME = NO_NAME][VALUE = 2][DATA null]]
+[(13649)(2019-02-11 12:33:11,555)              Worker]    @receivedNewTask  -  Checking target
+[(13649)(2019-02-11 12:33:11,555)              Worker]    @receivedNewTask  -  [Profile] Obsolete Processing: 0Processing 1
+[(13650)(2019-02-11 12:33:11,556)              Worker]    @receivedNewTask  -  checking #params on TT at  receivedNewTask 0
+[(13650)(2019-02-11 12:33:11,556)              Worker]    @executeTask      -  Enqueueing job 3 for execution.
+[(13650)(2019-02-11 12:33:11,556)              Worker]    @executeTask      -  Notifying presence of all data for job 3.
+[(13650)(2019-02-11 12:33:11,556)            Executor]    @processRequests  -  Dequeuing job 3
+[(13651)(2019-02-11 12:33:11,557)          Connection]    @registerChannel  -  Associating Socket: 244003730 with connection: 1909070061
+[(13651)(2019-02-11 12:33:11,557)        EventManager]    @run              -  Waiting for events
+[(13651)(2019-02-11 12:33:11,557)        EventManager]    @run              -  Processing NIO event
+[(13652)(2019-02-11 12:33:11,558)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(13652)(2019-02-11 12:33:11,558)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 57990531
+[(13652)(2019-02-11 12:33:11,558)          Connection]    @closedChannel    -  Channel on connection 57990531 has been closed
+[(13652)(2019-02-11 12:33:11,558)        EventManager]    @run              -  Processing NIO event
+[(13652)(2019-02-11 12:33:11,558)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13652)(2019-02-11 12:33:11,558)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@71ca18ed with transfer es.bsc.comm.stage.Submission@4951564b[SEND COMMAND OBJECT]
+[(13652)(2019-02-11 12:33:11,558)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@4951564b[SEND COMMAND OBJECT] on connection 1909070061
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @run              -  Processing NIO event
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@71ca18ed with transfer es.bsc.comm.stage.Shutdown@4ff568bd
+[(13653)(2019-02-11 12:33:11,559)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@4ff568bd on connection 1909070061
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @run              -  Processing NIO event
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(13653)(2019-02-11 12:33:11,559)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@374dd83 with transfer es.bsc.comm.stage.Shutdown@1835d572
+[(13653)(2019-02-11 12:33:11,559)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@1835d572 on connection 57990531
+[(13653)(2019-02-11 12:33:11,559)          Connection]    @dleNextTransfer  -  NIOConnection 57990531 takes es.bsc.comm.stage.Shutdown@1835d572
+[(13653)(2019-02-11 12:33:11,559)          Connection]    @closeConnection  -  Requesting connection 57990531 closure
+[(13653)(2019-02-11 12:33:11,559)       Communication]    @nectionFinished  -  Connection 57990531 finished
+[(13654)(2019-02-11 12:33:11,560)        EventManager]    @run              -  Waiting for events
+[(13654)(2019-02-11 12:33:11,560)        EventManager]    @run              -  Processing NIO event
+[(13654)(2019-02-11 12:33:11,560)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(13654)(2019-02-11 12:33:11,560)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1909070061
+[(13654)(2019-02-11 12:33:11,560)          Connection]    @dleNextTransfer  -  NIOConnection 1909070061 takes es.bsc.comm.stage.Submission@4951564b[SEND COMMAND OBJECT]
+[(13655)(2019-02-11 12:33:11,561)               Stage]    @loadFirstToken   -  Loading first token
+[(13655)(2019-02-11 12:33:11,561)        EventManager]    @run              -  Waiting for events
+[(13655)(2019-02-11 12:33:11,561)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13655)(2019-02-11 12:33:11,561)            Listener]    @write            -  writting buffer-2562026
+[(13656)(2019-02-11 12:33:11,562)            Listener]    @write            -  4 bytes written to socket 244003730
+[(13656)(2019-02-11 12:33:11,562)            Listener]    @write            -  Removed buffer1
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @run              -  Processing NIO event
+[(13656)(2019-02-11 12:33:11,562)            Listener]    @write            -  writting buffer-112285281
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(13656)(2019-02-11 12:33:11,562)            Listener]    @write            -  139 bytes written to socket 244003730
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1909070061
+[(13656)(2019-02-11 12:33:11,562)            Listener]    @write            -  Removed buffer1
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @run              -  Waiting for events
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @run              -  Processing NIO event
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(13656)(2019-02-11 12:33:11,562)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1909070061
+[(13657)(2019-02-11 12:33:11,563)            Listener]    @closeChannel     -  Channel 244003730is open. Requesting closure
+[(13657)(2019-02-11 12:33:11,563)       Communication]    @writeFinished    -  Finished sending Data for transfer group2has been received in the remote worker through connection 1909070061
+[(13657)(2019-02-11 12:33:11,563)          Connection]    @dleNextTransfer  -  NIOConnection 1909070061 takes es.bsc.comm.stage.Shutdown@4ff568bd
+[(13657)(2019-02-11 12:33:11,563)          Connection]    @closeConnection  -  Requesting connection 1909070061 closure
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @run              -  Waiting for events
+[(13657)(2019-02-11 12:33:11,563)            Listener]    @InterestChanges  -  Closing channel 244003730 no more data to write
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @run              -  Processing NIO event
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1909070061
+[(13657)(2019-02-11 12:33:11,563)          Connection]    @closedChannel    -  Channel on connection 1909070061 has been closed
+[(13657)(2019-02-11 12:33:11,563)       Communication]    @nectionFinished  -  Connection 1909070061 finished
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @run              -  Waiting for events
+[(13657)(2019-02-11 12:33:11,563)        EventManager]    @waitForEvents    -  Event Manager wait
+[(13659)(2019-02-11 12:33:11,565)            Executor]    @execute          -  Binding renamed files to sandboxed original names for Job 3
+[(13659)(2019-02-11 12:33:11,565)            Executor]    @lenameToRenames  -  Setting Original Name to /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/sandBox/job_3/compss-serialized-obj_cd88bc8e-2df0-11e9-9806-0894ef4d2464-3
+[(13660)(2019-02-11 12:33:11,566)        ThreadBinder]    @dComputingUnits  -  [ThreadBinderCPUs] Task 3 binded to cores 0
+[(13660)(2019-02-11 12:33:11,566)            Executor]    @execute          -  Executing Task of Job 3
+[(13667)(2019-02-11 12:33:11,573)              Worker]    @tLanguageParams  -  GETTING LANGUAGE PARAMS :2 -> es.bsc.compss.invokers.types.PythonParams@17673453
+[(13667)(2019-02-11 12:33:11,573)            Executor]    @init             -  PIPE Script: /apps/COMPSs/TrunkCollectionIN/Runtime/scripts/system/adaptors/nio/pipers/bindings_piper.sh
+[(13667)(2019-02-11 12:33:11,573)            Executor]    @ructGeneralArgs  -  WRITE PIPE Files: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.outbound
+
+[(13667)(2019-02-11 12:33:11,573)            Executor]    @ructGeneralArgs  -  READ PIPE Files: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.inbound
+
+[(13667)(2019-02-11 12:33:11,573)            Executor]    @ructGeneralArgs  -  WRITE DATA PIPE: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_data.outbound
+[(13667)(2019-02-11 12:33:11,573)            Executor]    @ructGeneralArgs  -  READ DATA PIPE: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_data.inbound
+[(13668)(2019-02-11 12:33:11,574)            Executor]    @init             -  Init piper ProcessBuilder
+[(13668)(2019-02-11 12:33:11,574)              Worker]    @tLanguageParams  -  GETTING LANGUAGE PARAMS :2 -> es.bsc.compss.invokers.types.CParams@1ba2d9d4
+[(13672)(2019-02-11 12:33:11,578)            Executor]    @init             -  Starting stdout/stderr gobblers ...
+[(13674)(2019-02-11 12:33:11,580)            Executor]    @run              -  Starting stream goobler
+[(13674)(2019-02-11 12:33:11,580)            Executor]    @run              -  Starting stream goobler
+[(13694)(2019-02-11 12:33:11,600)            Executor]    @run              -  [BINDINGS PIPER] NumThreads: 48
+
+[(13694)(2019-02-11 12:33:11,600)            Executor]    @run              -  [BINDINGS PIPER] Data CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_data.outbound
+
+[(13704)(2019-02-11 12:33:11,610)            Executor]    @run              -  [BINDINGS PIPER] Data RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_data.inbound
+
+[(13716)(2019-02-11 12:33:11,622)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.outbound
+
+[(13726)(2019-02-11 12:33:11,632)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound
+
+[(13736)(2019-02-11 12:33:11,642)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.outbound
+
+[(13745)(2019-02-11 12:33:11,651)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.outbound
+
+[(13755)(2019-02-11 12:33:11,661)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.outbound
+
+[(13765)(2019-02-11 12:33:11,671)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.outbound
+
+[(13774)(2019-02-11 12:33:11,680)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.outbound
+
+[(13784)(2019-02-11 12:33:11,690)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.outbound
+
+[(13794)(2019-02-11 12:33:11,700)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.outbound
+
+[(13804)(2019-02-11 12:33:11,710)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.outbound
+
+[(13813)(2019-02-11 12:33:11,719)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.outbound
+
+[(13823)(2019-02-11 12:33:11,729)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.outbound
+
+[(13832)(2019-02-11 12:33:11,738)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.outbound
+
+[(13842)(2019-02-11 12:33:11,748)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.outbound
+
+[(13851)(2019-02-11 12:33:11,757)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.outbound
+
+[(13861)(2019-02-11 12:33:11,767)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.outbound
+
+[(13870)(2019-02-11 12:33:11,776)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.outbound
+
+[(13880)(2019-02-11 12:33:11,786)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.outbound
+
+[(13889)(2019-02-11 12:33:11,795)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.outbound
+
+[(13899)(2019-02-11 12:33:11,805)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.outbound
+
+[(13908)(2019-02-11 12:33:11,814)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.outbound
+
+[(13916)(2019-02-11 12:33:11,822)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.outbound
+
+[(13924)(2019-02-11 12:33:11,830)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.outbound
+
+[(13932)(2019-02-11 12:33:11,838)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.outbound
+
+[(13942)(2019-02-11 12:33:11,848)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.outbound
+
+[(13952)(2019-02-11 12:33:11,858)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.outbound
+
+[(13961)(2019-02-11 12:33:11,867)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.outbound
+
+[(13970)(2019-02-11 12:33:11,876)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.outbound
+
+[(13980)(2019-02-11 12:33:11,886)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.outbound
+
+[(13989)(2019-02-11 12:33:11,895)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.outbound
+
+[(13998)(2019-02-11 12:33:11,904)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.outbound
+
+[(14006)(2019-02-11 12:33:11,912)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.outbound
+
+[(14013)(2019-02-11 12:33:11,919)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.outbound
+
+[(14022)(2019-02-11 12:33:11,928)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.outbound
+
+[(14032)(2019-02-11 12:33:11,938)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.outbound
+
+[(14041)(2019-02-11 12:33:11,947)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.outbound
+
+[(14050)(2019-02-11 12:33:11,956)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.outbound
+
+[(14059)(2019-02-11 12:33:11,965)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.outbound
+
+[(14068)(2019-02-11 12:33:11,974)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.outbound
+
+[(14077)(2019-02-11 12:33:11,983)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.outbound
+
+[(14087)(2019-02-11 12:33:11,993)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.outbound
+
+[(14096)(2019-02-11 12:33:12,002)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.outbound
+
+[(14105)(2019-02-11 12:33:12,011)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.outbound
+
+[(14114)(2019-02-11 12:33:12,020)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.outbound
+
+[(14124)(2019-02-11 12:33:12,030)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.outbound
+
+[(14133)(2019-02-11 12:33:12,039)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.outbound
+
+[(14141)(2019-02-11 12:33:12,047)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.outbound
+
+[(14149)(2019-02-11 12:33:12,055)            Executor]    @run              -  [BINDINGS PIPER] CMD Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.outbound
+
+[(14159)(2019-02-11 12:33:12,065)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.inbound
+
+[(14169)(2019-02-11 12:33:12,075)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.inbound
+
+[(14177)(2019-02-11 12:33:12,083)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.inbound
+
+[(14184)(2019-02-11 12:33:12,090)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.inbound
+
+[(14191)(2019-02-11 12:33:12,097)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.inbound
+
+[(14198)(2019-02-11 12:33:12,104)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.inbound
+
+[(14205)(2019-02-11 12:33:12,111)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.inbound
+
+[(14213)(2019-02-11 12:33:12,119)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.inbound
+
+[(14220)(2019-02-11 12:33:12,126)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.inbound
+
+[(14227)(2019-02-11 12:33:12,133)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.inbound
+
+[(14234)(2019-02-11 12:33:12,140)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.inbound
+
+[(14241)(2019-02-11 12:33:12,147)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.inbound
+
+[(14249)(2019-02-11 12:33:12,155)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.inbound
+
+[(14256)(2019-02-11 12:33:12,162)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.inbound
+
+[(14263)(2019-02-11 12:33:12,169)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.inbound
+
+[(14270)(2019-02-11 12:33:12,176)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.inbound
+
+[(14277)(2019-02-11 12:33:12,183)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.inbound
+
+[(14285)(2019-02-11 12:33:12,191)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.inbound
+
+[(14292)(2019-02-11 12:33:12,198)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.inbound
+
+[(14299)(2019-02-11 12:33:12,205)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.inbound
+
+[(14306)(2019-02-11 12:33:12,212)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.inbound
+
+[(14316)(2019-02-11 12:33:12,222)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.inbound
+
+[(14325)(2019-02-11 12:33:12,231)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.inbound
+
+[(14334)(2019-02-11 12:33:12,240)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.inbound
+
+[(14343)(2019-02-11 12:33:12,249)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.inbound
+
+[(14353)(2019-02-11 12:33:12,259)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.inbound
+
+[(14362)(2019-02-11 12:33:12,268)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.inbound
+
+[(14371)(2019-02-11 12:33:12,277)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.inbound
+
+[(14381)(2019-02-11 12:33:12,287)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.inbound
+
+[(14390)(2019-02-11 12:33:12,296)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.inbound
+
+[(14399)(2019-02-11 12:33:12,305)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.inbound
+
+[(14408)(2019-02-11 12:33:12,314)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.inbound
+
+[(14416)(2019-02-11 12:33:12,322)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.inbound
+
+[(14424)(2019-02-11 12:33:12,330)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.inbound
+
+[(14431)(2019-02-11 12:33:12,337)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.inbound
+
+[(14439)(2019-02-11 12:33:12,345)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.inbound
+
+[(14448)(2019-02-11 12:33:12,354)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.inbound
+
+[(14457)(2019-02-11 12:33:12,363)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.inbound
+
+[(14464)(2019-02-11 12:33:12,370)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.inbound
+
+[(14471)(2019-02-11 12:33:12,377)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.inbound
+
+[(14478)(2019-02-11 12:33:12,384)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.inbound
+
+[(14486)(2019-02-11 12:33:12,392)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.inbound
+
+[(14494)(2019-02-11 12:33:12,400)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.inbound
+
+[(14503)(2019-02-11 12:33:12,409)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.inbound
+
+[(14511)(2019-02-11 12:33:12,417)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.inbound
+
+[(14518)(2019-02-11 12:33:12,424)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.inbound
+
+[(14526)(2019-02-11 12:33:12,432)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.inbound
+
+[(14533)(2019-02-11 12:33:12,439)            Executor]    @run              -  [BINDINGS PIPER] RESULT Pipe: /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.inbound
+
+[(14540)(2019-02-11 12:33:12,446)            Executor]    @run              -  [BINDINGS PIPER] Initializing specific binding for PYTHON
+
+[(14540)(2019-02-11 12:33:12,446)            Executor]    @run              -  [BINDINGS PIPER] Making call: python -u /apps/COMPSs/TrunkCollectionIN//Bindings/python/2/pycompss/worker/piper_worker.py true false null 48 /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_9733
+[(14540)(2019-02-11 12:33:12,446)            Executor]    @run              -  30611_compute37.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.outbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.inbound /scratch/tmp/45
+[(14541)(2019-02-11 12:33:12,447)            Executor]    @run              -  89723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.inbound /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.inbound
+
+[(15227)(2019-02-11 12:33:13,133)            Executor]    @run              -  DEBUG - [PYTHON WORKER] piper_worker.py wake up
+
+[(15227)(2019-02-11 12:33:13,133)            Executor]    @run              -  DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Persistent worker parameters:
+DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Debug          : True
+DEBUG - [PYTHON WORKER] Tracing        : False
+
+[(15227)(2019-02-11 12:33:13,133)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Tasks per node : 48
+
+[(15227)(2019-02-11 12:33:13,133)            Executor]    @run              -  DEBUG - [PYTHON WORKER] In Pipes       : ['/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-
+[(15228)(2019-02-11 12:33:13,134)            Executor]    @run              -  ib0/pipe_973330611_compute37.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.outbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.outbound']
+DEBUG - [PYTHON WORKER] Out Pipes      : ['/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a843919
+[(15228)(2019-02-11 12:33:13,134)            Executor]    @run              -  5bf/s02r2b59-ib0/pipe_973330611_compute27.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.inbound', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.inbound']
+DEBUG - [PYTHON WORKER] Storage conf.  : null
+DEBUG - [PYTHON WORKER] -----------------------------
+DEBUG - [PYTHON WORKER] Launching process 0
+
+[(15286)(2019-02-11 12:33:13,192)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 1
+
+[(15288)(2019-02-11 12:33:13,194)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-0
+
+[(15288)(2019-02-11 12:33:13,194)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 2
+
+[(15289)(2019-02-11 12:33:13,195)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 3
+DEBUG - [PYTHON WORKER] Starting process Process-1
+
+[(15291)(2019-02-11 12:33:13,197)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-2
+
+[(15291)(2019-02-11 12:33:13,197)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 4
+
+[(15292)(2019-02-11 12:33:13,198)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 5
+
+[(15292)(2019-02-11 12:33:13,198)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-3
+
+[(15293)(2019-02-11 12:33:13,199)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 6
+
+[(15293)(2019-02-11 12:33:13,199)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-4
+
+[(15295)(2019-02-11 12:33:13,201)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 7
+
+[(15295)(2019-02-11 12:33:13,201)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-5
+
+[(15296)(2019-02-11 12:33:13,202)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 8
+
+[(15296)(2019-02-11 12:33:13,202)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-6
+
+[(15297)(2019-02-11 12:33:13,203)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 9
+
+[(15298)(2019-02-11 12:33:13,204)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-7
+
+[(15299)(2019-02-11 12:33:13,205)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 10
+
+[(15299)(2019-02-11 12:33:13,205)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-8
+
+[(15302)(2019-02-11 12:33:13,208)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 11
+
+[(15303)(2019-02-11 12:33:13,209)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-9
+
+[(15303)(2019-02-11 12:33:13,209)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 12
+
+[(15303)(2019-02-11 12:33:13,209)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-10
+
+[(15305)(2019-02-11 12:33:13,211)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 13
+
+[(15305)(2019-02-11 12:33:13,211)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-11
+
+[(15306)(2019-02-11 12:33:13,212)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 14
+
+[(15306)(2019-02-11 12:33:13,212)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-12
+
+[(15308)(2019-02-11 12:33:13,214)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 15
+
+[(15308)(2019-02-11 12:33:13,214)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-13
+
+[(15309)(2019-02-11 12:33:13,215)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 16
+
+[(15309)(2019-02-11 12:33:13,215)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-14
+
+[(15311)(2019-02-11 12:33:13,217)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 17
+
+[(15311)(2019-02-11 12:33:13,217)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-15
+
+[(15312)(2019-02-11 12:33:13,218)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 18
+
+[(15312)(2019-02-11 12:33:13,218)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-16
+
+[(15313)(2019-02-11 12:33:13,219)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 19
+
+[(15314)(2019-02-11 12:33:13,220)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-17
+
+[(15315)(2019-02-11 12:33:13,221)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 20
+
+[(15315)(2019-02-11 12:33:13,221)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-18
+
+[(15316)(2019-02-11 12:33:13,222)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 21
+
+[(15317)(2019-02-11 12:33:13,223)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-19
+
+[(15318)(2019-02-11 12:33:13,224)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 22
+
+[(15318)(2019-02-11 12:33:13,224)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-20
+
+[(15319)(2019-02-11 12:33:13,225)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 23
+
+[(15320)(2019-02-11 12:33:13,226)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-21
+
+[(15321)(2019-02-11 12:33:13,227)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 24
+
+[(15321)(2019-02-11 12:33:13,227)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-22
+
+[(15322)(2019-02-11 12:33:13,228)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 25
+
+[(15323)(2019-02-11 12:33:13,229)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-23
+
+[(15324)(2019-02-11 12:33:13,230)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 26
+
+[(15324)(2019-02-11 12:33:13,230)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-24
+
+[(15325)(2019-02-11 12:33:13,231)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 27
+
+[(15326)(2019-02-11 12:33:13,232)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-25
+
+[(15327)(2019-02-11 12:33:13,233)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 28
+
+[(15328)(2019-02-11 12:33:13,234)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-26
+
+[(15328)(2019-02-11 12:33:13,234)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 29
+
+[(15329)(2019-02-11 12:33:13,235)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-27
+
+[(15330)(2019-02-11 12:33:13,236)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 30
+
+[(15330)(2019-02-11 12:33:13,236)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-28
+
+[(15331)(2019-02-11 12:33:13,237)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 31
+
+[(15332)(2019-02-11 12:33:13,238)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-29
+
+[(15333)(2019-02-11 12:33:13,239)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 32
+
+[(15333)(2019-02-11 12:33:13,239)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-30
+
+[(15334)(2019-02-11 12:33:13,240)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 33
+
+[(15335)(2019-02-11 12:33:13,241)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-31
+
+[(15336)(2019-02-11 12:33:13,242)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 34
+
+[(15336)(2019-02-11 12:33:13,242)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-32
+
+[(15337)(2019-02-11 12:33:13,243)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 35
+
+[(15338)(2019-02-11 12:33:13,244)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-33
+
+[(15339)(2019-02-11 12:33:13,245)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 36
+
+[(15339)(2019-02-11 12:33:13,245)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-34
+
+[(15340)(2019-02-11 12:33:13,246)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 37
+
+[(15341)(2019-02-11 12:33:13,247)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-35
+
+[(15342)(2019-02-11 12:33:13,248)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 38
+
+[(15342)(2019-02-11 12:33:13,248)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-36
+
+[(15343)(2019-02-11 12:33:13,249)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 39
+
+[(15344)(2019-02-11 12:33:13,250)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-37
+
+[(15345)(2019-02-11 12:33:13,251)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 40
+
+[(15345)(2019-02-11 12:33:13,251)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-38
+
+[(15346)(2019-02-11 12:33:13,252)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 41
+
+[(15347)(2019-02-11 12:33:13,253)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-39
+
+[(15348)(2019-02-11 12:33:13,254)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 42
+
+[(15348)(2019-02-11 12:33:13,254)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-40
+
+[(15349)(2019-02-11 12:33:13,255)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 43
+
+[(15350)(2019-02-11 12:33:13,256)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-41
+
+[(15351)(2019-02-11 12:33:13,257)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 44
+
+[(15352)(2019-02-11 12:33:13,258)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-42
+
+[(15353)(2019-02-11 12:33:13,259)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 45
+
+[(15354)(2019-02-11 12:33:13,260)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-43
+
+[(15354)(2019-02-11 12:33:13,260)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 46
+
+[(15355)(2019-02-11 12:33:13,261)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-44
+
+[(15356)(2019-02-11 12:33:13,262)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Launching process 47
+
+[(15357)(2019-02-11 12:33:13,263)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-45
+
+[(15358)(2019-02-11 12:33:13,264)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-46
+
+[(15360)(2019-02-11 12:33:13,266)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Starting process Process-47
+
+[(16077)(2019-02-11 12:33:13,983)            Executor]    @send             -  EXECUTOR COMMAND: EXECUTE_TASK 3 /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.out /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.err false 3 true null METHOD resources_in_worker generate_object 1 s02r2b59-ib0 1 false 9 1 2 4 3 null seed 2 9 3 # $return_0 /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:false:true:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT 0 - s02r2b59,s02r2b59 @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound
+[(16077)(2019-02-11 12:33:13,983)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: EXECUTE_TASK 3 /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.out /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.err false 3 true null METHOD resources_in_worker generate_object 1 s02r2b59-ib0 1 false 9 1 2 4 3 null seed 2 9 3 # $return_0 /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:false:true:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT 0 - s02r2b59,s02r2b59
+
+
+[(16078)(2019-02-11 12:33:13,984)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Assigning affinity 0
+
+[(16078)(2019-02-11 12:33:13,984)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-1] Received task.
+
+[(16078)(2019-02-11 12:33:13,984)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-1] - TASK CMD: ['EXECUTE_TASK', '3', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.out', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.err', 'false', '3', 'true', 'null', 'METHOD', 'resources_in_worker', 'generate_object', '1', 's02r2b59-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '2', '9', '3', '#', '$return_0', '/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT:false:true:/scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT']
+
+[(17951)(2019-02-11 12:33:15,857)            Executor]    @read             -  Received endTask message: END_TASK 3 0 1 
+[(17952)(2019-02-11 12:33:15,858)            Executor]    @<init>           -  WARN: Skipping endTask parameters because of malformation.
+[(17953)(2019-02-11 12:33:15,859)             Invoker]    @invokeMethod     -  Updating parameters for job 3
+[(17953)(2019-02-11 12:33:15,859)            Executor]    @execute          -  Removing renamed files to sandboxed original names for Job 3
+[(17953)(2019-02-11 12:33:15,859)            Executor]    @ilenameToRename  -  Treating file /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/sandBox/job_3/compss-serialized-obj_cd88bc8e-2df0-11e9-9806-0894ef4d2464-3
+[(17954)(2019-02-11 12:33:15,860)            Executor]    @ilenameToRename  -  Repeated data for /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/sandBox/job_3/compss-serialized-obj_cd88bc8e-2df0-11e9-9806-0894ef4d2464-3. Nothing to do
+[(17954)(2019-02-11 12:33:15,860)            Executor]    @execute          -  Checking generated files for Job 3
+[(17954)(2019-02-11 12:33:15,860)            Executor]    @execute          -  [Profile] createSandBox: 8 createSimLinks: 0 bindCU: 1 execution4293 restoreSimLinks: 1 checkResults: 0
+[(17954)(2019-02-11 12:33:15,860)            Executor]    @leanTaskSandbox  -  Deleting sandbox /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/sandBox/job_3
+[(17962)(2019-02-11 12:33:15,868)            Executor]    @processRequests  -  Job 3 finished (success: true)
+[(17963)(2019-02-11 12:33:15,869)          Connection]    @registerChannel  -  Associating Socket: 1504929208 with connection: 1492308043
+[(17964)(2019-02-11 12:33:15,870)        EventManager]    @run              -  Processing NIO event
+[(17964)(2019-02-11 12:33:15,870)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(17964)(2019-02-11 12:33:15,870)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1492308043
+[(17964)(2019-02-11 12:33:15,870)        EventManager]    @run              -  Waiting for events
+[(17964)(2019-02-11 12:33:15,870)              Worker]    @sendTaskDone     -  RESULT FOR JOB 3 (TASK ID: 3)
+[(17964)(2019-02-11 12:33:15,870)        EventManager]    @waitForEvents    -  Event Manager wait
+[(17965)(2019-02-11 12:33:15,871)              Worker]    @sendTaskDone     -  [JOB_RESULT [JOB ID= 3][PARAM_TYPES INT_T FILE_T][PARAM_VALUES null null]]
+[(17965)(2019-02-11 12:33:15,871)        EventManager]    @run              -  Processing NIO event
+[(17965)(2019-02-11 12:33:15,871)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(17965)(2019-02-11 12:33:15,871)              Worker]    @sendTaskDone     -  Sending file /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.out, for connection: 1492308043
+[(17965)(2019-02-11 12:33:15,871)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@58f2d04b with transfer es.bsc.comm.stage.Submission@28c5a61f[SEND COMMAND OBJECT]
+[(17965)(2019-02-11 12:33:15,871)              Worker]    @sendTaskDone     -  Sending file /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.err, for connection: 1492308043
+[(17965)(2019-02-11 12:33:15,871)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@28c5a61f[SEND COMMAND OBJECT] on connection 1492308043
+[(17965)(2019-02-11 12:33:15,871)              Worker]    @sendTaskDone     -  Job 3(Task 3) send job done
+[(17965)(2019-02-11 12:33:15,871)          Connection]    @dleNextTransfer  -  NIOConnection 1492308043 takes es.bsc.comm.stage.Submission@28c5a61f[SEND COMMAND OBJECT]
+[(17967)(2019-02-11 12:33:15,873)               Stage]    @loadFirstToken   -  Loading first token
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @run              -  Waiting for events
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @run              -  Processing NIO event
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  writting buffer4261074
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@58f2d04b with transfer es.bsc.comm.stage.Submission@4960a520[SEND DATA FILE]
+[(17967)(2019-02-11 12:33:15,873)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@4960a520[SEND DATA FILE] on connection 1492308043
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  4 bytes written to socket 1504929208
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @run              -  Processing NIO event
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  Removed buffer1
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@58f2d04b with transfer es.bsc.comm.stage.Submission@2e4bf376[SEND DATA FILE]
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  writting buffer-505228018
+[(17967)(2019-02-11 12:33:15,873)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@2e4bf376[SEND DATA FILE] on connection 1492308043
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  368 bytes written to socket 1504929208
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @run              -  Processing NIO event
+[(17967)(2019-02-11 12:33:15,873)            Listener]    @write            -  Removed buffer1
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(17967)(2019-02-11 12:33:15,873)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOConnection@58f2d04b with transfer es.bsc.comm.stage.Shutdown@5b9dec95
+[(17968)(2019-02-11 12:33:15,874)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@5b9dec95 on connection 1492308043
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Waiting for events
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Processing NIO event
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1492308043
+[(17968)(2019-02-11 12:33:15,874)       Communication]    @writeFinished    -  Finished sending Job3 finishes properly through connection 1492308043
+[(17968)(2019-02-11 12:33:15,874)          Connection]    @dleNextTransfer  -  NIOConnection 1492308043 takes es.bsc.comm.stage.Submission@4960a520[SEND DATA FILE]
+[(17968)(2019-02-11 12:33:15,874)               Stage]    @loadFirstToken   -  Loading first token
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Processing NIO event
+[(17968)(2019-02-11 12:33:15,874)            Listener]    @write            -  writting buffer2435174
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(17968)(2019-02-11 12:33:15,874)            Listener]    @write            -  4 bytes written to socket 1504929208
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1492308043
+[(17968)(2019-02-11 12:33:15,874)            Listener]    @write            -  Removed buffer1
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Waiting for events
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Processing NIO event
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1492308043
+[(17968)(2019-02-11 12:33:15,874)        EventManager]    @run              -  Waiting for events
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @waitForEvents    -  Event Manager wait
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  writting buffer516026952
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  5938 bytes written to socket 1504929208
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  Removed buffer1
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @run              -  Processing NIO event
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1492308043
+[(17969)(2019-02-11 12:33:15,875)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.out through connection 1492308043
+[(17969)(2019-02-11 12:33:15,875)          Connection]    @dleNextTransfer  -  NIOConnection 1492308043 takes es.bsc.comm.stage.Submission@2e4bf376[SEND DATA FILE]
+[(17969)(2019-02-11 12:33:15,875)               Stage]    @loadFirstToken   -  Loading first token
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @run              -  Waiting for events
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @waitForEvents    -  Event Manager wait
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  writting buffer1400177
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  4 bytes written to socket 1504929208
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  Removed buffer1
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @run              -  Processing NIO event
+[(17969)(2019-02-11 12:33:15,875)            Listener]    @write            -  writting buffer971858239
+[(17969)(2019-02-11 12:33:15,875)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(17970)(2019-02-11 12:33:15,876)            Listener]    @write            -  16 bytes written to socket 1504929208
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @processEvent     -  Processing More To Write Event for connection@1492308043
+[(17970)(2019-02-11 12:33:15,876)            Listener]    @write            -  Removed buffer1
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @run              -  Waiting for events
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @run              -  Processing NIO event
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@1492308043
+[(17970)(2019-02-11 12:33:15,876)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/jobs/job3_NEW.err through connection 1492308043
+[(17970)(2019-02-11 12:33:15,876)          Connection]    @dleNextTransfer  -  NIOConnection 1492308043 takes es.bsc.comm.stage.Shutdown@5b9dec95
+[(17970)(2019-02-11 12:33:15,876)          Connection]    @closeConnection  -  Requesting connection 1492308043 closure
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @run              -  Waiting for events
+[(17970)(2019-02-11 12:33:15,876)            Listener]    @InterestChanges  -  Closing channel 1504929208 no more data to write
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @waitForEvents    -  Event Manager wait
+[(17970)(2019-02-11 12:33:15,876)            Listener]    @closeChannel     -  Channel 1504929208is open. Requesting closure
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @run              -  Processing NIO event
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 1492308043
+[(17970)(2019-02-11 12:33:15,876)          Connection]    @closedChannel    -  Channel on connection 1492308043 has been closed
+[(17970)(2019-02-11 12:33:15,876)       Communication]    @nectionFinished  -  Connection 1492308043 finished
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @run              -  Waiting for events
+[(17970)(2019-02-11 12:33:15,876)        EventManager]    @waitForEvents    -  Event Manager wait
+[(18518)(2019-02-11 12:33:16,424)          Connection]    @registerChannel  -  Associating Socket: 1665689681 with connection: 352468120
+[(18518)(2019-02-11 12:33:16,424)        EventManager]    @run              -  Processing NIO event
+[(18518)(2019-02-11 12:33:16,424)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(18518)(2019-02-11 12:33:16,424)        EventManager]    @processEvent     -  Processing Connection actually established for socket@352468120
+[(18519)(2019-02-11 12:33:16,425)        EventManager]    @run              -  Waiting for events
+[(18519)(2019-02-11 12:33:16,425)        EventManager]    @waitForEvents    -  Event Manager wait
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @run              -  Processing NIO event
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @processEvent     -  Processing Package received through  connection@352468120
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @run              -  Waiting for events
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @run              -  Processing NIO event
+[(18525)(2019-02-11 12:33:16,431)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(18526)(2019-02-11 12:33:16,432)        EventManager]    @processEvent     -  Processing Package received through  connection@352468120
+[(18529)(2019-02-11 12:33:16,435)       Communication]    @commandReceived  -  Received Command Request for sending data d3v2_1549884788948.IT@[file://s02r2b59-ib0:43001//scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT] through connection 352468120
+[(18530)(2019-02-11 12:33:16,436)       Communication]    @sendFile         -  [NIO Agent] Connection 352468120 will transfer file /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT as data d3v2_1549884788948.IT
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @run              -  Waiting for events
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @run              -  Processing NIO event
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@15023c98 with transfer es.bsc.comm.stage.Submission@790a2910[SEND DATA FILE]
+[(18530)(2019-02-11 12:33:16,436)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@790a2910[SEND DATA FILE] on connection 352468120
+[(18530)(2019-02-11 12:33:16,436)          Connection]    @dleNextTransfer  -  NIOConnection 352468120 takes es.bsc.comm.stage.Submission@790a2910[SEND DATA FILE]
+[(18530)(2019-02-11 12:33:16,436)               Stage]    @loadFirstToken   -  Loading first token
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @run              -  Processing NIO event
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(18530)(2019-02-11 12:33:16,436)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@15023c98 with transfer es.bsc.comm.stage.Shutdown@37895061
+[(18530)(2019-02-11 12:33:16,436)            Listener]    @write            -  writting buffer-1102267
+[(18531)(2019-02-11 12:33:16,437)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@37895061 on connection 352468120
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @run              -  Waiting for events
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @write            -  4 bytes written to socket 1665689681
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @waitForEvents    -  Event Manager wait
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @write            -  Removed buffer1
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @run              -  Processing NIO event
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @write            -  writting buffer-1763026514
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @write            -  188 bytes written to socket 1665689681
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @processEvent     -  Processing More To Write Event for connection@352468120
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @write            -  Removed buffer1
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @run              -  Waiting for events
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @run              -  Processing NIO event
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@352468120
+[(18531)(2019-02-11 12:33:16,437)       Communication]    @writeFinished    -  Finished sending /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/d3v2_1549884788948.IT through connection 352468120
+[(18531)(2019-02-11 12:33:16,437)          Connection]    @dleNextTransfer  -  NIOConnection 352468120 takes es.bsc.comm.stage.Shutdown@37895061
+[(18531)(2019-02-11 12:33:16,437)          Connection]    @closeConnection  -  Requesting connection 352468120 closure
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @run              -  Waiting for events
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @InterestChanges  -  Closing channel 1665689681 no more data to write
+[(18531)(2019-02-11 12:33:16,437)        EventManager]    @waitForEvents    -  Event Manager wait
+[(18531)(2019-02-11 12:33:16,437)            Listener]    @closeChannel     -  Channel 1665689681is open. Requesting closure
+[(18532)(2019-02-11 12:33:16,438)        EventManager]    @run              -  Processing NIO event
+[(18532)(2019-02-11 12:33:16,438)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(18532)(2019-02-11 12:33:16,438)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 352468120
+[(18532)(2019-02-11 12:33:16,438)          Connection]    @closedChannel    -  Channel on connection 352468120 has been closed
+[(18532)(2019-02-11 12:33:16,438)       Communication]    @nectionFinished  -  Connection 352468120 finished
+[(18532)(2019-02-11 12:33:16,438)        EventManager]    @run              -  Waiting for events
+[(18532)(2019-02-11 12:33:16,438)        EventManager]    @waitForEvents    -  Event Manager wait
+[(20734)(2019-02-11 12:33:18,640)          Connection]    @registerChannel  -  Associating Socket: 197918470 with connection: 727782606
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @run              -  Processing NIO event
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @processEvent     -  Processing Connection actually established for socket@727782606
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @run              -  Waiting for events
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @run              -  Processing NIO event
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(20734)(2019-02-11 12:33:18,640)        EventManager]    @processEvent     -  Processing Package received through  connection@727782606
+[(20735)(2019-02-11 12:33:18,641)       Communication]    @commandReceived  -  Received Command ExecutorShutdown through connection 727782606
+[(20735)(2019-02-11 12:33:18,641)              Worker]    @xecutionManager  -  Stopping Execution Manager...
+[(20735)(2019-02-11 12:33:18,641)         ExecManager]    @stop             -  Stopping Threads...
+[(20735)(2019-02-11 12:33:18,641)          ThreadPool]    @stop             -  Stopping Jobs Thread Pool
+[(20735)(2019-02-11 12:33:18,641)            Executor]    @processRequests  -  Dequeued job is null
+[(20735)(2019-02-11 12:33:18,641)            Executor]    @processRequests  -  Dequeued job is null
+[(20735)(2019-02-11 12:33:18,641)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @processRequests  -  Dequeued job is null
+[(20736)(2019-02-11 12:33:18,642)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @processRequests  -  Dequeued job is null
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20737)(2019-02-11 12:33:18,643)            Executor]    @finish           -  Executor finished
+[(20976)(2019-02-11 12:33:18,882)          ThreadPool]    @stop             -  ThreadPool stopped
+[(20976)(2019-02-11 12:33:18,882)          ThreadPool]    @stop             -  Stopping mirrors
+[(20976)(2019-02-11 12:33:18,882)            Executor]    @stopPipes        -  Stopping compute pipes for mirror 973330611
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute0.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute1.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute2.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute3.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute4.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-0] Received quit.
+
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute5.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-0')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute6.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-1] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-1')
+DEBUG - [PYTHON WORKER Process-2] Received quit.
+
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute7.outbound
+[(20977)(2019-02-11 12:33:18,883)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute8.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute9.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute10.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute11.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute12.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute13.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute14.outbound
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-3] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-2')
+('[PYTHON WORKER] Exiting process ', 'Process-3')
+DEBUG - [PYTHON WORKER Process-4] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-4')
+DEBUG - [PYTHON WORKER Process-5] Received quit.
+('[PYTHODEBUG - [PYTHON WORKER] Received message: QUIT
+
+N WORKER] Exiting process ', 'Process-5')
+DEBUG - [PYTHON WORKER Process-6] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-6')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-7] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-7')
+DEBUG - [PYTHON WORKER Process-8] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-8')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-9] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-9')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-10] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-10')
+
+[(20978)(2019-02-11 12:33:18,884)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute15.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-11] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute16.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-11')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-12] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-12')
+DEBUG - [PYTHON WORKER Process-13] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute17.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-13')
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-14] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute18.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-14')
+DEBUG - [PYTHON WORKER Process-15] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-15')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute19.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-16] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'ProcesDEBUG - [PYTHON WORKER] Received message: QUIT
+
+s-16')
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute20.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-18] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-17] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-18')
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute21.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-17')
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute22.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-20] Received quit.
+DEBUG - [PYTHON WORKER Process-19] Received quit.
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute23.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-20')
+('[PYTHON WORKER] Exiting process ', 'Process-19')
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute24.outbound
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20979)(2019-02-11 12:33:18,885)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute25.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-22] Received quit.
+DEBUG - [PYTHON WORKER Process-21] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-22')
+('[PYTHON WORKER] Exiting process ', 'Process-21')
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute26.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute27.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-23] Received quit.
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-23')
+DEBUG - [PYTHON WORKER Process-24] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute28.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  ('[PYDEBUG - [PYTHON WORKER] Received message: QUIT
+
+THON WORKER] Exiting process ', 'Process-24')
+DEBUG - [PYTHON WORKER Process-25] Received quit.
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-26] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-25')('[
+PYTHON WORKER] Exiting process '
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute29.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  , 'Process-26')
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute30.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-28] Received quit.
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-27] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-28')
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute31.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-27')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute32.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-29] Received quit.
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  ('[PYTHON WORDEBUG - [PYTHON WORKER Process-30] Received quit.
+KER] Exiting process ', 'Process-29')
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute33.outbound
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-30')
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20980)(2019-02-11 12:33:18,886)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute34.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-31] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-31')
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute35.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER Process-32] Received quit.
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute36.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  ('[PYTHON WORKER]DEBUG - [PYTHON WORKER] Received message: QUIT
+
+ Exiting process 'DEBUG - [PYTHON WORKER Process-33] Received quit.
+, 'Process-32')
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-33')
+DEBUG - [PYTHON WORKER Process-34] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-34')
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute37.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute38.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-35] Received quit.
+DEBUG - [PYTHON WORKER Process-36] Received quit.
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute39.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  ('[PYTHON WORKER] Exiting( 'p[rPoYcTeHsOsN  'WORK, E'RP]r oEcxeistsi-n3g5 'p)rocess
+ ', 'Process-36')
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute40.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-37] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-37')
+DEBUG - [PYTHON WORKER Process-38] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-38')
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute41.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute42.outbound
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-39] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-39')
+DEBUG - [PYTHON WORKER Process-40] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-40')
+[(20981)(2019-02-11 12:33:18,887)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute43.outbound
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute44.outbound
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-42] Received quit.
+DEBUG - [PYTHON WORKER Process-41] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-42')
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute45.outbound
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-41')
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-43] Received quit.
+DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute46.outbound
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-43')
+DEBUG - [PYTHON WORKER Process-44] Received quit.
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  ('[PYTHON WORKER] Exiting process ', 'Process-44')
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @send             -  EXECUTOR COMMAND: QUIT @ /scratch/tmp/4589723/0d8c7da4-b0f4-454b-8f7b-30a8439195bf/s02r2b59-ib0/pipe_973330611_compute47.outbound
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-45] Received quit.
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @stopPiper        -  Waiting for finishing piper process
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+('[PYTHON WORKER] Exiting process ', 'Process-45')
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-46] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-46')
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Received message: QUIT
+
+
+[(20982)(2019-02-11 12:33:18,888)            Executor]    @run              -  DEBUG - [PYTHON WORKER Process-47] Received quit.
+('[PYTHON WORKER] Exiting process ', 'Process-47')
+
+[(20984)(2019-02-11 12:33:18,890)            Executor]    @run              -  DEBUG - [PYTHON WORKER] Finished
+
+[(20995)(2019-02-11 12:33:18,901)            Executor]    @run              -  [BINDINGS PIPER] Finished with status 0
+
+[(20995)(2019-02-11 12:33:18,901)            Executor]    @run              -  [BINDINGS PIPER] Cleaning environment
+
+[(21385)(2019-02-11 12:33:19,291)            Executor]    @stopPiper        -  ExternalThreadPool finished
+[(21386)(2019-02-11 12:33:19,292)        EventManager]    @run              -  Waiting for events
+[(21386)(2019-02-11 12:33:19,292)        EventManager]    @run              -  Processing NIO event
+[(21386)(2019-02-11 12:33:19,292)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(21386)(2019-02-11 12:33:19,292)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@2b6114ce with transfer es.bsc.comm.stage.Submission@491540a9[SEND COMMAND OBJECT]
+[(21386)(2019-02-11 12:33:19,292)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Submission@491540a9[SEND COMMAND OBJECT] on connection 727782606
+[(21386)(2019-02-11 12:33:19,292)          Connection]    @dleNextTransfer  -  NIOConnection 727782606 takes es.bsc.comm.stage.Submission@491540a9[SEND COMMAND OBJECT]
+[(21387)(2019-02-11 12:33:19,293)               Stage]    @loadFirstToken   -  Loading first token
+[(21387)(2019-02-11 12:33:19,293)        EventManager]    @run              -  Processing NIO event
+[(21387)(2019-02-11 12:33:19,293)        EventManager]    @ProcessingEvent  -  Processing NEW_TRANSFER NIOEvent
+[(21387)(2019-02-11 12:33:19,293)        EventManager]    @processEvent     -  Processing New Transfer Event for connection es.bsc.comm.nio.NIOServerConnection@2b6114ce with transfer es.bsc.comm.stage.Shutdown@564cf61a
+[(21387)(2019-02-11 12:33:19,293)          Connection]    @requestStage     -  Requesting transfer es.bsc.comm.stage.Shutdown@564cf61a on connection 727782606
+[(21387)(2019-02-11 12:33:19,293)        EventManager]    @run              -  Waiting for events
+[(21387)(2019-02-11 12:33:19,293)        EventManager]    @waitForEvents    -  Event Manager wait
+[(21387)(2019-02-11 12:33:19,293)            Listener]    @write            -  writting buffer-2532235
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @write            -  4 bytes written to socket 197918470
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @write            -  Removed buffer1
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @write            -  writting buffer2068355243
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @run              -  Processing NIO event
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @write            -  140 bytes written to socket 197918470
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @write            -  Removed buffer1
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @ProcessingEvent  -  Processing LOW_BUFFER NIOEvent
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @processEvent     -  Processing More To Write Event for connection@727782606
+[(21388)(2019-02-11 12:33:19,294)       Communication]    @writeFinished    -  Finished sending ExecutorShutdownACK through connection 727782606
+[(21388)(2019-02-11 12:33:19,294)          Connection]    @dleNextTransfer  -  NIOConnection 727782606 takes es.bsc.comm.stage.Shutdown@564cf61a
+[(21388)(2019-02-11 12:33:19,294)          Connection]    @closeConnection  -  Requesting connection 727782606 closure
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @run              -  Waiting for events
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @InterestChanges  -  Closing channel 197918470 no more data to write
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @run              -  Processing NIO event
+[(21388)(2019-02-11 12:33:19,294)            Listener]    @closeChannel     -  Channel 197918470is open. Requesting closure
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @ProcessingEvent  -  Processing EMPTY_BUFFER NIOEvent
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @processEvent     -  Processing Write Empty Event for socket@727782606
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @run              -  Waiting for events
+[(21388)(2019-02-11 12:33:19,294)        EventManager]    @run              -  Processing NIO event
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @ProcessingEvent  -  Processing CLOSED_CHANNEL NIOEvent
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @processEvent     -  Processing New closedChannel event for connection 727782606
+[(21389)(2019-02-11 12:33:19,295)          Connection]    @closedChannel    -  Channel on connection 727782606 has been closed
+[(21389)(2019-02-11 12:33:19,295)       Communication]    @nectionFinished  -  Connection 727782606 finished
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @run              -  Waiting for events
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @waitForEvents    -  Event Manager wait
+[(21389)(2019-02-11 12:33:19,295)          Connection]    @registerChannel  -  Associating Socket: 860437886 with connection: 1731119070
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @run              -  Processing NIO event
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @ProcessingEvent  -  Processing CONNECTION_ESTABLISHED NIOEvent
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @processEvent     -  Processing Connection actually established for socket@1731119070
+[(21389)(2019-02-11 12:33:19,295)        EventManager]    @run              -  Waiting for events
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @run              -  Processing NIO event
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @processEvent     -  Processing Package received through  connection@1731119070
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @run              -  Waiting for events
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @run              -  Processing NIO event
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @ProcessingEvent  -  Processing PACKET_ENTRY NIOEvent
+[(21390)(2019-02-11 12:33:19,296)        EventManager]    @processEvent     -  Processing Package received through  connection@1731119070
+[(21391)(2019-02-11 12:33:19,297)       Communication]    @commandReceived  -  Received Command GenerateWorkerDebugFiles through connection 1731119070

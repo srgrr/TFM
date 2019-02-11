@@ -22,5 +22,6 @@ enqueue_compss \
   --qos=debug \
   --num_nodes=4 \
   --max_tasks_per_node=1 \
+  --worker_working_dir=scratch \
   -dg \
   resources_in_worker.py \
