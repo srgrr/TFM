@@ -3,20 +3,20 @@ WORKER - Parameters of execution:
   * Method type: METHOD
   * Method definition: [DECLARING CLASS=resources_in_worker, METHOD NAME=generate_object]
   * Parameter types: int
-  * Parameter values: 4
+  * Parameter values: 1
   * Parameter streams: UNSPECIFIED
   * Parameter prefixes: null
   * Has Target: false
   * Has Return: true
-[INVOKER] COMPSS_HOSTNAMES: s03r2b66
+[INVOKER] COMPSS_HOSTNAMES: s12r2b70
 [INVOKER] COMPSS_NUM_NODES: 1
 [INVOKER] COMPSS_NUM_THREADS: 1
 [EXECUTOR] executeTask - End task execution
 ask.
-DEBUG - [PYTHON WORKER Process-1] - TASK CMD: ['EXECUTE_TASK', '5', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/jobs/job5_NEW.out', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/jobs/job5_NEW.err', 'false', '5', 'true', 'null', 'METHOD', 'resources_in_worker', 'generate_object', '1', 's03r2b66-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '4', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-1] - TASK CMD: ['EXECUTE_TASK', '2', '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/jobs/job2_NEW.out', '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/jobs/job2_NEW.err', 'false', '2', 'true', 'null', 'METHOD', 'resources_in_worker', 'generate_object', '1', 's12r2b70-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '1', '9', '3', '#', '$return_0', '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT']
 DEBUG - [PYTHON WORKER Process-1] Begin task execution
 DEBUG - [PYTHON WORKER Process-1] Storage conf: null
-DEBUG - [PYTHON WORKER Process-1] Params: ['resources_in_worker', 'generate_object', '1', 's03r2b66-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '4', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-1] Params: ['resources_in_worker', 'generate_object', '1', 's12r2b70-ib0', '1', 'false', '9', '1', '2', '4', '3', 'null', 'seed', '1', '9', '3', '#', '$return_0', '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT']
 DEBUG - [PYTHON WORKER Process-1] Path: resources_in_worker
 DEBUG - [PYTHON WORKER Process-1] Method name: generate_object
 DEBUG - [PYTHON WORKER Process-1] Num slaves: 1
@@ -25,20 +25,20 @@ DEBUG - [PYTHON WORKER Process-1] Cus: 1
 DEBUG - [PYTHON WORKER Process-1] Has target: false
 DEBUG - [PYTHON WORKER Process-1] Num Params: 2
 DEBUG - [PYTHON WORKER Process-1] Return Length: 1
-DEBUG - [PYTHON WORKER Process-1] Args: ['4', '3', 'null', 'seed', '4', '9', '3', '#', '$return_0', '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT']
+DEBUG - [PYTHON WORKER Process-1] Args: ['4', '3', 'null', 'seed', '1', '9', '3', '#', '$return_0', '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT']
 DEBUG - [PYTHON WORKER Process-1] Processing parameters:
 DEBUG - [PYTHON WORKER Process-1] Parameter : 0
 DEBUG - [PYTHON WORKER Process-1] 	 * Type : 4
 DEBUG - [PYTHON WORKER Process-1] 	 * Stream : 3
 DEBUG - [PYTHON WORKER Process-1] 	 * Prefix : null
 DEBUG - [PYTHON WORKER Process-1] 	 * Name : seed
-DEBUG - [PYTHON WORKER Process-1] 	 * Value: '4'
+DEBUG - [PYTHON WORKER Process-1] 	 * Value: '1'
 DEBUG - [PYTHON WORKER Process-1] Parameter : 1
 DEBUG - [PYTHON WORKER Process-1] 	 * Type : 9
 DEBUG - [PYTHON WORKER Process-1] 	 * Stream : 3
 DEBUG - [PYTHON WORKER Process-1] 	 * Prefix : #
 DEBUG - [PYTHON WORKER Process-1] 	 * Name : $return_0
-DEBUG - [PYTHON WORKER Process-1] 	 * Value: '/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT'
+DEBUG - [PYTHON WORKER Process-1] 	 * Value: '/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT'
 DEBUG - [PYTHON WORKER Process-1] RUN TASK with arguments: 
 DEBUG - [PYTHON WORKER Process-1] 	- Path: resources_in_worker
 DEBUG - [PYTHON WORKER Process-1] 	- Method/function name: generate_object
@@ -50,7 +50,7 @@ Parameter seed
 	Type 4
 	File Name None
 	Key None
-	Content 4
+	Content 1
 	Stream 3
 	Prefix null
 --------------------
@@ -58,7 +58,7 @@ Parameter seed
 DEBUG - [PYTHON WORKER Process-1] 		 
 Parameter $return_0
 	Type 9
-	File Name /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT
+	File Name /scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT
 	Key None
 	Content None
 	Stream 3
@@ -77,14 +77,14 @@ Parameter seed
 	Type 4
 	File Name None
 	Key None
-	Content 4
+	Content 1
 	Stream 3
 	Prefix null
 --------------------
 , 
 Parameter $return_0
 	Type 9
-	File Name /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT:false:true:/scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/d5v2_1549881926952.IT
+	File Name /scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT:false:true:/scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/d2v2_1549884247472.IT
 	Key None
 	Content None
 	Stream 3
@@ -96,5 +96,5 @@ DEBUG - [PYTHON WORKER Process-1] Return Values: []
 DEBUG - [PYTHON WORKER Process-1] Return isModifier: True 
 DEBUG - [PYTHON WORKER Process-1] Finished task execution
 DEBUG - [PYTHON WORKER Process-1] End task execution. Status: Ok
-DEBUG - [PYTHON WORKER Process-1] - Pipe /scratch/tmp/4589364/0ee807cd-4eb9-4c42-9f8e-a3f409c5333d/s03r2b66-ib0/pipe_1853867606_compute1.inbound END TASK MESSAGE: END_TASK 5 0 1 
+DEBUG - [PYTHON WORKER Process-1] - Pipe /scratch/tmp/4589589/d5245d52-313a-4db3-8010-a92ee38db6ae/s12r2b70-ib0/pipe_-669062019_compute1.inbound END TASK MESSAGE: END_TASK 2 0 1 
 

@@ -21,5 +21,6 @@ enqueue_compss \
 enqueue_compss \
   --qos=debug \
   --num_nodes=4 \
+  --max_tasks_per_node=1 \
   -dg \
   resources_in_worker.py \
