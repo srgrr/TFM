@@ -55,10 +55,6 @@ def main():
 
   # Check that they match
   assert np.allclose(zero_one_zero_one, master_vector), "Vectors do not match"
-
-  import time
-  time.sleep(1238472487238)
-
   # They did match, we can now end the program
   print("Congratulations! Both vectors match!")
 
