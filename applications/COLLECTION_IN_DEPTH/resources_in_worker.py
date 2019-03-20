@@ -26,7 +26,6 @@ def select_element(c, i, j, k, l):
   """Given a collection and a set of indices, return the element
   of this collection which corresponds to these indices
   """
-  print("Matrix content is %s" % str(c))
   return c[i][j][k][l]
 
 def main():
