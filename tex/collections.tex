@@ -1,5 +1,11 @@
 \section{Collections in COMPSs}
 \label{sec:col}
+As we have seen in previous sections and examples, a COMPSs parameter is basically a regular user-code object, as a \verb|numpy.ndarray| with added metadata that allows the COMPSs Runtime to compute any dependency between tasks induced by this particular object.
+% Explain that this definition is sometimes not enough for some use-cases
 
 \subsection{Collection as Input Parameters}
 \label{subsec:col_in}
+The first step in this implementation consists of enabling the COMPSs Programming Model to accept collections fully composed of input parameters.
+
+\subsection{Collections as INOUT Parameters}
+\label{subsec:col_inout}
