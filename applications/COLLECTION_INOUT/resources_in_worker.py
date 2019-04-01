@@ -40,6 +40,7 @@ def main():
   from pycompss.api.api import compss_wait_on
   # Generate ten random vectors with pre-determined seed
   ten_random_vectors = [generate_object(i) for i in range(10)]
+  increase_elements(ten_random_vectors)
   # Pick the fifth vector from a COLLECTION_IN parameter
   fifth_vector = compss_wait_on(select_element(ten_random_vectors, 4))
   print("My chosen vector is \t %s" % str( fifth_vector ))
