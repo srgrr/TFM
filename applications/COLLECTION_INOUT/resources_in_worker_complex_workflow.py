@@ -6,10 +6,12 @@ from pycompss.api.parameter import *
 # 1) Ten random vectors with 5 elements are created in COMPSs tasks
 # 2) A task receives these ten random vectors packed in a COLLECTION_IN
 #    parameter
-# 3) A task receives this collection as a COLLECTION_INOUT, and increases all entries
+# 3) A task receives the fifht element of this collection as an INOUT and increases all
+#    its entries by one
+# 4) A task receives this collection as a COLLECTION_INOUT, and increases all entries
 #    of all vectors by exactly one
-# 4) The fifth of these vectors is chosen
-# 5) This same vector is created in the master program, and a check is performed
+# 5) The fifth of these vectors is chosen
+# 6) This same vector is created in the master program, and a check is performed
 
 
 # This program should be enough to test that this feature
@@ -24,10 +26,14 @@ def generate_object(seed):
   np.random.seed(seed)
   return np.random.rand(5)
 
-@task(c = COLLECTION_INOUT, returns = 1)
+@task(c = COLLECTION_INOUT)
 def increase_elements(c):
   for elem in c:
     elem += 1.0
+
+@task(e = INOUT)
+def increase_element(e):
+  e += 1.0
 
 @task(c = COLLECTION_IN, returns = 1)
 def select_element(c, i):
@@ -41,6 +47,7 @@ def main():
   # Generate ten random vectors with pre-determined seed
   ten_random_vectors = [generate_object(i) for i in range(10)]
   increase_elements(ten_random_vectors)
+  increase_element(ten_random_vectors[4])
   # Pick the fifth vector from a COLLECTION_IN parameter
   fifth_vector = compss_wait_on(select_element(ten_random_vectors, 4))
   print("My chosen vector is \t %s" % str( fifth_vector ))
@@ -48,7 +55,7 @@ def main():
   # Recreate this vector locally 
   import numpy as np
   np.random.seed(4)
-  master_vector = np.random.rand(5) + 1.0
+  master_vector = np.random.rand(5) + 2.0
 
   print("The correct vector is \t %s" % str( master_vector ))
 
