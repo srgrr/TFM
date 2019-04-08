@@ -24,7 +24,7 @@ def generate_object(seed):
   np.random.seed(seed)
   return np.random.rand(5)
 
-@task(c = COLLECTION_INOUT, returns = 1)
+@task(c = COLLECTION_INOUT)
 def increase_elements(c):
   for elem in c:
     elem += 1.0
