@@ -9,3 +9,4 @@ Col INOUT,Enable Col INOUT Handling,4,3
 Col IN,Implement basic COL IN feature,4,10
 Runtime familiarization,Learn Runtime structure,5,no
 Bindings familiarization,Learn Bindings (Py + Commons) structure,2,10
+Find and fix task performance degradation,"Practical familiarization exercise",10,11
