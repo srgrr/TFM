@@ -1,7 +1,7 @@
 \newpage
 \section{Fixing tasks overheads in PyCOMPSs}
 \label{sec:task_overhead}
-This first section describes a performance fix in the COMPSs programming model. Its intention is to give a practical example of how important is to properly manage objects in distributed programming models.
+This first section describes a performance fix in the COMPSs programming model. Its intention is to give a practical example of how important is to properly manage objects in distributed programming models and to show how complex and long finding a bug can be.
 
 \subsection{Problem description}
 A COMPSs user reported via mailing list that his application showed a gradual performance degradation over time. The workflow of his application can be summarized as follows:
@@ -23,23 +23,8 @@ Now we know that the main source of this overhead comes from the \verb|get_objec
 
 This function iterates over potentially all of the tracked objects just to get the identifier of some object (or to assign it one). This is done this way because an object needs to be hashable for being used as a key in a dictionary. Hashable usually means immutable, and no user can guarantee us that his objects will fulfill these properties. In fact, the programming model supports INOUT objects, which are, by nature, mutable objects. Some examples of mutable Python objects are \verb|[1, 2, 3, "hello"]|, \verb|object()| and \verb|numpy.random.rand(5)|.\\
 \\
-A possible fix may consist of using the \verb|id| function. This function returns us the logical memory address of the object. However, this can bring some undesired behaviors. Let's consider the following code snippet:
+A possible fix may consist of using the \verb|id| function. This function accepts an object as its unique argument and returns its memory address.
 
-\inputminted{python}{snippets/id_breaks.py}
-
-After the line \verb|y1 = master_routine(1)| PyCOMPSs will track the object \verb|x|. Lets assume that we are using \verb|id(obj)| as the key of the \verb|obj2id| dictionary. After this function PyCOMPSs will track the object \verb|x|, so if \verb|id(x)| $ = 0x123$ then PyCOMPSs will know that the object allocated at the memory address $0x123$ will be mapped to the file \verb|file_1|. However, we must note that no actual references to these objects are stored in the PyCOMPSs data structures, so \verb|x| will be deleted by the garbage collector. Therefore, it is possible that the object \verb|x| from the second call will use the same memory address from the previous one. This means that we can reuse the previous \verb|x| object, leading to a very weird error which may be difficult to isolate and fix. In fact, memory address reutilisation is very common in Python:
-
-\begin{verbatim}
-Python 2.7.15rc1 (default, Nov 12 2018, 14:31:15) 
-[GCC 7.3.0] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>> x = object()
->>> id(x)
-140404280975488
->>> del x
->>> x = object()
->>> id(x)
-140404280975488
-\end{verbatim}
-
-
+% TODO: COMPLETE THIS SECTION, SHOW A TRACE WITH THE PERFORMANCE UPGRADE
+% TODO: ADD REFERENCES TO CLOC
+The overall performance gain was, as shown in figure \ref{fig:task_performance_after}, enourmous. Although the final implementation consisted of a few lines of source code, it was arguably hard to find where this improvement should be made. We must note that COMPSs has, according to the \verb|cloc| tool, around 300000 source lines of code (sloc).
