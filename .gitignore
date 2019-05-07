@@ -20,6 +20,12 @@ compss/runtime/config/xml/resources/src/main/java/es/bsc/compss/types/resources/
 # Ignore Sphinx files
 docs/build
 
+# Trace files
+*.stmp
+*.sym
+*.ttmp
+*.mpit
+
 # ========== Java ignores =================
 
 
