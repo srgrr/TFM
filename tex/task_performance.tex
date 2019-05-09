@@ -1,7 +1,7 @@
 \newpage
 \section{Fixing tasks overheads in PyCOMPSs}
 \label{sec:task_overhead}
-This first section describes a performance fix in the COMPSs programming model. Its intention is to give a practical example of how important is to properly manage objects in distributed programming models and to show how complex and long finding a bug can be.
+This first section describes a performance fix in the COMPSs programming model. Its intention is to give a practical example of how important is to properly manage objects in distributed programming models and to show how complex finding a bug in this kind of software can be.
 
 \subsection{Problem description}
 A COMPSs user reported via mailing list that his application showed a gradual performance degradation over time. The workflow of his application can be summarized as follows:
@@ -13,15 +13,30 @@ The user was able to detect this performance degradation thanks to the tracing t
 % TODO: ADD TRACE FIGURE
 
 \subsection{Analysing and narrowing down the problem}
-The trace from figure \ref{fig:trace_task_degradation} gives us the hint that there is something wrong about-
+The trace from figure \ref{fig:trace_task_degradation} gives us the hint that there is something wrong about how the COMPSs Runtime manages tasks. Note that this fact only gives us a very rough hint on where to start looking for, but there are still many possible candidates and places to look at. Some of these places are:
+\begin{itemize}
+\item PyCOMPSs \verb|@task| decorator
+\item PyCOMPSs object serialization
+\item PyCOMPSs-to-COMPSs parameter forwarding
+\item COMPSs Runtime task registering
+\item COMPSs Runtime dependency computation
+\item COMPSs Runtime data transfer
+\item COMPSs Worker task reception
+\item ...
+\end{itemize}
+The list may contain 30 additional items before the last(s) step(s) \textit{user's task is executed, results are serialized and the master gets a notification about it}. Some sections are arguably skippable, as our knowledge and experience tells us they cannot have anything to do with our issue, but the other ones must be revised one by one. The natural way to proceed is to simply follow the PyCOMPSs and COMPSs source code between the user's call to some task and the user synchronizing the results of this task (if apply).\\
+\\
+Fortunately for us, the problem was on a quite early stage: the handling of the object identifiers in the Python binding.
 % TODO: COMPLETE THIS SECTION, EXPLAIN HOW WE DID ARRIVE TO IDOBJ
 
 \subsection{Object identification and mapping in PyCOMPSs}
-Now we know that the main source of this overhead comes from the \verb|get_object_id| function from the PyCOMPSs source code. Let's take a look at this function:
+Our first (and last) bet was on the \verb|get_object_id| function from the PyCOMPSs source code. Let's take a look at this function:
 
 \inputminted{python}{snippets/get_object_id_old.py}
 
 This function iterates over potentially all of the tracked objects just to get the identifier of some object (or to assign it one). This is done this way because an object needs to be hashable for being used as a key in a dictionary. Hashable usually means immutable, and no user can guarantee us that his objects will fulfill these properties. In fact, the programming model supports INOUT objects, which are, by nature, mutable objects. Some examples of mutable Python objects are \verb|[1, 2, 3, "hello"]|, \verb|object()| and \verb|numpy.random.rand(5)|.\\
+\\
+If the Python binding is tracking $n$ objects then this function may iterate $\mathcal{O}(n)$ times just to retrieve (or to give) a single identifier. It is not hard to see that an application with $n$ simultaneous PyCOMPSs objects will have to do $\mathcal{O}(n^2)$ iterations, which is consistent with what we observed at the traces.
 \\
 A possible fix may consist of using the \verb|id| function. This function accepts an object as its unique argument and returns its memory address.
 
