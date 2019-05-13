@@ -9,7 +9,7 @@ def wc_naive(dataset):
 	return len(st)
 
 def hloglog(dataset):
-	hobj = HyperLogLog(b = 64, p = 15, plot = True)
+	hobj = HyperLogLog(b = 64, p = 14, plot = True)
 	with open(dataset, "r") as f:
 		for line in f:
 			for w in line.strip().split():
