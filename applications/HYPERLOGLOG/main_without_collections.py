@@ -12,7 +12,6 @@ def parse_arguments():
                 help="(Absolute or relative) paths to files")
 	parser.add_argument("--bits", default = 64, type = int, help = "Bits per hash")
 	parser.add_argument("--buckets", default = 11, type = int, help = "Bits for bucket indexing")
-	parser.add_argument("--collections", action = "store_true")
 	return parser.parse_args()
 
 @task(filename = FILE_IN, returns = 1)
@@ -24,13 +23,6 @@ def count_distinct(filename, bits, buckets):
 				h.add_word(w)
 	return h
 
-@task(hloglogs = COLLECTION_IN, returns = 1)
-def reduce_hloglog_collections(hloglogs, bits, buckets):
-	h = HyperLogLog(b = bits, p = buckets)
-	for hloglog in hloglogs:
-		h.add_hyperloglog(hloglog)
-	return h.get_estimation()
-
 @task(returns = 1)
 def reduce_hloglog(bits, buckets, *args):
 	h = HyperLogLog(b = bits, p = buckets)
@@ -38,18 +30,13 @@ def reduce_hloglog(bits, buckets, *args):
 		h.add_hyperloglog(hloglog)
 	return h.get_estimation()
 
-def main(files, bits, buckets, collections):
+def main(files, bits, buckets):
 	N = len(files)
 	hloglogs =\
 		list(map(count_distinct, files, [bits] * N, [buckets] * N))
 	from pycompss.api.api import compss_wait_on
-	if collections:
-		estimation = reduce_hloglog_collections(hloglogs, bits, buckets)
-	else:
-		estimation = reduce_hloglog(bits, buckets, *hloglogs)
-
 	print("Estimated cardinality: %d" 
-		% compss_wait_on(estimation))
+		% compss_wait_on(reduce_hloglog(bits, buckets, *hloglogs)))
 
 if __name__ == '__main__':
 	opts = parse_arguments()
