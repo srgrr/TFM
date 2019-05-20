@@ -6,13 +6,25 @@ A very common issue reported by COMPSs users is that the programming model is no
 \\
 The ideal solution, which consists of implementing a generic introspection algorithm, is very hard, if not impossible, to implement. Python is a language with no types, some objects can be modified if iterated, many others have no easy way to list its internal attributes, circular references can happen... the list is almost endless. However, this use case is pretty common, so something must be done. An interesting observation is that any sub object will necesarrily have the same direction as the super object sent as a task parameter. This represents an edge that can be exploited to obtain some performance. These two reasons are more than enough to consider implementing some kind of support for this feature.\\
 \\
-After some meetings it was decided that support for arrays should be implemented in the COMPSs Programming Model. Given that many COMPSs users find words like \textit{array, hash map, reflection, inheritance} complicated and misleading it was decided to call this feature as \textit{support for collections}. This name also gives the opportunity to extend this implementation to other iterable data structures such as sets, hash maps and so on.\\
+After some meetings it was decided that support for arrays should be implemented in the COMPSs Programming Model. Given that many COMPSs users find words like \textit{array, hash map, reflection, inheritance} complicated and misleading it was decided to call this feature as \textit{support for collections}, as collection is a word that seemed more understandable by non computer science researchers. This name also gives the opportunity to extend this implementation to other iterable data structures such as sets, hash maps and so on.\\
+\\
+This feature should cover these two cases:
+\begin{verbatim}
+L = [future_object_1, future_object_2, ...]
+y = f(L) # Future objects should be synced and available
+\end{verbatim}
+
+\begin{verbatim}
+L = [object_1]
+modify_object_1()
+f(L) # object_1 should be updated and synced properly
+\end{verbatim}
+In other words, collections should support both IN and INOUT objects.
 
 \subsection{Collections as Input Parameters}
 \label{subsec:col_in}
 The first step consists of enabling the COMPSs Programming Model to accept collections fully composed of input parameters. This step will also help us to identify and to mark all the parts that require some implementation and/or modification when dealing with this feature.\\
 \\
-This feature should cover these two cases:
 
 
 \subsection{Collections of Collections: (Matrices)}
