@@ -55,7 +55,7 @@ class HyperLogLog(object):
 
 	def get_estimation(self):
 		"""Return the estimation of the cardinality as the harmonic mean
-		of the registries
+		of the registers
 		"""
 		return float(self.buckets.shape[0]) / np.mean(1.0 / (2.0 ** self.buckets))
 

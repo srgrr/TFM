@@ -38,18 +38,27 @@ def reduce_hloglog(bits, buckets, *args):
 		h.add_hyperloglog(hloglog)
 	return h.get_estimation()
 
+def elapsed_time(name, start, end):
+	print("%s=%.08f" % (name, end - start))
+
 def main(files, bits, buckets, collections):
+	import time
 	N = len(files)
 	hloglogs =\
 		list(map(count_distinct, files, [bits] * N, [buckets] * N))
-	from pycompss.api.api import compss_wait_on
+	from pycompss.api.api import compss_barrier, compss_wait_on
+	# Easier isolation of reduce time
+	compss_barrier()
+	start_t = time.time()
 	if collections:
 		estimation = reduce_hloglog_collections(hloglogs, bits, buckets)
 	else:
 		estimation = reduce_hloglog(bits, buckets, *hloglogs)
+	end_t = time.time()
 
-	print("Estimated cardinality: %d" 
-		% compss_wait_on(estimation))
+	print("Estimated cardinality: %d" % compss_wait_on(estimation))
+
+	elapsed_time("reduce", start_t, end_t)
 
 if __name__ == '__main__':
 	opts = parse_arguments()
