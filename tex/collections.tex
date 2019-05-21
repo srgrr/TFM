@@ -41,7 +41,7 @@ This feature is especially interesting because its implementation serves two pur
 \label{subsec:col_in}
 The first step consists of enabling the COMPSs Programming Model to accept collections fully composed of input parameters. This step will also help us to identify and to mark all the parts that require some implementation and/or modification when dealing with this feature.\\
 \\
-The easiest way to implement this feature is by what we call the \textit{contagion model}. Note that, in terms of dependencies, if some object $x$ is contained in some collection $C$ then any dependency that affects $C$ must also affect $x$, and vice versa. Let's consider the following code:
+The easiest way to implement this feature is by what we call the \textit{contagion model}. Note that, in terms of dependencies, if some object $x$ is contained in some collection $C$ then any dependency that affects $C$ must also affect $x$, and vice versa. Let's consider the following pseudo-code:
 
 \begin{verbatim}
 c1 = f() # c1 is a future object
@@ -54,7 +54,40 @@ Once we have decided what we want to implement we must decide how and where to s
 
 \inputminted{python}{applications/COLLECTION_IN/resources_in_master.py}
 
+As we mentioned in section \ref{subsec:compss_components}, the design of the programming model forces the developer to go through many layers of the software just to implement a single feature. Any PyCOMPSs parameter will go through the pipeline shown in figure \ref{fig:parameter_pipeline}.
 
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{figures/parameter_pipeline.png}
+\caption{The journey of a Python parameter, from the user's function call until the task in finished in the worker}
+\label{fig:parameter_pipeline}
+\end{figure}
+
+In the following sections we will explain how the implementation of this feature affected all of the parts that appear in figure \ref{fig:parameter_pipeline}.
+
+\subsubsection{Python Binding}
+\label{subsubsec:python_binding_col_in}
+This part covers intercepting the user's call to a PyCOMPSs task, the serialization of the task parameters (if necessary) and the forwarding of the necessary metadata to the Java Runtime.\\
+\\
+The very first step, and the easiest one, consists of adding a \verb|COLLECTION_IN| annotation in the list of annotations. This part is as easy as copy-pasting any of the existing parameters and then adapting it to our needs:
+
+\inputminted{python}{snippets/param_col_in.py}
+
+In fact, copy-pasting the specifications of the \verb|IN| parameter in more than enough. It is also necessary to add the type \verb|COLLECTION| in an inter-language type list which is after replicated in the three programming languages.\\
+\\
+The second step consists of serializing all the necessary data. 
+
+\subsubsection{C/C++ Bindings Common}
+\label{subsubsec:bindings_common_col_in}
+
+\subsubsection{Runtime/Master (Java)}
+\label{subsubsec:runtime_master_col_in}
+
+\subsubsection{Runtime/Worker (Java)}
+\label{subsubsec:runtime_worker_col_in}
+
+\subsubsection{Python Worker}
+\label{subsubsec:python_worker_col_in}
 
 \subsection{Collections of Collections: (Matrices)}
 \label{subsec:col_depth}
@@ -62,6 +95,6 @@ Once we have decided what we want to implement we must decide how and where to s
 \subsection{Collections as INOUT Parameters}
 \label{subsec:col_inout}
 
-\subsection{Some practical examples}
+\subsection{Practical Applications}
 \label{subsec:col_examples}
 \input{hyperloglog.tex}
