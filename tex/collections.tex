@@ -75,22 +75,37 @@ The very first step, and the easiest one, consists of adding a \verb|COLLECTION_
 
 In fact, copy-pasting the specifications of the \verb|IN| parameter in more than enough. It is also necessary to add the type \verb|COLLECTION| in an inter-language type list which is after replicated in the three programming languages.\\
 \\
-The second step consists of serializing all the necessary data. 
+The second step consists of serializing all the necessary data.
+
+\inputminted{python}{snippets/serialize_object_into_file.py}
+
+As we can see in the snippet, our implementation is just a recursive call to an already existing function devoted to serialize objects.
 
 \subsubsection{C/C++ Bindings Common}
 \label{subsubsec:bindings_common_col_in}
+All metadata regarding parameters is produced by the corresponding binding (in our case, PyCOMPSs) and then translated to something understandable by the COMPSs runtime. This is achieved by extending Python with C++ and then sending messages via JNI (Java Native Interface \footnote{https://en.wikipedia.org/wiki/Java_Native_Interface}). In the case of the collection parameters it was decided to forward, from Python to Java, the following information:
+
+\begin{verbatim}
+collectionId N
+type1 Val1
+...
+typeN ValN
+\end{verbatim}
+
+Note that if the $ith$ parameter is a collection then $val_i$ will contain the whole sub-collection.
 
 \subsubsection{Runtime/Master (Java)}
 \label{subsubsec:runtime_master_col_in}
+
+%TODO: COLLECT DEPENDENCY GRAPH FROM MN3
 
 \subsubsection{Runtime/Worker (Java)}
 \label{subsubsec:runtime_worker_col_in}
 
 \subsubsection{Python Worker}
 \label{subsubsec:python_worker_col_in}
+This last step is probably the easiest one. 
 
-\subsection{Collections of Collections: (Matrices)}
-\label{subsec:col_depth}
 
 \subsection{Collections as INOUT Parameters}
 \label{subsec:col_inout}
