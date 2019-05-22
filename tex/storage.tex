@@ -1,8 +1,19 @@
 \section{Combining Storage Systems with COMPSs}
 \label{sec:storage}
+Most COMPSs objects are created by the user and managed by the Runtime. The data transferring software is a self-made library based on NIO \footnote{https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html}. Although this is usually a good enough solution for most use cases, there are three scenarios in which it may be a disadvantage to use this library:
+
+\begin{enumerate}
+\item The objects are the output of some previous application
+\item The outputs of the COMPSs application are the input of some other application
+\item The filesystem and/or the network presents huge bandwidth limitations
+\end{enumerate}
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
 
 \subsection{A Practical Implementation: Redis}
 \label{subsec:storage_redis}
+The first step towards validating this storage API consisted of providing a valid, functional implementation. For this purpose Redis was chosen.\\
+\\
+Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^14 = 16384$ slots. Each key is either chosen or randomly assigned, and it determines the \textit{slot} of this object in the database. More precisely, given a key $k$, and a value $v$, $v$ will be stored at the position $\textrm{CRC16}(k) \textrm{mod} 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been sent with no errors, and it can also be used as a quick hash function.\\
+\\
