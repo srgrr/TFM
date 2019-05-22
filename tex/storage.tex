@@ -8,6 +8,8 @@ Most COMPSs objects are created by the user and managed by the Runtime. The data
 \item The filesystem and/or the network presents huge bandwidth limitations
 \end{enumerate}
 
+The two first items represent a common usability problem. Many research groups generate their inputs 
+
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
 
@@ -15,5 +17,21 @@ Most COMPSs objects are created by the user and managed by the Runtime. The data
 \label{subsec:storage_redis}
 The first step towards validating this storage API consisted of providing a valid, functional implementation. For this purpose Redis was chosen.\\
 \\
-Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^14 = 16384$ slots. Each key is either chosen or randomly assigned, and it determines the \textit{slot} of this object in the database. More precisely, given a key $k$, and a value $v$, $v$ will be stored at the position $\textrm{CRC16}(k) \textrm{mod} 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been sent with no errors, and it can also be used as a quick hash function.\\
+Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^14 = 16384$ slots. Each key is either chosen by the user or randomly assigned, and it determines the position of this object in the hash table. More precisely, given a key $k$, and a value $v$, $v$ will be stored at the position $\textrm{CRC16}(k) \mod \quad 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been sent with no errors, and it can also be used as a quick hash function.\\
 \\
+Our implementation serializes objects in-memory and stores them as byte arrays in the database. Although this does not save us from serializing objects it is enough to avoid dealing with the filesystem, and to do all the operations in-memory. Huge byte arrays are split in distributed blocks to avoid long-term load imbalances and to increase long-term data locality. If we have $N$ worker nodes, our data is $M$ bytes long, it is available at only one node, and nodes are busy enough to make data locality irrelevant then the expected data transferring time is
+$$E_1[N] = \frac{N - 1}{N} \times M$$
+If our data is split into $K$ blocks, $\frac{M}{K}$ bytes each block, and each block is at a different node then the expected data transferring time can expressed as
+
+$$E_2[N] \leq \frac{K}{N}(K - 1)\frac{M}{K} + \frac{N - K}{N}M$$
+
+By simplifying $M = 1$ we obtain that $E_2[N] \leq E_1[N] = \frac{N - 1}{N}$. However, this second approach offers the opportunity to introduce parallelism and, in fact, most practical applications show that the required time to transfer the $(K - 1)$ remaining blocks is usually less or equal than $2.5\frac{M}{K}$, or something around that, and that in the worst case scenario the introduced overhead is relatively negligible, which is consistent with the two formulas above.
+
+\subsection{Practical Applications}
+\label{subsec:storage_apps}
+\subsubsection{K-Means}
+\label{subsubsec:kmeans_redis}
+K-Means \cite{Lloyd82leastsquares} is a clustering algorithm which, given $N$ $k$-dimensional points and an integer $c$, assigns each point a label between $1$ and $c$. The idea is that these labels represent groups of \textit{similar} points. 
+
+\subsubsection{Matrix Multiplication}
+\label{subsubsec:matmul_redis}

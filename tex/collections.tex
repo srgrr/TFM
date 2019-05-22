@@ -83,7 +83,7 @@ As we can see in the snippet, our implementation is just a recursive call to an 
 
 \subsubsection{C/C++ Bindings Common}
 \label{subsubsec:bindings_common_col_in}
-All metadata regarding parameters is produced by the corresponding binding (in our case, PyCOMPSs) and then translated to something understandable by the COMPSs runtime. This is achieved by extending Python with C++ and then sending messages via JNI (Java Native Interface \footnote{https://en.wikipedia.org/wiki/Java_Native_Interface}). In the case of the collection parameters it was decided to forward, from Python to Java, the following information:
+All metadata regarding parameters is produced by the corresponding binding (in our case, PyCOMPSs) and then translated to something understandable by the COMPSs runtime. This is achieved by extending Python with C++ and then sending messages via JNI (Java Native Interface \footnote{https://en.wikipedia.org/wiki/Java\_Native\_Interface}). In the case of the collection parameters it was decided to forward, from Python to Java, the following information:
 
 \begin{verbatim}
 collectionId N
