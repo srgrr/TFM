@@ -121,7 +121,7 @@ def parse_arguments():
     help = 'Number of dimensions. Default = 2'
   )
   parser.add_argument('-c', '--centres', type = int, default = 5,
-    help = 'Number of centres. Default = 2'
+    help = 'Number of centres. Default = 5'
   )
   parser.add_argument('-f', '--fragments', type = int, default = 10,
     help = 'Number of fragments. Default = 10. Condition: fragments < points'
@@ -130,7 +130,7 @@ def parse_arguments():
     choices = ['uniform', 'normal'],
     help = 'Distribution of points. Default = uniform'
   )
-  parser.add_argument('-i', '--iterations', type = int, default = 20,
+  parser.add_argument('-i', '--iterations', type = int, default = 10,
     help = 'Maximum number of iterations'
   )
   parser.add_argument('-e', '--epsilon', type = float, default = 1e-9,

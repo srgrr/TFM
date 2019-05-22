@@ -1,3 +1,11 @@
 \section{Conclusions and Future Work}
-\label{sec:conclusions}
+\subsection{Conclusions}
+\label{subsec:conclusions}
+
+
+\subsection{Future Work}
+\label{subsec:future_work}
+
+Let's consider the application from section \ref{subsubsec:matmul_redis}. In the product of two $2 \times 2$ matrices the dependency $mul(A_{1, 1}, B_{1, 1}, C_{1, 1}) \implies mul(A_{1,2}, B_{2, 1}, C_{1, 1})$ appears, when it is actually enough to ensure that no two tasks involving the same $C_{i, j}$ are executed concurrently. An open research line consists of developing a distributed mechanism that ensures task commutativity. It was discussed to implement the option to assign each task a commutativity group, meaning that two tasks that belong to this group are mutually commutative. Task commutativity is already implemented in the OMPSs programming model \cite{duran2011ompss}, but it still remains as a challenge to implement an equivalent feature for a distributed programming model. 
+
 

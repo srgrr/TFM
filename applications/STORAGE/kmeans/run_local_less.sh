@@ -13,9 +13,6 @@
   # Leave the application args on $0
   shift 1
 
-  # Init the storage backend
-  redis-server --daemonize yes
-
   # Launch the application
   runcompss \
   --pythonpath=$(pwd)/src \
@@ -23,6 +20,3 @@
   -t \
   -g \
   $(pwd)/src/kmeans.py $@
-
-  # Kill the storage backend
-  pkill redis
