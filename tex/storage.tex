@@ -8,13 +8,14 @@ Most COMPSs objects are created by the user and managed by the Runtime. The data
 \item The filesystem and/or the network presents huge bandwidth limitations
 \end{enumerate}
 
-
+The idea of replacing files with databases helps with these three items. Custom storage system can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines. Another great point is that these storage systems are specialized on transferring objects between nodes, so replacing COMPSs with them may give us a little performance boost.
 %TODO: FINISH THIS CHAPTER
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
-The need of defining a storage API comes from the fact that some researchs groups are interested into mixing some of their tools with the COMPSs Programming Model. After some meetings with these groups it was decided 
-%TODO: ALSO FINISH THIS ONE
+The need of defining a storage API comes from the fact that some researchs groups are interested in mixing some of their tools with the COMPSs Programming Model. After some meetings it was decided that storage systems should be used as follows:
+
+% TODO: WRITE ABOUT STORAGE API, GET SLIDES
 
 \subsection{A Practical Implementation: Redis}
 \label{subsec:storage_redis}
