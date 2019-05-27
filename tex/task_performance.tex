@@ -4,7 +4,7 @@
 This first practical section describes a performance fix in the COMPSs programming model. Its intention is to give a practical example of how important is to properly manage objects in distributed programming models and to show how complex finding a bug in this kind of software can be.
 
 \subsection{Problem description}
-A COMPSs user reported via mailing list that his application showed a gradual performance degradation over time. The workflow of his application can be summarized as follows:
+A COMPSs user reported via mailing list that his application showed a gradual performance degradation over time. A source code that reproduces the \textit{guilty} workflow is the following:
 
 \inputminted{python}{applications/TASK_OVERHEAD/main.py}
 

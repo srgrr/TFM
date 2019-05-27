@@ -19,10 +19,8 @@ This approach, known as HyperLogLog \cite{Flajolet07hyperloglog:the}, still requ
 \\
 An interesting trivia fact is that if we need $\mathcal{O}(\log n)$ bits for our hash function to be able to count until $n$ then we only need $\mathcal{O}(\log \log n)$ to store the number of leading zeros of some hash value. This is why HyperLogLog is called that way.\\
 \\
-A very nice property of HyperLogLog is that two distinct runs on two different datasets can be merged if they have used the same parameters (hash function, $b$, and $p$) in such a way that it approximates the cardinality of the union of the two datasets. Given two arrays $a$ and $b$, each corresponding to a run of HyperLogLog we can get a fictional run of HyperLogLog $c$ that represents the union of both datasets by computing $c_{i} =\max(a_{i}, b_{i})$ for all of the $2^{p}$ positions. This makes sense, as it produces the same result as running a single HyperLogLog on the concatenation of the two datasets. This property allows us to parallelize or to distribute this algorithm, giving us a potential performance boost. The source code we will use for our experiments is the following:
-\newpage
-\inputminted{python}{applications/HYPERLOGLOG/main.py}
-The \verb|HyperLogLog| class can be found in the project's GitHub repository\footnote{https://github.com/srgrr/TFM/blob/master/applications/HYPERLOGLOG/main.py}.
+A very nice property of HyperLogLog is that two distinct runs on two different datasets can be merged if they have used the same parameters (hash function, $b$, and $p$) in such a way that it approximates the cardinality of the union of the two datasets. Given two arrays $a$ and $b$, each corresponding to a run of HyperLogLog we can get a fictional run of HyperLogLog $c$ that represents the union of both datasets by computing $c_{i} =\max(a_{i}, b_{i})$ for all of the $2^{p}$ positions. This makes sense, as it produces the same result as running a single HyperLogLog on the concatenation of the two datasets. This property allows us to parallelize or to distribute this algorithm, giving us a potential performance boost. The source code we will use for our experiments can be found in appendix \ref{subsec:hyperloglog_source_code}.\\
+\\
 Note that this application is a classical \textit{map-reduce} workflow. Without collections we are forced to implement any reduce function as \verb|reduce(f, *args)|. Each extra argument is passed as an input parameter via socket and pipe, implying a huge overhead. With collections only the collection object, and the list of identifiers, are transferred. The other properties of the contents, such as direction, locations and so on, are deduced or requested in the destination node.\\
 \\
 The elimination of this overhead is noticeable even with a very small number of parameters. As we can see in figure \ref{fig:collection_vs_normal}, the collection feature reduces the overhead drastically. An important observation is that a PyCOMPSs task of the form \verb|f(*args)| usually starts to show problems and crashes when more than $60$ arguments are passed, as each argument represents a lot of metadata to be transferred via socket and pipe.
@@ -33,82 +31,6 @@ The elimination of this overhead is noticeable even with a very small number of 
 \label{fig:collection_vs_normal}
 \end{figure}\\
 \\
-Let's note that for a task \verb|f(a, b, c, d, e)| the following information is sent through a socket:
-
-\begin{verbatim}
-[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: metadata.f
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_0
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_1
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 2
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_2
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 3
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_3
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 4
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_4
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 5
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
-[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
-\end{verbatim}
-
-While the collection equivalent generates this data:
-
-\begin{verbatim}
-[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: metadata.g
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 26
-[BINDING-COMMONS]  -  @process_param  -  Collection: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
-[BINDING-COMMONS]  -  @process_param  -  NAME: c
-[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
-[BINDING_COMMONS]  -  @process_param
-[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
-[BINDING-COMMONS]  -  @process_param  -  File: ...
-[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
-[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
-[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
-[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
-\end{verbatim}
+A comparison between the amount of meta-data generated and sent by the classical reduce implementation and by the collections version can be found in appendix \ref{subsec:reduce_data_comparison}.
 
 This improvement benefits many applications, as the map-reduce scheme is very common.

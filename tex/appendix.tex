@@ -1,0 +1,104 @@
+\section{Appendix}
+\label{sec:appendix}
+
+\subsection{Collections as Input Parameters}
+\label{subsec:col_in}
+\inputminted{python}{applications/COLLECTION_IN/resources_in_master.py}
+
+
+\subsection{HyperLogLog}
+\label{subsec:hyperloglog_source_code}
+Main application:
+\inputminted{python}{applications/HYPERLOGLOG/main.py}
+\verb|HyperLogLog| class
+\inputminted{python}{applications/HYPERLOGLOG/HyperLogLog.py}
+
+
+\subsection{Metadata generation comparison}
+\label{subsec:reduce_data_comparison}
+
+A task \verb|f(a, b, c, d, e)| sends this information through a socket:
+\begin{verbatim}
+[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: metadata.f
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_0
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_1
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 2
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_2
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 3
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_3
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 4
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: *args*_4
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 5
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+\end{verbatim}
+
+While the collection equivalent generates this data:
+
+\begin{verbatim}
+[BINDING-COMMONS]  -  @GS_RegisterCE  -  Task registered: metadata.g
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew - Processing task execution in bindings-common. 
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 0
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 26
+[BINDING-COMMONS]  -  @process_param  -  Collection: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 0
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: null
+[BINDING-COMMONS]  -  @process_param  -  NAME: c
+[BINDING-COMMONS]  -  @GS_ExecuteTaskNew  -  Processing parameter 1
+[BINDING_COMMONS]  -  @process_param
+[BINDING-COMMONS]  -  @process_param  -  ENUM DATA_TYPE: 9
+[BINDING-COMMONS]  -  @process_param  -  File: ...
+[BINDING-COMMONS]  -  @process_param  -  ENUM DIRECTION: 1
+[BINDING-COMMONS]  -  @process_param  -  ENUM STREAM: 3
+[BINDING-COMMONS]  -  @process_param  -  PREFIX: #
+[BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
+\end{verbatim}
+
+\subsection{K-Means + Storage Implementation}
+\label{subsec:kmeans_redis}
+\inputminted{python}{snippets/kmeans_storage.py}
+
+
+\subsection{Matmul + Storage Implementation}
+\label{subsec:matmul_redis}
+\inputminted{python}{snippets/matmul_storage.py}
