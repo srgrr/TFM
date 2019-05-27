@@ -8,20 +8,22 @@ Most COMPSs objects are created by the user and managed by the Runtime. The data
 \item The filesystem and/or the network presents huge bandwidth limitations
 \end{enumerate}
 
-The idea of replacing files with databases helps with these three items. Custom storage systems can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines. Another great advantage is that these storage systems are specialized, therefore having better implementations than us, on transferring objects between nodes, so replacing COMPSs with them may give us a little performance boost.
+The idea of replacing files with databases helps with these three items. Custom storage systems can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines. Another great advantage is that these storage systems are specialized, and therefore have better implementations than us, on transferring objects between nodes, so replacing COMPSs with them may give us a little performance boost.
 %TODO: FINISH THIS CHAPTER
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
-The need of defining a storage API comes from the fact that some researchs groups are interested in mixing some of their tools with the COMPSs Programming Model. After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations just by changing the API implementation in their configuration. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
+The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.
+
+After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations just by changing the API implementation in their configuration. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
 
 \begin{table}[]
 \centering
 \begin{tabular}{|l|l|}
 \hline
 Method name                                                     & Description                                                        \\ \hline
-\verb|make\_persistent(id = None)| & Make the Storage Object persistent                                 \\ \hline
-\verb|delete\_persistent()|        & Delete the Storage Object from the Storage System                  \\ \hline
+\verb|make_persistent(id = None)| & Make the Storage Object persistent                                 \\ \hline
+\verb|delete_persistent()|        & Delete the Storage Object from the Storage System                  \\ \hline
 \verb|getID()|                     & Get the identifier of the Storage Object                           \\ \hline
 \verb|getByID(*objects)| (static)  & Retrieve the objects with the given identifiers \\ \hline
 \end{tabular}
