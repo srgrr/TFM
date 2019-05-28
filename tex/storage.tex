@@ -1,6 +1,6 @@
 \section{Combining Storage Systems with COMPSs}
 \label{sec:storage}
-Most COMPSs objects are created by the user and managed by the Runtime. The data transferring software is a self-made library based on NIO \footnote{https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html}. Although this is usually a good enough solution for most use cases, there are three scenarios in which it may be a disadvantage to use this library:
+Most COMPSs objects are created by the user and managed by the Runtime. The data transferring software is a home-made library based on NIO \footnote{https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html}. Although this is usually a good enough solution for most use cases, there are three scenarios in which it may be a disadvantage to use this library:
 
 \begin{enumerate}
 \item The objects are the output of some previous application
@@ -8,14 +8,14 @@ Most COMPSs objects are created by the user and managed by the Runtime. The data
 \item The filesystem and/or the network presents huge bandwidth limitations
 \end{enumerate}
 
-The idea of replacing files with databases helps with these three items. Custom storage systems can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines. Another great advantage is that these storage systems are specialized, and therefore have better implementations than us, on transferring objects between nodes, so replacing COMPSs with them may give us a little performance boost.
-%TODO: FINISH THIS CHAPTER
+The idea of replacing files with databases helps with these three items. Custom storage systems can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines (and some additional swap space if necessary). Another great advantage is that these storage systems are specialized, and therefore have better implementations than us, on transferring objects between nodes, so replacing COMPSs with them may give us a little performance boost. In this chapter we explore the possibility of relegating COMPSs as a simple task orchestrator by replacing the object management stage by specialized storage systems. As usually happens, the implementation of this feature can give some usability problems. We will also deal with this aspect of the implementation.
+
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
-The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.
-
-After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations just by changing the API implementation in their configuration. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
+The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.\\
+\\
+After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations by just changing the chosen API implementation in their configuration. The existence of an API should also make the user's life easier, so it must be developed taking into account the needs of the research groups and the usability of the final product. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
 
 \begin{table}[]
 \centering
@@ -30,26 +30,25 @@ Method name                                                     & Description   
 \caption{Public methods of the storage API}
 \label{table:storage_api_public_methods}
 \end{table}
-
+There are also some additional internal methods that are optional to implement, as \verb|getLocations|, which allows the COMPSs Runtime to know the locations of some piece of data. This \verb|getLocations| is implicit when using the default file system of COMPSs, but needs to be defined when using a storage system in which COMPSs has little to no control on where the objects are stored.\\
+\\
 COMPSs can be configured to let it know that the user is using some storage system. In that case, a path with a \textit{implementation bundle} should be provided. COMPSs will add to the \verb|CLASSPATH| and \verb|PYTHONPATH| variables the necessary paths.\\
 \\
-The target storage system can be an already living and existing database, or can be created by COMPSs if a script to do that is specified. In the first case, a list with the addresses of the storage node(s) should be provided. Note that this list can refer to nodes that have no COMPSs worker instances running on it. This is ideal for COMPSs applications which take the outputs of some other applications as their inputs. In the second case a \verb|storage_init.sh| script should be provided. This script receives the list of the COMPSs nodes as command line arguments and it is responsible to create the corresponding storage backend. It is also advisable to implement a \verb|storage_stop.sh| script if the created storage system by COMPSs is not necessary after the COMPSs execution.
+The target storage system can be an already living and existing database, or can be created by COMPSs if a script to do that is specified. In the first case, a list with the addresses of the storage node(s) should be provided. Note that this list can refer to nodes that have no COMPSs worker instances running on it. This is ideal for COMPSs applications which take the outputs of some other applications as their inputs. In the second case a \verb|storage_init.sh| script should be provided. This script receives the list of the COMPSs nodes as command line arguments and it is responsible to create the corresponding storage backend. It is also advisable to implement a \verb|storage_stop.sh| script if the created storage system by COMPSs is not necessary after the COMPSs execution.\\
+\\
+It must be noted that COMPSs is still responsible of dependency calculation and  transferring metadata between nodes (e.g: the parameters of a task). This means that our collections feature still offers some of the advantages introduced by it, such as a metadata transfer optimizations.
 
 \subsection{A Practical Implementation: Redis}
 \label{subsec:storage_redis}
-The first step towards validating this storage API consisted of providing a valid, functional implementation of the previously defined API. For this purpose Redis was chosen.\\
+The first step towards validating this storage API consisted of providing a valid, functional implementation of it. For this purpose Redis was chosen.\\
 \\
-Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^14 = 16384$ slots. Each key is either chosen by the user or randomly assigned, and it determines the position of this object in the hash table. More precisely, given a key $k$, and a value $v$, $v$ will be stored at the position $\textrm{CRC16}(k) \mod \quad 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been sent with no errors, and it can also be used as a quick hash function.\\
+Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^{14} = 16384$ slots. Each key is either chosen by the user or randomly assigned, and it determines the position of this object in the hash table. More precisely, given a key $k$, and a value $v$, $v$ will be stored in the position $\textrm{CRC16}(k) \mod \quad 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been received with no errors, and it can also be used as a quick hash function.\\
 \\
-Our implementation serializes objects in-memory and stores them as byte arrays in the database. Although this does not save us from serializing objects it is enough to avoid us to deal with the filesystem, allowing us to do all the operations in-memory. Huge byte arrays are split in distributed blocks to avoid long-term load imbalances and to increase long-term data locality. If we have $N$ worker nodes, our data is $M$ bytes long, it is available at only one node, and nodes are busy enough to make data locality irrelevant then the expected data transferring time is
-$$E_1[N] = \frac{N - 1}{N} \times M$$
-If our data is split into $K$ blocks, $\frac{M}{K}$ bytes each block, and each block is at a different node then the expected data transferring time can expressed as
-
-$$E_2[N] \leq \frac{K}{N}(K - 1)\frac{M}{K} + \frac{N - K}{N}M$$
-
-By simplifying $M = 1$ we obtain that $E_2[N] \leq E_1[N] = \frac{N - 1}{N}$. However, this second approach offers the opportunity to introduce parallelism and, in fact, most practical applications show that the required time to transfer the $(K - 1)$ remaining blocks is usually less or equal than $2.5\frac{M}{K}$, or something around that, and that in the worst case scenario the introduced overhead is relatively negligible, which is consistent with the two formulas above. Another important detail is that Redis offers the possibility to have replicas. A replica is a Redis instance that mirrors the behavior of some other Redis instance and is usually located in a different node/machine than the original one. This reduces even more the expected transfer time, but it introduces a dangerous tradeoff between time and space.
-
-Another detail about our Redis implementation is that Redis offers no direct way to make some piece of data be stored in some node. However, the Storage API defines a method which allows the user to do that. Our solution to this problem consisted of simply generating random keys until one of them mapped to a valid slot. This adds almost no overhead, as the number of nodes tends to be a very manageable number such as 16, 32, 64, or at most 128 in most practical cases.
+Our implementation serializes objects in-memory and stores them as byte arrays in the database. Although this does not save us from serializing objects it is enough to avoid us to deal with the filesystem, allowing us to do all the operations in-memory. Huge byte arrays are split in distributed blocks to avoid long-term load imbalances and to increase long-term data locality. Another important detail is that Redis offers the possibility to have replicas. A replica is a Redis instance that mirrors the behavior of some other Redis instance and is usually located in a different node/machine than the original one. This reduces even more the expected transfer time, but it introduces a dangerous tradeoff between time and space.\\
+\\
+Another detail about our Redis implementation is that Redis offers no direct way to make some piece of data be stored in some node. However, the Storage API defines a method which allows the user to do that. Our solution to this problem consisted of simply generating random keys until one of them mapped to a valid slot. This adds almost no overhead, as the number of nodes tends to be a very manageable number such as 16, 32, 64, or at most 128 in most practical cases.\\
+\\
+Our Redis implementation can be used with an already existing storage system by just specifying the list of storage nodes and it is also capable to create a Redis Cluster with the specified COMPSs Nodes. A Redis cluster is created by launching three or more Redis instances and then joining them into a cluster with a Redis command. This storage implementation, and its user's manual, can be found in the project's repository \footnote{https://github.com/srgrr/TFM/tree/master/applications/STORAGE}.
 
 \subsection{Practical Applications}
 \label{subsec:storage_apps}
@@ -91,14 +90,12 @@ Some results of how this application scales and behaves with various, different 
 \label{fig:kmeans_strong_redis}
 \end{figure}
 
-
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale = 0.5]{figures/storage/kmeans_strong_speedup.png}
 \caption{Strong scaling speedup graph of our various storage implementations}
 \label{fig:kmeans_strong_speedup_redis}
 \end{figure}
-
 
 \begin{figure}[ht!]
 \centering
@@ -107,7 +104,6 @@ Some results of how this application scales and behaves with various, different 
 \label{fig:kmeans_weak_redis}
 \end{figure}
 
-
 \begin{figure}[ht!]
 \centering
 \includegraphics[scale = 0.5]{figures/storage/kmeans_weak_speedup.png}
@@ -115,8 +111,7 @@ Some results of how this application scales and behaves with various, different 
 \label{fig:kmeans_weak_speedup_redis}
 \end{figure}
 
-As we can see, our storage implementation does not improve the overall performance of this application. However, as we can see in figure \ref{fig:kmeans_transfer_trace}, this applications has little to no heavy transfers, only at the beggining, so these results are more or less expected.
-
+As we can see, our storage implementation does not improve the overall performance of this application. This applications has little to no heavy transfers, only at the beggining, so these results are more or less expected.
 
 %TODO: GET THE KMEANS TRACE
 
@@ -126,9 +121,16 @@ The matrix multiplication is a very common algorithm and it is usually the prefe
 
 \inputminted{python}{snippets/matmul_python.py}
 
-This code can be parallelized in any of the three loops. The only special requirement is to make sure that no pair of additions over the same $C_{i, j}$ are done concurrently. Our COMPSs implementation can be found in appendix \ref{subsec:matmul_redis}. As we can see, we \textit{solve} the problem by arranging all the tasks that involve some $C_{i, j}$ in a dependency chain.\\
+This code can be parallelized in any of the three loops. The only special requirement is to make sure that no pair of additions over the same $C_{i, j}$ are done concurrently. Our COMPSs implementation can be found in appendix \ref{subsec:matmul_redis}. As we can see, we \textit{solve} the problem by arranging all the tasks that involve some $C_{i, j}$ in a dependency chain. We also consider the members of the matrices to be sub-matrices instead of single numbers in order to keep some balance between task count and task granularity. These dependencies can be observed in figure \ref{fig:matmul_redis_dep_graph}. As we can observe in the labels of edges, this application has more tasks than pieces of data. This means that most tasks will require to transfer at least one of its parameters.\\
+\begin{figure}
+\centering
+\includegraphics[scale = 0.2]{figures/matmul_storage_dep_graph.png}
+\caption{Dependency graph of a 2x2 matrix multiplication.}
+\label{fig:matmul_redis_dep_graph}
+\end{figure}
 \\
-As we can see in figures \ref{fig:matmul_strong_redis} and \ref{fig:matmul_strong_speedup_redis} the Matrix Multiplication algorithm gets a huge benefit from our storage systems. This is expected, as this application is a great example of a very transfer-intensive workflow.
+As we can see in figures \ref{fig:matmul_strong_redis} and \ref{fig:matmul_strong_speedup_redis} the Matrix Multiplication algorithm gets a huge benefit from our storage systems. This is expected, as this application is a great example of a very transfer-intensive workflow. Although this application is syntethic and has little to no usage in real scenarios, it still represents and reproduces many realistic workflows. Usually, an improvement on this application implies improvements on many real applications.
+
 
 \begin{figure}
 \centering
