@@ -31,8 +31,8 @@ Another important thing to note is that a distributed application can still expl
 
 This last approach is what we consider a well \textit{COMPSsfied} application: it has a reasonable task count and granularity, and it exploits various levels of parallelism at the same time. This application also delegates most of the work to \verb|numpy| procedures, which are mainly written in C++ and OpenMP. This aspect is also important in PyCOMPSs, as Python is, by nature, a very slow programming language and it should be only used as an orchestrator.
 
-As mentioned in section \ref{sec:hpcenv}, COMPSs is mainly designed to run in HPC environments. Most of HPC machines integrate some sort of queue system to manage its resources among all the demanding users. Our previous example can be run as a job in a queue system with the following command:
+As we mentioned in section \ref{sec:hpcenv}, COMPSs is mainly designed to run in HPC environments. Most of HPC machines integrate some sort of queue system to manage its resources among all the demanding users. Our previous example can be run as a job in a queue system with the following command:
 
 \inputminted{bash}{applications/PI_SQUARE/run_mn4.sh}
 
-
+The \verb|enqueue_compss| command refers to a generic queueing script (see section \ref{subsec:hpc_queues}) which translates our request to enqueue this COMPSs job to a specific queue system.
