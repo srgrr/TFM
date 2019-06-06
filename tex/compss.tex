@@ -1,6 +1,5 @@
-\section{The COMPSs Programming Model}
 \label{sec:compss}
-\subsection{Introduction}
+\subsubsection{Introduction}
 COMP Superscalar (and, from now on, COMPSs) is a framework aimed to ease the development of applications for distributed infrastructures \cite{compss} \cite{Lordan2014}. A COMPSs application is typically a normal application with some special annotations and a few extra function calls in its code that transform a sequential code into a program that can run in a distributed environment.\\
 \\
 COMPSs applications can be written in Java, C/C++, and in Python (both 2 and 3). The Python framework is called PyCOMPSs \cite{pycompss}. All the examples and real-world usages in this project will be developed in the PyCOMPSs framework and in the Python language. However, this does not mean that all the features discussed and developed in this project are only available for PyCOMPSs. In fact, given how COMPSs is designed, the implementation of a feature for PyCOMPSs usually implies to implicitly implement it for any of the programming languages that are supported by COMPSs.\\
@@ -23,7 +22,7 @@ The COMPSs framework also provides users and developers with some tools and data
 
 \input{compss_example.tex}
 
-\subsection{COMPSs Components}
+\subsubsection{COMPSs Components}
 \label{subsec:compss_components}
 COMPSs is designed, developed, and deployed in a modular way. This has some advantages:
 \begin{itemize} 
@@ -49,8 +48,19 @@ An overview of the main COMPSs components can be found in figure \ref{fig:compss
 This design choice also brings some unwanted problems. The main issue is isolation and concentration of knowledge of some parts in some developers, which leads to unnecessary code replication, lack of coherence of design and implementation choices between different modules, partial feature implementations (e.g: a feature that is only available in PyCOMPSs because it was developed by someone who did not know how to implement it in the Java runtime), and many other things. All these issues will be adressed and referred to in this document, as they appear and play an important role in our own design choices and implementations.
 
 %TODO
-\subsection{Runtime Structure}
+\subsubsection{Runtime Structure}
 \label{subsec:runtime_structure}
+
+The COMPSs Runtime is the \textit{brain} of the programming model. It receives the generated task parameters, computes dependencies between them, decides how to distribute the workload of the tasks among the available resources, and so on. As we can see in figure \ref{fig:runtime_modules}, the COMPSs Runtime is divided in five layers. The roles of these layers are:
+
+\begin{itemize}
+\item \textbf{Engine} Receive a task from the bindings/loader, process its parameters, register them if necessary, compute dependencies between tasks. Keep track of this task graph, and of tasks with in-degree zero in this graph. Send executable tasks to the scheduler.
+\item \textbf{Scheduler} Receive a executable task from the COMPSs Engine. Keep track of the available resources, the locations of all data units, the current load of these resources, and decide a location to execute this task according to these parameters
+\item \textbf{Adaptors} Provide an intermediate layer between the communications library and other layers. Responsible of sending and receiving requests between the computing nodes. A request can be about some data unit or about executing a task in some resource.
+\end{itemize}
+
+We have ommited the Resources and Communication Library because they are out of the scope of this project. The Resources layer will not affect any of our work, and the Communication Library needs no modifications, as it is a very low level library, and we can construct any of the new communication features we need by combining the already existing primitives.
+
 
 \begin{figure}
 \centering
@@ -59,17 +69,21 @@ This design choice also brings some unwanted problems. The main issue is isolati
 \label{fig:runtime_modules}
 \end{figure}
 
-\subsection{PyCOMPSs Structure}
+\subsubsection{PyCOMPSs Structure}
 \label{subsec:pycompss_structure}
 PyCOMPSs can be summarized as a Python Binding for COMPSs. It gives the user a way to annotate his Python code, and it internally transforms and forwards all the derived task creation requests and data to the COMPSs Runtime. Its role can be summarized as follows:
 \begin{enumerate}
 \item Execute the user code, both the master and the worker part
-\item Implement code annotations (\verb|@task|, \verb|@binary|, etc)
-\item Implement flow control mechanisms (\verb|compss_wait_on|, \verb|compss_barrier|, etc)
-\item Transform the user data into something easily to transport between different machines
+\item Implement code annotations, such as \verb|@task|, \verb|@binary|, etc
+\item Implement wrappers to flow control mechanisms, such as \verb|compss_wait_on|, \verb|compss_barrier|, etc
+\item Transform the user data into something easy to transport between different machines
 \end{enumerate}
 
-\subsection{Usability vs Performance}
+The binding implementation can be divided into two big parts: master and worker. The master executes the user's code, captures tasks calls, forwards the data to the COMPSs Runtime, offers future objects to the user and the possibility to wait for some object to be available (synchronization points). The worker is just a Python process constantly listening to a pipe and obeying the orders it receives from this pipe. These orders can consist of executing a task or to end the process. When executing a task, the worker must deserialize the parameters, which are usually stored as files in the filesystem, fetch the function, reconstruct its signature, rearrange the parameters according to it, execute the user's function, capture the results (or the modification of the parameters if they were \textit{INOUTs}), serialize and store them in the filesystem, and communicate success or failure to the COMPSs Runtime.\\
+\\
+PyCOMPSs makes a strong emphasis on usability. This means that a lot of effort is put on minimizing the necessary changes to make a sequential program run in PyCOMPSs. We also try to take advantage of any new usability feature to try to introduce improvements in the programming model performance. This is not always possible and, in fact, usability implies a tradeoff with performance.
+
+\subsubsection{Usability vs Performance}
 \label{subsec:compss_ux_vs_perf}
 COMPSs has two goals: to give the not-so-expert user an easy way to make their sequential applications run in distributed environments, and to do it as efficiently as possible. Many improvements in the COMPSs framework are aimed to improve only one of these two aspects. For example, any improvement in the communication library may improve the performance of the user application, but the user will still face the same usability limitations when using COMPSs. Adding an automatic return completion, to handle the case when the user forgot to annotate the return value of some task, may save the user a lot of debugging time, but it will have no impact in the performance of the user application.\\
 \\

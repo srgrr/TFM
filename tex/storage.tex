@@ -13,7 +13,7 @@ The idea of replacing files with databases helps with these three items. Custom 
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
-The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.\\
+The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba} (see sections \ref{subsec:dataclay_state_of_the_art} and \ref{subsec:hecuba_state_of_the_art}).\\
 \\
 After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations by just changing the chosen API implementation in their configuration. The existence of an API should also make the user's life easier, so it must be developed taking into account the needs of the research groups and the usability of the final product. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
 
@@ -48,7 +48,7 @@ Our implementation serializes objects in-memory and stores them as byte arrays i
 \\
 Another detail about our Redis implementation is that Redis offers no direct way to make some piece of data be stored in some node. However, the Storage API defines a method which allows the user to do that. Our solution to this problem consisted of simply generating random keys until one of them mapped to a valid slot. This adds almost no overhead, as the number of nodes tends to be a very manageable number such as 16, 32, 64, or at most 128 in most practical cases.\\
 \\
-Our Redis implementation can be used with an already existing storage system by just specifying the list of storage nodes and it is also capable to create a Redis Cluster with the specified COMPSs Nodes. A Redis cluster is created by launching three or more Redis instances and then joining them into a cluster with a Redis command. This storage implementation, and its user's manual, can be found in the project's repository \footnote{https://github.com/srgrr/TFM/tree/master/applications/STORAGE}.
+Our Redis implementation can be used with an already existing storage backend by just specifying the list of storage nodes and it is also capable to create a Redis Cluster with the specified COMPSs Nodes. A Redis cluster is created by launching three or more Redis instances and then joining them into a cluster with a Redis command. This storage implementation, and its user's manual, can be found in the project's repository \footnote{https://github.com/srgrr/TFM/tree/master/applications/STORAGE}.
 
 \subsection{Practical Applications}
 \label{subsec:storage_apps}

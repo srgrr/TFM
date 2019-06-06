@@ -1,4 +1,3 @@
-% Esto es mi TFM
 \documentclass{article}
 \usepackage{graphicx}
 \setlength\parindent{0pt}
@@ -8,6 +7,8 @@
 \usepackage{amsmath}
 \begin{document}
 \newpage
+\input{cover.tex}
+\newpage
 \input{abstract.tex}
 \newpage
 \input{agradecimientos.tex}
@@ -16,13 +17,18 @@
 \listoffigures
 \listoftables
 
+
 \input{introduction.tex}
+
+\input{state_of_the_art.tex}
 
 \input{planning.tex}
 
-\input{hpcenv.tex}
+% MOVED TO STATE OF THE ART
+%\input{hpcenv.tex}
 
-\input{compss.tex}
+% MOVED TO STATE OF THE ART
+%\input{compss.tex}
 
 \input{task_performance.tex}
 
