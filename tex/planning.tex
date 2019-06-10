@@ -1,6 +1,6 @@
 \section{Tasks and time planning}
 \label{sec:tasks_and_time_planning}
-This project intends to implement various features aimed to improve the object management stage of the COMPSs programming model. These features may depend on some previous features or they may be totally independent. This project also requires some additional tasks, as writing this document. All tasks, with their dependencies, can be found in figure \ref{fig:thesis_task_graph}.
+This project intends to implement various features aimed to improve the object management stage of the COMPSs programming model. These features may depend on some previous features or they may be totally independent. This project also requires some additional tasks, as writing this document. This section intends to organize the objectives mentioned in section \ref{subsec:intro_objectives}. Some new objectives and tasks are added, such as learning the COMPSs internals. All tasks, with their dependencies, can be found in figure \ref{fig:thesis_task_graph}.
 
 \begin{figure}[ht!]
 \includegraphics[scale = 0.20]{figures/thesis_task_graph.png}
@@ -8,6 +8,8 @@ This project intends to implement various features aimed to improve the object m
 \caption{A dependency graph representation of the different tasks and the dependencies between them. The numbers between parentheses denote the estimated number of needed weeks to do some task}
 \end{figure}
 
+\subsection{Project Tasks}
+\label{subsec:project_tasks}
 A more precise explanation of these tasks (and shortcuts to the corresponding sections) can be found below. It is recommended to read the following sections in order to fully understand all the terms and explanations that will appear in this document.
 
 \begin{itemize}
@@ -15,7 +17,7 @@ A more precise explanation of these tasks (and shortcuts to the corresponding se
 
 \item \textbf{Bindings familiarization} COMPSs has two bindings that allow the user to write applications for both C/C++ and Python. We will mainly focus on the Python (PyCOMPSs) part. This task will consist of learning the different Python modules, how user code is decorated from there, and how this binding communicates with the COMPSs Runtime via C++ Python extensions \footnote{https://docs.python.org/3/extending/building.html} and the JNI library \footnote{https://es.wikipedia.org/wiki/Java\_Native\_Interface}. The development of this task can be found in section \ref{subsec:pycompss_structure}.
 
-\item \textbf{Collection IN} This feature will allow the user to deal with multiple COMPSs parameters at once if he puts them in some container. This task and all the others that have something to do with it is developed and explained in section \ref{sec:col}.
+\item \textbf{Collection IN} This feature will allow the user to deal with multiple COMPSs input parameters at once if he puts them in some container. This task and all the others that have something to do with it is developed and explained in section \ref{sec:col}.
 
 \item \textbf{Merge Collection IN} This task consists of integrating the changes made in COMPSs to support collections into the main branch of the software while guaranteeing that this integration does not affect the stability and performance of the software. This section includes to implement some kind of unit test, and to include it in a continuous integration environment. COMPSs has many concurrent developers attacking many sections of the software at the same time, and the software has many lines of source code, so this task may no be as trivial as it seems.
 
@@ -29,11 +31,14 @@ A more precise explanation of these tasks (and shortcuts to the corresponding se
 
 \item \textbf{Threading IO in PyCOMPSs} Most Python implementations have a Global Interpreter Lock (GIL) that prevent parallelism with Python threads. This does not mean that some speedup can be obtained if IO operations are done with Python threads, and that Python programs are necessary sequential or, at best, concurrent (for example, the Numpy library has many linear algebra operations implemented with OpenMP). This task explores if it is worthy to parallelize IO operations with Python threads.
 
-\item \textbf{Find and fix task performance degradation} This task is just a practical exercise aimed to check if we have actually achieved a good enough understanding of the COMPSs programming model. It consists of dealing with a performance decay in a user's application. By dealing we mean to identify the problem, its sources, think about a solution and implement it (if applies). This task is developed in section \ref{sec:task_overhead}. This task is intended to serve as an extension of the explanation on how COMPSs works.
+\item \textbf{Find and fix task performance degradation} This task will be useful to check if we have actually achieved a good enough understanding of the COMPSs programming model. It consists of dealing with a performance decay in a user's application. By dealing we mean to identify the problem, its sources, think about a solution and implement it (if applies). This task is developed in section \ref{sec:task_overhead}. This task is intended to serve as an extension of the explanation on how COMPSs works.
 
 \end{itemize}
 
-\section{Methodology}
+As a remark, we consider the development of applications or use cases to be implicit in any task, so there is no "develop practical application" task in the graph.
+
+\subsection{Methodology}
+
 This project will be developed in a constant-feedback, results-driven model. That is, the outcome of some implementation may make our initial planning change, as these implementations may reveal more interesting lines, or heavy limitations to the current ones.\\
 \\
 One of the key aspects of this kind of work is to keep results reachable and easy to reproduce. For this purpose all the contents regarding to this project can be found in two git repositories:

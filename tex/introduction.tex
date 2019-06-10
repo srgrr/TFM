@@ -1,5 +1,8 @@
 \section{Introduction}
 \label{sec:introduction}
+
+\subsection{Motivation}
+\label{subsec:intro_motivation}
 Most modern research fields use computational resources in some way or another. This trend started some decades ago, and it seems to be increasingly accepted and adopted among all the scientific fields. While computer science has brought many solutions to many research problems, it also caused a lot of difficulties and created new problems to researchers. One of the most remarkable problems is the increasing difficulty on programming and software development due to the increasing sizes of data sets, experiments, and number and complexity of the available computational resources. This problem becomes even more noticeable when a research group has no computer scientists and all the programming tasks are done by non-experts.\\
 \\
 \textit{Non-expert} programming has always been an issue, but it was far more manageable when all the programs ran sequentially in a single core machine. Multi-core CPUs allowed a program to run various fragments of its code at the same time and thus increased the difficulty of programming both in a conceptual and in a technical way. Parallel programming introduced concepts such as \textit{race condition}, \textit{data dependency}, \textit{critical region}, \textit{parallelism factor}, \textit{granularity}, \textit{overhead} and many more, and the existing frameworks (e.g: native threads) were too low level to be understood or used by non computer scientists, and implied high development and maintainment costs.\\
@@ -15,12 +18,28 @@ So, the next step was obvious: make a program run in different machines simultan
 As happened with parallel programming, the demands of the industry encouraged the development of frameworks, programming models and file systems aimed to make the development of distributed applications easier. These frameworks and programming models usually abstract the user from things such as explicit computational resource management, synchronization between processes, logging, and network and object handling.\\
 \\
 One of the most used frameworks is Spark \cite{Zaharia:2010:SCC:1863103.1863113} alongside with HDF5 \cite{shvachko2010hadoop}. Usually, a Spark application consists of the repeated application of a set of fixed patterns, such as map-reduce, while making the \textit{hard steps} transparent to the user. Although this is a very powerful tool, it still requires a strong programming knowledge, as it may not be trivial to translate any idea or an already existing application to this set of patterns. It is for this reason that task-based programming models offer a good alternative. A task-based programming model lets the user to select which parts of the code will be tasks, allowing him to take already existing applications and making them run in a distributed environment with minimal effort.
-\\
-This project focuses on improving the task-based programming model COMP Superscalar (and, from now on, COMPSs) \cite{compss} by both adding features aimed to improve usability and performance by focusing on the object management stage. Object management implies a lot of different algorithms, problems, and use cases. Some of these use cases are:
+
+
+\subsection{Objectives}
+\label{subsec:intro_objectives}
+This project focuses on improving the task-based programming model COMP Superscalar (and, from now on, COMPSs) \cite{compss} by both adding features aimed to improve usability and performance by focusing on the object management stage. Object management implies a lot of different algorithms, problems. Some of them are:
 \begin{itemize}
 \item Have a quick way to uniquely identify user objects
 \item Translate user objects into something transferable between different machines with, possibly, different architectures and/or versions of some of its software. Try to cover as much objects as possible
 \item Maintain consistency between versions of the objects among all the computational resources, keep track of its locations, and use this information to exploit data locality when scheduling tasks in task-based programming models
 \item Transfer objects between computational resources. Do it as smart as possible to minimize redundant data transfers, bottlenecks, and so on
 \end{itemize}
-In this project we will explore some features and paradigms aimed to improve any of these aspects. We will also implement applications and algorithms to test them.
+In this project we will explore some features and paradigms aimed to improve any of these aspects. We will also implement applications and algorithms to test them. Our specific objectives are:
+
+\begin{itemize}
+\item \textbf{Fix PyCOMPSs task Overheads} The current PyCOMPSs version (tagged as 2.4) seems to do some kind of $\mathcal{O}(n)$ computation before sending the nth emitted task to the COMPSs Runtime. Our objective is to detect, analyze and fix the source of this overhead.
+\item \textbf{Collection Parameters} Make COMPSs support arrays of parameters. Compute dependencies between them, and exploit the fact that these parameters \textit{go together} to reduce object management overheads.
+\item \textbf{Combine Storage with COMPSs} Explore and provide alternatives to GPFS to avoid COMPSs dealing with the file system. 
+\item \textbf{Add threading to PyCOMPSs IO operations} Although Python has a Global Interpreter Lock \footnote{https://wiki.python.org/moin/GlobalInterpreterLock} (GIL) it can still benefit from rearranging non-blocking IO operations. Our objective is to experiment with parallel object (de)serialization.
+\item \textbf{Implement distributed applications as tests} This step consists of implementing applications with specific workflows aimed to test the new features or improvements to the COMPSs programming model. It also contributes to have a bigger repository of use cases and applications.
+\end{itemize}
+
+
+\subsection{Document structure}
+\label{subsec:document_structure}
+The rest of the document is organized as follows. Section \ref{sec:state_of_the_art} enumerates the current technologies, frameworks and programming models related to this project and, in general, with HPC and distributed systems. Section \ref{sec:tasks_and_time_planning} enumerates and organizes the tasks to do in this project and the employed methodology. The rest of the sections are devoted to the development of the features, executions and experiments of the project itself. Some source codes can be found as appendices, or as inline comments if they are short enough, but other are too long to be attached in this document, as the COMPSs code itself. In these cases, a link or a reference to a repository will be provided when necessary.
