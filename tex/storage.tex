@@ -13,7 +13,7 @@ The idea of replacing files with databases helps with these three items when the
 
 \subsection{Defining a Storage API}
 \label{subsec:storage_api}
-The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba} (see sections \ref{subsec:dataclay_state_of_the_art} and \ref{subsec:hecuba_state_of_the_art}).\\
+The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.\\
 \\
 After some meetings it was decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations by just changing the chosen API implementation in their configuration. The existence of an API should also make the user's life easier, so it must be developed taking into account the needs of the research groups and the usability of the final product. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
 
