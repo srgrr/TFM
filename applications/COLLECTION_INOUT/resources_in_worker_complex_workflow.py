@@ -4,7 +4,7 @@ from pycompss.api.parameter import *
 # A small, simple program to show the COLLECTION_INOUT feature
 # Its workflow can be summarized as follows:
 # 1) Ten random vectors with 5 elements are created in COMPSs tasks
-# 2) A task receives these ten random vectors packed in a COLLECTION_IN
+# 2) A task receives these ten random vectors packed in a COLLECTION_INOUT
 #    parameter
 # 3) A task receives the fifht element of this collection as an INOUT and increases all
 #    its entries by one
