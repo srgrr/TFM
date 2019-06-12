@@ -1,14 +1,9 @@
 \section{State of The Art}
 \label{sec:state_of_the_art}
 
-\subsection{COMPSs}
-\label{subsec:compss_state_of_the_art}
-\input{compss.tex}
-
 \subsection{Mare Nostrum IV}
 \label{subsec:mare_nostrum}
-%TODO: MENCIONAR QUE COMPSS ESTA PENSADO PARA SER USADO AQUI
-Mare Nostrum is a generic name to refer to the main supercomputer of the Barcelona Supercomputing Center \footnote{https://www.bsc.es}. Mare Nostrum IV is the fourth version of this supercomputer.
+Mare Nostrum is a generic name to refer to the main supercomputer of the Barcelona Supercomputing Center \footnote{https://www.bsc.es}. Mare Nostrum IV is the fourth version of this supercomputer. 
 
 \subsection{GPFS}
 \label{subsec:gpfs}
@@ -30,3 +25,8 @@ The most common solution to the two aforementioned problems is to divide the dif
 Two of the most common queue systems are LSF \cite{zhou1992lsf} and SLURM \cite{yoo2003slurm}. All the experiments of this project will be done in the Mare Nostrum 4 supercomputer, which uses SLURM.\\
 \\
 Although SLURM has its own micro-language and instructions, such as \verb|srun|, and submissions scripts, most of the experiments done in this project will not need them, as we will have generic queueing scripts available to us. A generic queueing script is a script capable to work with various queue systems to generate the corresponding specific queueing scripts. In our case, our script will translate our orders into a bunch of \verb|srun| commands and similar.\\
+\newpage
+\subsection{COMPSs}
+\label{subsec:compss_state_of_the_art}
+\input{compss.tex}
+
