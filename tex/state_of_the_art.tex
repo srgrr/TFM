@@ -8,7 +8,7 @@ Mare Nostrum is a generic name to refer to the main supercomputer of the Barcelo
 \subsection{GPFS}
 \label{subsec:gpfs}
 GPFS \cite{schmuck2002gpfs} is a distributed file system developed by IBM. It gives a perceived behaviour of a regular POSIX file system, while guaranteeing consistency between different computational resources, and a correct parallel access to its files. Under this model, any node has access any file at any location. As we can see in figure \ref{fig:gpfs_schema} a node accesses data through a switching fabric. A switching fabric is a kind network topology in which any two nodes connect between each other through a series of switches. This topology allows a more efficient communication between nodes than other topologies such as broadcast networks.
-\begin{figure}
+\begin{figure}[ht!]
 \centering
 \includegraphics{figures/gpfs_schema.png}
 \caption{GPFS Shared disk environment. Figure 1 from \cite{schmuck2002gpfs}}
