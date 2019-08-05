@@ -1,15 +1,15 @@
-\section{Introduction}
+\chapter{Introduction}
 \label{sec:introduction}
 
-\subsection{Motivation}
+\section{Motivation}
 \label{subsec:intro_motivation}
-Most modern research fields use computational resources in some way or another. This trend started some decades ago, and it seems to be increasingly accepted and adopted among all the scientific fields. While computer science has brought many solutions to many research problems, it also caused a lot of difficulties and created new problems to researchers. One of the most remarkable problems is the increasing difficulty on programming and software development due to the increasing sizes of data sets, experiments, and number and complexity of the available computational resources. This problem becomes even more noticeable when a research group has no computer scientists and all the programming tasks are done by non-experts.\\
+Most modern research fields use computational resources in some way or another. This trend started some decades ago, and it seems to be increasingly accepted and adopted among all the scientific fields. While computer science contributed to solve many research problems, it also created new challenges to researchers, as the increasing difficulty on programming and software development due to the increasing sizes of data sets, experiments, and number and complexity of the available computational resources. This problem becomes even more noticeable when a research group has no computer scientists and all the programming tasks are done by non-experts. This happens to be very common in fields like biology, chemistry or physics.\\
 \\
 \textit{Non-expert} programming has always been an issue, but it was far more manageable when all the programs ran sequentially in a single core machine. Multi-core CPUs allowed a program to run various fragments of its code at the same time and thus increased the difficulty of programming both in a conceptual and in a technical way. Parallel programming introduced concepts such as \textit{race condition}, \textit{data dependency}, \textit{critical region}, \textit{parallelism factor}, \textit{granularity}, \textit{overhead} and many more, and the existing frameworks (e.g: native threads) were too low level to be understood or used by non computer scientists, and implied high development and maintainment costs.\\
 \\
 This shift towards more complex computational models and programs due to the presence of parallelism encouraged the industry to create easier frameworks and programming models for parallel computing. One of the greatest examples of these new frameworks is OpenMP\cite{openmp08}. OpenMP simplified the task of writing parallel programs a lot, making it understandable to non computer scientists. As an example, a working sequential matrix multiplication algorithm can be written as follows:
 \inputminted{c}{snippets/matmul_openmp.cc}
-Note that all the forks, joins, private copies and similar are just \textit{specified}, but not done explicitly. This simplification allowed the general public to take advantage of parallelism. There are many other concurrent and parallel frameworks and models, such as MPI\cite{Forum:1994:MMI:898758}, and many programming languages, such as Java, have a built-in threading library, which is usually simpler to use than native, low-level threads. Even some languages, such as Erlang, are explicitly designed for concurrent and parallel programming.\\
+Note that all the forks, joins, private copies and similar are just \textit{specified}, but not done explicitly. This simplification allowed the general programming public to take advantage of parallelism. There are many other concurrent and parallel frameworks and models, such as MPI\cite{Forum:1994:MMI:898758}, and many programming languages, such as Java, have a built-in threading library, which is usually simpler to use than native, low-level threads. Even some languages, such as Erlang, are explicitly designed for concurrent and parallel programming.\\
 \\
 For many years the computational \textit{growth model} consisted of simply adding more resources to increase the potential degree of parallelism, as the performance improvements of individual processors stagnated. In last years, the parallel growth model also started to show signs of stagnation, but the demand of computational resources and the size of the problems to solve are still increasing. In fact, the sizes of the datasets experimented an exponential growth with the boom of paradigms such as Big Data or Deep Learning, in which it is not strange to deal with datasets that, simply put, do not fit in a single machine.\\
 \\
@@ -19,10 +19,9 @@ As happened with parallel programming, the demands of the industry encouraged th
 \\
 One of the most used frameworks is Spark \cite{Zaharia:2010:SCC:1863103.1863113} alongside with HDF5 \cite{shvachko2010hadoop}. Usually, a Spark application consists of the repeated application of a set of fixed patterns, such as map-reduce, while making the \textit{hard steps} transparent to the user. Although this is a very powerful tool, it still requires a strong programming knowledge, as it may not be trivial to translate any idea or an already existing application to this set of patterns. It is for this reason that task-based programming models offer a good alternative. A task-based programming model lets the user to select which parts of the code will be tasks, allowing him to take already existing applications and make them run in a distributed environment with minimal effort.
 
-
-\subsection{Objectives}
+\section{Objectives}
 \label{subsec:intro_objectives}
-This project focuses on improving the task-based programming model COMP Superscalar (and, from now on, COMPSs) \cite{compss} by both adding features aimed to improve usability and performance by focusing on the object management stage. Object management implies a lot of different algorithms, problems. Some of them are:
+This project focuses on improving the task-based programming model COMP Superscalar (and, from now on, COMPSs) \cite{compss} by both adding features aimed to improve usability and performance by focusing on the object management stage. Object management implies a lot of different algorithms and computational problems. Some of them are:
 \begin{itemize}
 \item Have a quick way to uniquely identify user objects
 \item Translate user objects into something transferable between different machines with, possibly, different architectures and/or versions of some of its software. Try to cover as much objects as possible
@@ -33,13 +32,13 @@ In this project we will explore some features and paradigms aimed to improve any
 
 \begin{itemize}
 \item \textbf{Fix PyCOMPSs task Overheads} The current PyCOMPSs version (tagged as 2.4) seems to do some kind of $\mathcal{O}(n)$ computation before sending the nth emitted task to the COMPSs Runtime. Our objective is to detect, analyze and fix the source of this overhead.
-\item \textbf{Collection Parameters} Make COMPSs support arrays of parameters. Compute dependencies between them, and exploit the fact that these parameters \textit{go together} to reduce object management overheads.
+\item \textbf{Collection Parameters} Make COMPSs support arrays of parameters. Compute dependencies between the elements of collections and collections themselves, and exploit the fact that these parameters \textit{go together} to reduce object management overheads.
 \item \textbf{Combine Storage with COMPSs} Explore and provide alternatives to GPFS to avoid COMPSs dealing with the file system. 
 \item \textbf{Add threading to PyCOMPSs IO operations} Although Python has a Global Interpreter Lock \footnote{https://wiki.python.org/moin/GlobalInterpreterLock} (GIL) it can still benefit from rearranging non-blocking IO operations. Our objective is to experiment with parallel object (de)serialization.
 \item \textbf{Implement distributed applications as tests} This step consists of implementing applications with specific workflows aimed to test the new features or improvements to the COMPSs programming model. It also contributes to have a bigger repository of use cases and applications.
 \end{itemize}
 
 
-\subsection{Document structure}
+\section{Document structure}
 \label{subsec:document_structure}
 The rest of the document is organized as follows. Section \ref{sec:state_of_the_art} enumerates the current technologies, frameworks and programming models related to this project and, in general, with HPC and distributed systems. Section \ref{sec:tasks_and_time_planning} enumerates and organizes the tasks to do in this project and the employed methodology. The rest of the sections are devoted to the development of the features, executions and experiments of the project itself. Some source codes can be found as appendices, or as inline comments if they are short enough, but other are too long to be attached in this document, as the COMPSs code itself. In these cases, a link or a reference to a repository will be provided when necessary.

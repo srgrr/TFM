@@ -1,9 +1,9 @@
 \newpage
-\section{Fixing tasks overheads in PyCOMPSs}
+\chapter{Improving object identification in PyCOMPSs}
 \label{sec:task_overhead}
-This section describes a performance fix in the COMPSs programming model. It also gives a practical example of how important is to properly manage objects in distributed programming models and to show how complex finding a bug in this kind of software can be.
+This section describes a performance improvement in the COMPSs programming model. It also gives a practical example of how important is to properly manage objects in distributed programming models and to show how complex finding a bug in this kind of software can be.
 
-\subsection{Problem description}
+\section{Problem description}
 A COMPSs user reported via mailing list that his application showed a gradual performance degradation over time. A source code that reproduces the \textit{guilty} workflow is the following:
 
 \inputminted{python}{applications/TASK_OVERHEAD/main.py}
@@ -24,8 +24,8 @@ The user was able to detect this performance degradation thanks to the tracing t
 \label{fig:zoom_task_late}
 \end{figure}
 
-\subsection{Analysing and narrowing down the problem}
-The trace from figure \ref{fig:zoom_task_late} gives us the hint that there is something wrong about how COMPSs manages tasks. Note that this fact only gives us a very rough hint on where to start looking for, but there are still many possible candidates and places to look at. Some of these places are:
+\section{Analysing and narrowing down the problem}
+The trace from figure \ref{fig:zoom_task_late} shows us that there is something wrong about how COMPSs manages tasks. Note that this fact only gives us a very rough hint on where to start looking for, but there are still many possible candidates and places to look at. Some of these places are:
 \begin{itemize}
 \item PyCOMPSs \verb|@task| decorator
 \item PyCOMPSs object serialization
@@ -36,15 +36,16 @@ The trace from figure \ref{fig:zoom_task_late} gives us the hint that there is s
 \item COMPSs Worker task reception
 \item ...
 \end{itemize}
-The list may contain 30 additional items before the last(s) step(s) \textit{user's task is executed, results are serialized and the master gets a notification about it}. Some sections are arguably skippable, as our knowledge and experience tells us they cannot have anything to do with our issue, but the other ones must be revised one by one. The natural way to proceed is to simply follow the PyCOMPSs and COMPSs source code in the \textit{natural order}. That is, start from the user's source code, detect a task, go to the \verb|@task| decorator, and so on.\\
+The list may contain 30 additional items before the last step(s) \textit{user's task is executed, results are serialized and the master gets a notification about it}. Some sections are arguably skippable, as our knowledge and experience tells us they cannot have anything to do with our issue, but many others must be reviewed. The natural way to proceed is to simply follow the PyCOMPSs and COMPSs source code in the \textit{natural order}. That is, start from the user's source code, detect a task, go to the \verb|@task| decorator, and so on.\\
 \\
 Fortunately for us, the problem was on a quite early stage: the handling of the object identifiers in the Python binding.
-% TODO: COMPLETE THIS SECTION, EXPLAIN HOW WE DID ARRIVE TO IDOBJ
 
-\subsection{Object identification and mapping in PyCOMPSs}
+\section{Object identification and mapping in PyCOMPSs}
 Our first (and last) bet was on the \verb|get_object_id| function from the PyCOMPSs source code. Let's take a look at this function:
 
 \inputminted{python}{snippets/get_object_id_old.py}
+
+
 
 This function iterates over potentially all of the tracked objects just to get the identifier of some object (or to assign it one). This is done this way because an object needs to be hashable for being used as a key in a dictionary. Hashable usually means immutable, and no user can guarantee us that his objects will fulfill these properties. In fact, the programming model supports INOUT objects, which are, by nature, mutable objects. Some examples of mutable Python objects are \verb|[1, 2, 3, "hello"]|, \verb|object()| and \verb|numpy.random.rand(5)|.\\
 \\

@@ -1,0 +1,154 @@
+\chapter{Combining Storage Systems with COMPSs}
+\label{sec:storage}
+All COMPSs objects are created by the user and managed by the Runtime. The data transferring software is a home-made library based on NIO \footnote{https://docs.oracle.com/javase/7/docs/api/java/nio/package-summary.html}. Although this is usually a good enough solution for most use cases, there are three scenarios in which it may be a disadvantage to use this library:
+
+\begin{enumerate}
+\item The objects are the output of some previous application
+\item The outputs of the COMPSs application are the input of some other application
+\item The filesystem and/or the network presents huge bandwidth limitations
+\end{enumerate}
+
+The idea of replacing files with databases or other alternative storage systems such as NVRAM helps with these three items when the available file system is not distributed like GPFS. Custom storage systems can help the user to avoid dealing with the file system and execute complex, distributed workflows using only the RAM of all the machines (and some additional swap space if necessary). Another advantage is that these storage systems are specialized, and therefore have better implementations than us on transferring objects between nodes, so delegating object management to these systems may give us a little performance boost. In this chapter we explore the possibility of relegating COMPSs as a simple task orchestrator by replacing the object management stage by specialized storage systems. As usually happens, the implementation of this feature can give some usability problems. We will also deal with this aspect of the implementation.
+
+
+\section{Defining a Storage API}
+\label{subsec:storage_api}
+The need of defining a storage API comes from the fact that some research groups are interested in mixing some of their tools with the COMPSs Programming Model. The two main tools or products from these research groups are DataClay \cite{DataClay} and Hecuba \cite{alomar2015hecuba}.\\
+\\
+We decided that storage systems should implement all the same API. This would make implementations simpler and would allow the users to run the same application with different storage implementations by just changing the chosen API implementation in their configuration. The existence of an API should also make the user's life easier, so it must be developed taking into account the needs of the research groups and the usability of the final product. All API implementations must define a \verb|StorageObject| class from which any object that interacts with the database must inherit. A list of these methods can be found in table \ref{table:storage_api_public_methods}.
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|}
+\hline
+Method name                                                     & Description                                                        \\ \hline
+\verb|make_persistent(id = None)| & Make the Storage Object persistent                                 \\ \hline
+\verb|delete_persistent()|        & Delete the Storage Object from the Storage System                  \\ \hline
+\verb|getID()|                     & Get the identifier of the Storage Object                           \\ \hline
+\verb|getByID(*objects)| (static)  & Retrieve the objects with the given identifiers \\ \hline
+\end{tabular}
+\caption{Public methods of the storage API}
+\label{table:storage_api_public_methods}
+\end{table}
+The \verb|makePersistent| method is called by the user and stores the in-memory object in the database. This method is entirely dependent of the storage implementation. Some implementations just serialize the whole in-memory object and store the byte array in the database, while other implementations store classfields separately. The only constraint about this method is that it must guarantee that the object will be fully stored in the storage system before allowing the user code to continue, and that the in-memory version must be exactly equal to the storage version of the object.\\
+\\
+There are also some additional internal methods that are optional to implement, as \verb|getLocations|, which allows the COMPSs Runtime to know the locations of some piece of data. This \verb|getLocations| is implicit when using the default file system of COMPSs, but needs to be defined when using a storage system in which COMPSs has little to no control on where the objects are stored.\\
+\\
+COMPSs can be configured to let it know that the user is using some storage system. In that case, a path with a \textit{implementation bundle} should be provided. COMPSs will add to the \verb|CLASSPATH| and \verb|PYTHONPATH| variables the necessary paths.\\
+\\
+The target storage system can be an already running database, or can be created by COMPSs if a script to do that is specified. In the first case, a list with the addresses of the storage node(s) should be provided. Note that this list can refer to nodes that have no COMPSs worker instances running on it. This is ideal for COMPSs applications which take the outputs of some other applications as their inputs. In the second case a \verb|storage_init.sh| script should be provided. This script receives the list of the COMPSs nodes as command line arguments and it is responsible to create the corresponding storage backend. It is also advisable to implement a \verb|storage_stop.sh| script if the created storage system by COMPSs is not necessary after the COMPSs execution.\\
+\\
+It must be noted that COMPSs is still responsible of dependency calculation and  transferring metadata between nodes (e.g: the parameters of a task). This means that our collections feature still offers some of the advantages introduced by it, such as a metadata transfer optimizations.
+
+\section{A Practical Implementation: Redis}
+\label{subsec:storage_redis}
+The first step towards validating this storage API consisted of providing a valid, functional implementation of it. For this purpose Redis was chosen.\\
+\\
+Redis \footnote{https://redis.io/} is a simple Key-Value distributed storage database. Redis can be seen as a distributed hash map with $2^{14} = 16384$ slots. Each key is either chosen by the user or randomly assigned, and it determines the position of this object in the hash table. More precisely, given a key $k$, and a value $v$, $v$ will be stored in the position $\textrm{CRC16}(k) \mod \quad 16384$. CRC16\footnote{https://en.wikipedia.org/wiki/Cyclic\_redundancy\_check} is a known checksum-like method used by many devices and network protocols to check that a message has been received with no errors, and it can also be used as a quick hash function.\\
+\\
+Our implementation serializes in-memory objects and stores them as byte arrays in the database. Although this does not save us from serializing objects it is enough to avoid us to deal with the filesystem, allowing us to do all the operations in-memory. Huge byte arrays are split in distributed blocks to avoid long-term load imbalances and to increase long-term data locality, in a similar fashion to Hecuba. Another important detail is that Redis offers the possibility to have replicas. A replica is a Redis instance that mirrors the behavior of some other Redis instance and is usually located in a different node/machine than the original one. This reduces even more the expected transfer time, but it introduces a dangerous tradeoff between time and space.\\
+\\
+Another detail about our Redis implementation is that Redis offers no direct way to make some piece of data be stored in some node. However, the Storage API defines a method which allows the user to do that. Our solution to this problem consisted of simply generating random keys until one of them mapped to a valid slot. This adds almost no overhead, as the number of nodes tends to be a very manageable number such as 16, 32, 64, or at most 128 in most practical cases. We also introduced an optimization for static cluster topologies which consist of precomputing all the possible locations for all the 16384 slots. This way, \verb|getLocations| can be computed in constant time with no online queries to the storage backend. This gives us a small edge with respect to other storage implementations (or COMPSs itself when handling files), which do an explicit computation each time they call \verb|getLocations|.\\
+\\
+Redis also supports pipelining. Pipelining consists of joining various different queries into a single macro-query, allowing the storage backend optimize the order and internal commands. This pipelining feature also represents a small edge with respect to classical files, which are handled separately.
+\\
+Our Redis implementation can be used with an already existing storage backend by just specifying the list of storage nodes and it is also capable to create a Redis Cluster with the specified COMPSs Nodes. A Redis cluster is created by launching three or more Redis instances and then joining them into a cluster with a Redis command. This storage implementation, and its user's manual, can be found in the project's repository \footnote{https://github.com/srgrr/TFM/tree/master/applications/STORAGE}. The two most importants pieces of it, the Java and Python core API implementations, can be found in appendix \ref{subsec:storage_api_redis_impl}.
+
+\section{Practical Applications}
+\label{subsec:storage_apps}
+\subsection{K-Means}
+\label{subsubsec:kmeans_redis}
+K-Means \cite{Lloyd82leastsquares} is a clustering algorithm which, given $N$ $k$-dimensional points and an integer $c$, assigns each point a label between $1$ and $c$. The idea is that these labels represent groups of \textit{similar} points. An example of what this algorithm computes can be found in figure \ref{fig:kmeans_example}.
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.5]{figures/kmeans_example.png}
+\caption{A set of points grouped by the K-Means algorithm. Black points represent centroids, colours represent different groups}
+\label{fig:kmeans_example}
+\end{figure}
+
+The algorithm can be sumarized as follows:
+
+\begin{enumerate}
+\item Generate $c$ random $d$ dimensional points, call them \textit{centroids}
+\item For each point of the input data, compute the nearest centroid, assign them labels according to which centroid is the closest
+\item For each group, compute the mean of its members. Use this mean point as the new centroid
+\item Repeat step 2 until the new centroids are \textit{equal enough} to the old ones
+\end{enumerate}
+
+This algorithm can be easily run in a distributed environment by dividing the input points into chunks and replicating the centroids in each computing node. Note that the input points will not vary during all the execution, and that the centroids usually represent a very small amount of data, so no big network transfers should be expected here, and therefore no huge improvements should be observed with the storage implementation. Our PyCOMPSs implementation is the following can be found in appendix \ref{subsec:kmeans_redis}.
+
+Some results of how this application scales and behaves with various, different storage implementations and with files can be found in figures \ref{fig:kmeans_storage_dep_graph} \ref{fig:kmeans_strong_redis} \ref{fig:kmeans_strong_speedup_redis}, \ref{fig:kmeans_weak_redis}, and \ref{fig:kmeans_weak_speedup_redis}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.3]{figures/kmeans_storage_dep_graph.png}
+\caption{Dependency graph of a 6-iteration K-Means execution with $4$ point fragments.}
+\label{fig:kmeans_storage_dep_graph}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{figures/storage/kmeans_strong.png}
+\caption{Strong scaling graph of our various storage implementations}
+\label{fig:kmeans_strong_redis}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{figures/storage/kmeans_strong_speedup.png}
+\caption{Strong scaling speedup graph of our various storage implementations}
+\label{fig:kmeans_strong_speedup_redis}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{figures/storage/kmeans_weak.png}
+\caption{Weak scaling graph of our various storage implementations}
+\label{fig:kmeans_weak_redis}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale = 0.5]{figures/storage/kmeans_weak_speedup.png}
+\caption{Weak scaling speedup graph of our various storage implementations}
+\label{fig:kmeans_weak_speedup_redis}
+\end{figure}
+
+As we can see, our storage implementation does not improve the overall performance of this application. This applications has little to no heavy transfers, only at the beggining, so these results are more or less expected.
+
+%TODO: GET THE KMEANS TRACE
+
+\subsection{Matrix Multiplication}
+\label{subsubsec:matmul_redis}
+The matrix multiplication is a very common algorithm and it is usually the preferred example of what an embarrassingly parallel application is (i.e: a parallel application with no dependencies). Its distributed version is also interesting but due to other property: the enormous amount of required data transfers. Let's take a look to the following code:
+
+\inputminted{python}{snippets/matmul_python.py}
+
+This code can be parallelized in any of the three loops. The only special requirement is to make sure that no pair of additions over the same $C_{i, j}$ are done concurrently. Our COMPSs implementation can be found in appendix \ref{subsec:matmul_redis}. As we can see, we \textit{solve} the problem by arranging all the tasks that involve some $C_{i, j}$ in a dependency chain. We also consider the members of the matrices to be sub-matrices instead of single numbers in order to keep some balance between task count and task granularity. These dependencies can be observed in figure \ref{fig:matmul_redis_dep_graph}. As we can observe in the labels of edges, this application has far less tasks than pieces of data, and tasks have a huge \textit{data variety}. This means that most tasks will require to transfer at least one of its parameters.\\
+\begin{figure}
+\centering
+\includegraphics[scale = 0.2]{figures/matmul_storage_dep_graph.png}
+\caption{Dependency graph of a 2x2 matrix multiplication.}
+\label{fig:matmul_redis_dep_graph}
+\end{figure}
+\\
+As we can see in figures \ref{fig:matmul_strong_redis} and \ref{fig:matmul_strong_speedup_redis} the Matrix Multiplication algorithm gets a huge benefit from our storage systems. This is expected, as this application is a great example of a very transfer-intensive workflow. Although this application is syntethic and has little to no usage in real scenarios, it still represents and reproduces many realistic workflows. Usually, an improvement on this application implies improvements on many real life applications, as they tend to be very transfer intensive.
+
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.5]{figures/storage/matmul.png}
+\caption{Strong scaling graph of our various storage implementations}
+\label{fig:matmul_strong_redis}
+\end{figure}
+
+
+
+\begin{figure}
+\centering
+\includegraphics[scale = 0.5]{figures/storage/matmul_speedup.png}
+\caption{Strong scaling speedup graph of our various storage implementations}
+\label{fig:matmul_strong_speedup_redis}
+\end{figure}
+

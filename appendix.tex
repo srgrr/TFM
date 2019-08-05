@@ -1,20 +1,25 @@
-\section{Appendix}
-\label{sec:appendix}
-
-\subsection{Collections as Input Parameters}
+\chapter{Collections as Input Parameters}
 \label{subsec:col_in_program}
-\inputminted{python}{applications/COLLECTION_IN/resources_in_master.py}
+\inputminted[breaklines = true]{python}{applications/COLLECTION_IN/resources_in_master.py}
+
+\chapter{Collections as INOUT Parameters}
+\label{subsec:col_inout_program}
+\inputminted[breaklines = true]{python}{applications/COLLECTION_INOUT/resources_in_worker.py}
+
+The same application but adding a task which changes a single element of a collection, proving that our recursion pattern is enough to catch the two possible ways in which dependencies are generated (from collection to content, and from content to collection).
+
+\inputminted[breaklines = true]{python}{applications/COLLECTION_INOUT/resources_in_worker_complex_workflow.py}
 
 
-\subsection{HyperLogLog}
+\chapter{HyperLogLog}
 \label{subsec:hyperloglog_source_code}
 Main application:
-\inputminted{python}{applications/HYPERLOGLOG/main.py}
+\inputminted[breaklines = true]{python}{applications/HYPERLOGLOG/main.py}
 \verb|HyperLogLog| class
-\inputminted{python}{applications/HYPERLOGLOG/HyperLogLog.py}
+\inputminted[breaklines = true]{python}{applications/HYPERLOGLOG/HyperLogLog.py}
 
 
-\subsection{Metadata generation comparison}
+\chapter{Metadata generation comparison}
 \label{subsec:reduce_data_comparison}
 
 A task \verb|f(a, b, c, d, e)| sends this information through a socket:
@@ -94,11 +99,20 @@ While the collection equivalent generates this data:
 [BINDING-COMMONS]  -  @process_param  -  NAME: $return_0
 \end{verbatim}
 
-\subsection{K-Means + Storage Implementation}
+\chapter{Redis Storage API implementation}
+\label{subsec:storage_api_redis_impl}
+Python:
+\inputminted[breaklines = true]{python}{applications/STORAGE/redisPSCO/COMPSs-Redis-bundle/python/storage/api.py}
+Java:
+\inputminted[breaklines = true]{java}{applications/STORAGE/redisPSCO/src/main/java/storage/StorageItf.java}
+The \verb|storage_init.sh| script, used to build Redis clusters on demand:
+\inputminted[breaklines = true]{bash}{applications/STORAGE/redisPSCO/scripts/storage_init.sh}
+
+\chapter{K-Means + Storage Implementation}
 \label{subsec:kmeans_redis}
-\inputminted{python}{snippets/kmeans_storage.py}
+\inputminted[breaklines = true]{python}{snippets/kmeans_storage.py}
 
 
-\subsection{Matmul + Storage Implementation}
+\chapter{Matmul + Storage Implementation}
 \label{subsec:matmul_redis}
-\inputminted{python}{snippets/matmul_storage.py}
+\inputminted[breaklines = true]{python}{snippets/matmul_storage.py}
